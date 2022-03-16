@@ -3,13 +3,11 @@ import useTranslation from 'next-translate/useTranslation'
 import MusicEqualizer from './MusicEqualizer'
 import Link from './Link'
 import fetcher from '@/lib/fetcher'
-
 export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
-
   return (
-    <div className="flex w-full items-center gap-1 sm:gap-2">
+    <div className="flex flex-wrap justify-center  items-center gap-1 sm:gap-2">
       <svg className="h-5 w-5 flex-none" viewBox="0 0 168 168">
         <path
           fill="#1ED760"
@@ -20,7 +18,8 @@ export default function NowPlaying() {
       <div className="flex max-w-full truncate">
         {data?.songUrl ? (
           <Link
-            className="max-w-max truncate text-sm hover:text-spotify-green"
+            className="max-w-max truncate text-sm
+              hover:text-spotify-green"
             href={data.songUrl}
             title={data.title}
           >
@@ -30,7 +29,7 @@ export default function NowPlaying() {
           <p className="text-sm text-gray-500 dark:text-gray-400">{t('common:not-playing')}</p>
         )}
         <span className="mx-2 text-sm text-gray-500 dark:text-gray-400 sm:block">{'–'}</span>
-        <p className="max-w-max truncate text-sm text-gray-500 dark:text-gray-400">
+        <p className="max-w-max truncate text-sm  text-gray-500 dark:text-gray-400">
           {data?.artist ?? 'Spotify'}
         </p>
       </div>

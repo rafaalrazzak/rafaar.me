@@ -261,6 +261,14 @@ module.exports = {
             opacity: 0,
           },
         },
+        'gradient-background-4': {
+          '0%, 58.333%, 91.667%, 100%': {
+            opacity: 1,
+          },
+          '66.667%, 83.333%': {
+            opacity: 0.5,
+          },
+        },
       },
       animation: {
         shrink: 'shrink 1.5s infinite',
@@ -271,6 +279,7 @@ module.exports = {
         'gradient-foreground-2': 'gradient-foreground-2 8s infinite',
         'gradient-background-3': 'gradient-background-3 8s infinite',
         'gradient-foreground-3': 'gradient-foreground-3 8s infinite',
+        'gradient-background-4': 'gradient-background-4 4s infinite',
       },
     },
   },

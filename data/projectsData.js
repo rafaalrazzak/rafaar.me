@@ -1,7 +1,7 @@
 const projectsData = {
   en: [
     {
-      title: 'DigitalOcean Tools',
+      title: 'Digital Ocean Tools',
       description: `DigitalOcean Tools is an open source project built to provide the ability to upload and 
       delete objects from DigitalOcean Spaces in Azure DevOps Build and Release Management.`,
       href: 'https://github.com/marceloavf/digitalocean-tools-vsts',
@@ -27,27 +27,27 @@ const projectsData = {
   ],
   id: [
     {
-      title: 'DigitalOcean Tools',
-      description: `O DigitalOcean Tools é um projeto de código aberto criado para fornecer a capacidade de manusear objetos do 
-      DigitalOcean Spaces no Azure DevOps.`,
+      title: 'Digital Ocean Tools.',
+      description: `Alat digitalcean adalah proyek open source yang dibuat untuk memberikan kemampuan untuk menangani objek dari
+      Ruang digital di DevOps Azure.`,
       href: 'https://github.com/marceloavf/digitalocean-tools-vsts',
     },
     {
       title: 'GitHub Tools',
-      description: `GitHub Tool é um projeto de código aberto feito para fornecer uma implementação para criar e
-      modificar versões do GitHub para o Azure DevOps.`,
+      description: `Alat GitHub adalah proyek open source yang dibuat untuk memberikan implementasi untuk membuat dan
+      Ubah versi GitHub untuk Azure DevOps.`,
       href: 'https://github.com/marceloavf/github-tools-vsts',
     },
     {
       title: 'Docz',
-      description: `Docz é um projeto de código aberto que contribuí, criado para facilitar a escrita e a publicação de uma
-      documentação interativa para seu código.`,
+      description: `DOCZ adalah proyek open source yang berkontribusi, dibuat untuk memfasilitasi penulisan dan publikasi a
+      Dokumentasi interaktif untuk kode Anda.`,
       href: 'https://github.com/doczjs/docz',
     },
     {
       title: 'Semantic Release',
-      description: `O Semantic Release é um projeto de código aberto que eu uso e contribuo ativamente, construído para automatizar
-      todo o fluxo de liberação de pacotes.`,
+      description: `SEMIOLT RELEASE adalah proyek sumber terbuka yang saya gunakan dan berkontribusi aktif, dibangun untuk mengotomatisasi
+      Semua paket rilis paket.`,
       href: 'https://github.com/semantic-release/semantic-release',
     },
   ],

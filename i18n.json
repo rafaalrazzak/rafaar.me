@@ -3,7 +3,7 @@
   "defaultLocale": "en",
   "localeDetection": false,
   "pages": {
-    "*": ["common", "headerNavLinks","blog", "404", "SEO", "learning"],
+    "*": ["common", "headerNavLinks", "404", "SEO", "learning"],
     "/projects": ["projects"]
   }
 }

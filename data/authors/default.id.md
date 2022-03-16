@@ -1,80 +1,54 @@
 ---
 name: Rafa Al Razzak
 avatar: /static/images/profile.png
-occupation: Students at Al-Asiyah IT Vocational High School
+occupation: Siswa di Sekolah Menengah Kejuruan Al-Asiyah
 company: 📍 Bogor, Indonesia
-email: me@marceloformentao.dev
-twitter: https://twitter.com/marceloavf
-linkedin: https://www.linkedin.com/in/marceloavf/
-github: https://github.com/marceloavf
+email: contact.rafaalrazzak@gmail.com
+twitter: https://twitter.com/rafa_ar_id
+instagram: https://instagram.com/rafa.ar.id
+github: https://github.com/raf-ar
 ---
 
-Engenheiro de Software que codifica por paixão e cria por diversão. Trabalhei com várias tecnologias como  Vue, React, Angular, Node, com 8+ anos de experiência.
+<h1 align="center">Hi 👋, I'm Rafa Al Razzak</h1>
+<h3 align="center">I am a student at AL-ASIYAH vocational high school</h3>
 
-Além de programar, gosto de jogar, escutar música, assistir séries e filmes e de animais de estimação 😊.
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=raf-ar&label=Profile%20views&color=0e75b6&style=flat" alt="raf-ar" /> </p>
 
-## Linha do tempo
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=raf-ar" alt="raf-ar" /></a> </p>
 
-### 2022
+<p align="left"> <a href="https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge" alt="rafa_ar_id" /></a> </p>
 
-- Comecei a aprender [Clojure](https://clojure.org/api/cheatsheet).
-- Me inscrevi no [Talk'n Talk](https://www.talkntalk.com.br/) para melhorar minha conversação em inglês.
-- Publiquei meu site.
-- Ingressei na [Hotmart](https://www.hotmart.com/) como Engenheiro de Software.
+- 🌱 I’m currently learning **react.js | next.js | tailwindcss**
 
-### 2021
+- 👨‍💻 All of my projects are available at [https://s.id/ra-fa](https://s.id/ra-fa)
 
-- Perdi [meu pai](https://www.facebook.com/paulosergio.formentao) ❤️, a pessoa mais amada que conheço.
+- 📝 I regularly write articles on [https://s.id/b-raf](https://s.id/b-raf)
 
-### 2020
+- 📫 How to reach me **contact.rafaalrazzak@gmail.com**
 
-- Recebi a certificação [Scrum Foundation Professional Certificate (SFPC)](https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc-en-sp).
+- ⚡ Fun fact **I'm very curious**
 
-### 2019
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://codepen.io/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="rafa_ar" height="30" width="40" /></a>
+<a href="https://dev.to/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="rafa_ar" height="30" width="40" /></a>
+<a href="https://twitter.com/rafa_ar_id" t
+arget="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rafa_ar_id" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/rafa al razzak" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="rafa al razzak" height="30" width="40" /></a>
+<a href="https://codesandbox.com/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="rafa_ar" height="30" width="40" /></a>
+<a href="https://fb.com/rafa.ar.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="rafa.ar.id" height="30" width="40" /></a>
+<a href="https://instagram.com/rafa.ar.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="rafa.ar.id" height="30" width="40" /></a>
+</p>
 
-- Ministrei workshop sobre Git: Desmistificando o Gerenciamento de Código na Precisão Sistemas.
-- Ministrei workshop sobre Versionamento e Controle de Pacotes na Precisão Sistemas.
-- Recebi a certificação [DevOps Essentials Professional Certificate (DEPC)](https://certiprof.com/pages/devops-essentials-professional-certificate-depc).
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> </p>
 
-### 2018
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=raf-ar&show_icons=true&locale=en&layout=compact" alt="raf-ar" /></p>
 
-- Me mudei [Jales](https://pt.wikipedia.org/wiki/Jales).
-- Contribui para o lançamento do [Docz](https://github.com/doczjs/docz).
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=raf-ar&show_icons=true&locale=en" alt="raf-ar" /></p>
 
-### 2017
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=raf-ar&" alt="raf-ar" /></p>
 
-- Ingressei na Precisão Sistemas na posição de Engenheiro de Software.
+<h3 align="left">Support:</h3>
+<p><a href="https://trakteer.id/rafaar"><img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMBJUrG1xcGEyclqpfwooQD8VsSugFioyZ_CMOsp0c4NXbh1ulgIP3Lk&s=10" height="60" width="135" alt="rafaar" /></a><a href="https://saweria.co/rafaar"> <img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkVSdZ6TXvhkBUdw1q1yv8hYzcBuaIPrcgw&usqp=CAU" height="60" width="135" alt="rafaar" /></a></p><br><br>
 
-### 2015
-
-- Ingressei na [Agência Vop!](https://www.agenciavop.com.br/) na posição de Desenvolvedor Front-end.
-- Premiado no [Desafio Inova Paula Souza - Etapa Melhor dos Melhores Estadual](http://atribunanaweb.com.br/noticia/projeto-da-fatec-jales-foi-destaque-no-melhor-dos-melhores) com o projeto Social Fitness.
-- Com ajuda de um amigo, [Renan Favaro](https://www.linkedin.com/in/renanrfavaro/), de Santa Catarina, comecei a realizar trabalhos freelance fora do estado.
-  - Publiquei meu primeiro projeto público para uma empresa de roupas chamada [Fase Lunar](https://www.behance.net/gallery/25095881/Fase-Lunar) no Behance.
-
-### 2014
-
-- Finalizei minha graduação em Sistemas para Internet na FATEC.
-- Com ajuda de um amigo, Reinaldo Takaki, nos inscrevemos no Desafio Inova Paula Souza com o projeto Social Fitness.
-
-### 2013
-
-- Comecei a trabalhar como 'Web Designer' na [Vento Tecnologia](https://www.behance.net/gallery/14305247/Identidade-Visual-Vento-Tecnologia), agência de marketing de Florinanópolis, Santa Catarina.
-- Inicei projetos freelancer como 'Web Designer' para empresas locais.
-
-### 2012
-
-- Ingressei na FATEC Jales, cursando Sistemas para Internet.
-- Iniciei o aprendizado de PHP e JavaScript.
-
-### 2010
-
-- Comecei a aprender a coleção Adobe (Photoshop, Illustrator, Flash, Dreamweaver, etc.).
-
-### 1997
-
-- Me mudei para [São Francisco](https://pt.wikipedia.org/wiki/S%C3%A3o_Francisco_(S%C3%A3o_Paulo)), não sei exatamente quando 😂.
-
-### 1994
-
-- Nasci 🥚 (em [Americana](https://pt.wikipedia.org/wiki/Americana)).

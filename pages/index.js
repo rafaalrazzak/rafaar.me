@@ -33,9 +33,11 @@ export default function Home({ posts, locale, availableLocales }) {
         <div className="h-screen w-full">
           <Hero />
         </div>
-        <h1 className="py-3 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl xl:text-6xl md:leading-14">
-          {t('common:hi')} <span className="animate-fade-text">Mar</span>
-          <span>celo</span> <span className="animate-fade-text">Formentão</span>
+        <h1 className="py-3 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 xl:text-6xl">
+          {t('common:hi')}{' '}
+          <span className="animate-fade-text">
+            Rafa Al Razzak
+          </span>
         </h1>
         <p className="px-2 text-xl font-light leading-6 text-gray-500 dark:text-gray-400 sm:px-6 xl:px-0">
           {t('common:mini-bio')}
@@ -43,7 +45,7 @@ export default function Home({ posts, locale, availableLocales }) {
       </div>
       <div>
         <div>
-          <div className="pb-2 w-full flex flex-wrap">
+          <div className="flex w-full flex-wrap pb-2">
             <Card
               title={t('common:learning')}
               description={t('learning:description')}
@@ -122,8 +124,8 @@ export default function Home({ posts, locale, availableLocales }) {
         )}
 
         <div className="py-7">
-          <h1 className="text-2xl flex justify-center font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-            My <span className="text-green-500 mx-1"> Spotify </span> Top Song
+          <h1 className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+            My <span className="mx-1 text-green-500"> Spotify </span> Top Song
           </h1>
           <TopTracks />
         </div>

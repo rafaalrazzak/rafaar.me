@@ -4,20 +4,10 @@ class MyDocument extends Document {
     return (
       <Html className="scroll-smooth">
         <Head>
-          <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/static/favicons/favicon-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/static/favicons/favicon-16x16.png"
-          />
-          <link rel="manifest" href="/static/favicons/site.webmanifest" />
+          <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+          <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+         <link rel="manifest" href="/static/favicons/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#8b5cf6" />
           <meta name="theme-color" content="#8b5cf6" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +23,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="bg-white text-black antialiased dark:bg-violet-1000 dark:text-white transition-all duration-500">
+        <body className="bg-white text-black antialiased transition-all duration-500 dark:bg-violet-1000 dark:text-white">
           <Main />
           <NextScript />
         </body>

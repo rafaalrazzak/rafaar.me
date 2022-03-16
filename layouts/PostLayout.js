@@ -1,5 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
+import { FaGithub, FaTwitter } from 'react-icons/fa'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
@@ -8,7 +9,6 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 

@@ -1,14 +1,14 @@
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
+import { FaGithub, FaTwitter } from 'react-icons/fa'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import Image from '@/components/Image'
 import { BlogSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import ScrollTop from '@/components/ScrollTop'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import siteMetadata from '@/data/siteMetadata'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 

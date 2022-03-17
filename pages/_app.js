@@ -21,7 +21,7 @@ export default function App({ Component, pageProps, router }) {
   })
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+    <ThemeProvider attribute="class" enableSystem={true}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>

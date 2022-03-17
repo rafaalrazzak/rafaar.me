@@ -66,7 +66,7 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-            <div className="flex">
+            <div className="flex items-center">
               {locales.map((e, index) => (
                 <span key={e}>
                   <button
@@ -76,7 +76,7 @@ export default function Header() {
                     onClick={() => changeLanguage(e)}
                     className="inline-block cursor-pointer p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 sm:py-4"
                   >
-                    {e}
+                    {e.toUpperCase()}
                   </button>
                   {index === 0 && (
                     <span className="py-1 text-gray-300 dark:text-gray-700 sm:py-4">/</span>

@@ -8,7 +8,7 @@ export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
   return (
-    <div className="flex flex-wrap items-center  justify-center gap-1 sm:gap-2">
+    <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2">
       {data?.isPlaying && data?.songUrl ? (
         <SongImage src={data.songImage} alt="song-image" width={20} height={20} />
       ) : (
@@ -20,7 +20,7 @@ export default function NowPlaying() {
         </svg>
       )}
       {data?.isPlaying && data?.songUrl && <MusicEqualizer />}
-      <div className="flex max-w-full truncate">
+      <div className="flex max-w-full flex-wrap justify-center truncate">
         {data?.songUrl ? (
           <Link
             className="max-w-max truncate text-sm
@@ -31,12 +31,12 @@ export default function NowPlaying() {
             {data.title}
           </Link>
         ) : (
-          <p className="text-sm text-gray-500 dark:text-gray-400">{t('common:not-playing')}</p>
+          <p className="flex flex-wrap text-sm text-gray-500 dark:text-gray-400">
+            {t('common:not-playing')}
+          </p>
         )}
-        <span className="mx-2 flex flex-wrap text-sm text-gray-500 dark:text-gray-400 sm:block">
-          {'–'}
-        </span>
-        <p className="max-w-max truncate text-sm  text-gray-500 dark:text-gray-400">
+        <span className="mx-2 flex flex-wrap text-sm text-gray-500 dark:text-gray-400">{'–'}</span>
+        <p className='dark:text-gray-400" flex flex-wrap truncate  text-sm text-gray-500'>
           {data?.artist ?? 'Spotify'}
         </p>
       </div>

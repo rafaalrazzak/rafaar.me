@@ -8,23 +8,23 @@ const MobileNav = ({ navShow, onToggleNav }) => {
   return (
     <div className="sm:hidden">
       <div
-        className={`fixed w-full h-screen top-12 right-0 bg-white dark:bg-violet-1000 z-40 ease-in-out duration-500 ${
+        className={`fixed top-12 right-0 z-40 h-screen w-full bg-white duration-500 ease-in-out dark:bg-violet-1000 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
-        } bg-opacity-30 dark:bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
+        } bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
       >
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed z-30 w-full h-full cursor-auto focus:outline-none"
+          className="fixed z-30 h-full w-full cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="mt-8 relative space-y-8 z-40">
+        <nav className="relative z-40 mt-8 space-y-8">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12">
               <Link
                 href={link.href}
                 title={link.title}
-                className="text-xl font-semibold leading-8 tracking-wide text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                className="text-xl font-semibold leading-8 tracking-wide text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
                 onClick={onToggleNav}
               >
                 {t(`headerNavLinks:${link.title.toLowerCase()}`)}

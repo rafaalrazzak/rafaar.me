@@ -266,7 +266,7 @@ module.exports = {
             opacity: 1,
           },
           '66.667%, 83.333%': {
-            opacity: 0.5,
+            opacity: 0.7,
           },
         },
       },

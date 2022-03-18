@@ -20,6 +20,9 @@ const nextConfig = {
   compress: true,
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  images: {
+    domains: ['i.scdn.co'],
+  },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts', 'context'],
   },

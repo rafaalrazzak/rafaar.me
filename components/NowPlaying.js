@@ -7,6 +7,9 @@ import fetcher from '@/lib/fetcher'
 export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
+  const artisLength = data?.artist.length >= 30
+  const titleLength = data?.title.length >= 30
+  console.log(artisLength)
   return (
     <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2">
       {data?.isPlaying && data?.songUrl ? (
@@ -35,7 +38,13 @@ export default function NowPlaying() {
             {t('common:not-playing')}
           </p>
         )}
-        <span className="mx-2 flex flex-wrap text-sm text-gray-500 dark:text-gray-400">{'–'}</span>
+        <div>
+          {artisLength || titleLength ? (
+            <span className="mx-2 hidden flex-wrap text-sm text-gray-500 dark:text-gray-400 sm:flex">
+              {'–'}
+            </span>
+          ) : null}
+        </div>
         <p className='dark:text-gray-400" flex flex-wrap truncate  text-sm text-gray-500'>
           {data?.artist ?? 'Spotify'}
         </p>

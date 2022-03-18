@@ -66,7 +66,7 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-            <div className="flex">
+            <div className="flex items-center">
               {locales.map((e, index) => (
                 <span key={e}>
                   <button

@@ -7,7 +7,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Card from '@/components/Card'
-import TopTracks from '@/components/TopTrack'
+import TopTracks from '@/components/TopTracks'
 
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const MAX_DISPLAY = 3
@@ -120,11 +120,16 @@ export default function Home({ posts, locale, availableLocales }) {
             </Link>
           </div>
         )}
-        <div className="py-7">
-          <h1 className="flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-            My <span className="mx-1 text-green-500"> Spotify </span> Top Song
-          </h1>
-          <TopTracks />
+        <TopTracks />
+
+        <div className="flex justify-end text-base font-medium leading-6">
+          <Link
+            href={`/topTracks`}
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label={`Read Top Tracks`}
+          >
+            {t('common:more')} &rarr;
+          </Link>
         </div>
       </div>
     </>

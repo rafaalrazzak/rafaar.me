@@ -11,7 +11,6 @@ export default function Track(track) {
             width="200"
             height="200"
             alt="image-song"
-            quality="100"
           />
           <div className="flex flex-col justify-start p-4 leading-normal">
             <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">

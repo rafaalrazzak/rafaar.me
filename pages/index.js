@@ -121,16 +121,6 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
         )}
         <TopTracks />
-
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href={`/topTracks`}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label={`Read Top Tracks`}
-          >
-            {t('common:more')} &rarr;
-          </Link>
-        </div>
       </div>
     </>
   )

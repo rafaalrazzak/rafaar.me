@@ -9,8 +9,8 @@ export default function Track(track) {
             <Image
               className="transform items-start justify-start overflow-hidden rounded-tl-lg bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-[1.15] xs:absolute xs:hidden xs:rounded-full md:h-auto md:w-full md:rounded-l-lg "
               src={track.songImage}
-              width="130"
-              height="130"
+              width="150"
+              height="150"
               alt="image-song"
               placeholder="blur"
               layout="fixed"

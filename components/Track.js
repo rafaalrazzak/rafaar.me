@@ -2,15 +2,15 @@ import Image from './Image'
 import Link from './Link'
 export default function Track(track) {
   return (
-    <div className="relative my-4 flex h-40 w-full flex-col justify-center overflow-hidden rounded-lg border-b bg-white/30 shadow-sm filter backdrop-blur-md transition-colors duration-500 ease-linear hover:bg-spotify-green/10 hover:text-white dark:border-gray-600/50 dark:bg-gray-800 dark:hover:bg-gray-700 md:flex-row">
+    <div className="relative my-4 flex h-44 w-full flex-col justify-center overflow-hidden rounded-lg border-b bg-white/30 shadow-sm filter backdrop-blur-md transition-colors duration-500 ease-linear hover:bg-spotify-green/10 hover:text-white dark:border-gray-600/50 dark:bg-gray-800 dark:hover:bg-gray-700 md:flex-row">
       <Link href={track.songUrl} className="w-full">
         <div className="flex h-full w-full justify-start ">
           <div className="flex xs:hidden">
             <Image
               className="transform items-start justify-start overflow-hidden rounded-tl-lg bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-[1.15] xs:absolute xs:hidden xs:rounded-full md:h-auto md:w-full md:rounded-l-lg "
               src={track.songImage}
-              width="160"
-              height="160"
+              width="176"
+              height="176"
               alt="image-song"
               placeholder="blur"
               layout="fixed"

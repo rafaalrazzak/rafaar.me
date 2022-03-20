@@ -10,7 +10,7 @@ export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing', fetcher)
   return (
     <div className="flex max-w-full flex-wrap flex-col items-center justify-center gap-1 sm:gap-2">
-     <div className="flex flex-row">
+     <div className="flex flex-row justify-center my-1">
     {data?.isPlaying && data?.songUrl ? (
         <SongImage src={data.songImage} alt="song-image" size={20} quality={100} />
       ) : (
@@ -33,6 +33,9 @@ export default function NowPlaying() {
             {t('common:not-playing')}
           </p>
         )}
+        <span className="mx-2 flex text-sm text-gray-500 dark:text-gray-400">
+              {'–'}
+            </span>
         <p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
           {data?.artist ?? 'Spotify'}
         </p>

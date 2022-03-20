@@ -19,7 +19,7 @@ export default function Track(track) {
             />
           </div>
           <div className="relative flex flex-col justify-start p-4 leading-normal">
-            <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white md:text-xl">
+            <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white md:text-xl">
               {track.title}
             </h5>
             <p className="md:text-md mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">

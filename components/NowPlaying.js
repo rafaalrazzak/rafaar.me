@@ -34,6 +34,7 @@ export default function NowPlaying() {
         <p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
           {data?.artist ?? 'Spotify'}
         </p>
+     </div>
     </div>
   )
 }

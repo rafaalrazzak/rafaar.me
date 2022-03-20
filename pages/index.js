@@ -29,7 +29,7 @@ export default function Home({ posts, locale, availableLocales }) {
         description={siteMetadata.description[locale]}
         availableLocales={availableLocales}
       />
-      <div className="relative pb-12 pt-2 text-center sm:pb-14 sm:pt-3">
+      <div className="relative justify-center pb-12 pt-2 text-center xs:flex xs:flex-col xs:pb-8 sm:pb-14 sm:pt-3">
         <div className="h-screen w-full">
           <Hero />
         </div>
@@ -40,7 +40,7 @@ export default function Home({ posts, locale, availableLocales }) {
           {t('common:mini-bio')}
         </p>
       </div>
-      <div>
+      <div className="flex w-full flex-col items-center justify-center">
         <div>
           <div className="flex w-full flex-wrap pb-2">
             <Card
@@ -72,7 +72,7 @@ export default function Home({ posts, locale, availableLocales }) {
                       </dl>
                       <div className="space-y-5 xl:col-span-2">
                         <div className="space-y-6">
-                          <div>
+                          <div className="flex flex-col xs:w-full xs:justify-center">
                             <h2 className="text-2xl font-bold leading-8 tracking-tight">
                               <Link
                                 href={`/blog/${slug}`}
@@ -109,7 +109,7 @@ export default function Home({ posts, locale, availableLocales }) {
             })}
           </ul>
         </div>
-        {posts.length >= 1 && (
+        {posts.length >= 3 && (
           <div className="flex justify-end text-base font-medium leading-6">
             <Link
               href="/blog"

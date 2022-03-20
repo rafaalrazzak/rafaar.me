@@ -7,7 +7,6 @@ export default function Tracks() {
   if (!data) {
     return null
   }
-
   return (
     <>
       {data.tracks.map((track, index) => (

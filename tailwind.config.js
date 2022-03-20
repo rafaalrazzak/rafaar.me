@@ -12,6 +12,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    screens: {
+      xs: { max: '325px' },
+      ...defaultTheme.screens,
+    },
+
     extend: {
       fontSize: {
         '6xl': '3.4rem',

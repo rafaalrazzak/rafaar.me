@@ -7,12 +7,10 @@ import fetcher from '@/lib/fetcher'
 export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
-  const artisLength = data?.artist.length >= 25
-  const titleLength = data?.title.length >= 25
   return (
     <div className="flex max-w-full flex-wrap items-center justify-center gap-1 sm:gap-2">
       {data?.isPlaying && data?.songUrl ? (
-        <SongImage src={data.songImage} alt="song-image" width={20} height={20} />
+        <SongImage src={data.songImage} alt="song-image" width={20} height={20} quality={100} />
       ) : (
         <svg className="h-5 w-5 flex-none" viewBox="0 0 168 168">
           <path
@@ -38,7 +36,7 @@ export default function NowPlaying() {
           </p>
         )}
         <div>
-          {artisLength || titleLength ? (
+          {data?.artist >= 25 || data?.title.length >= 25 ? (
             <span className="mx-2 hidden flex-wrap text-sm text-gray-500 dark:text-gray-400 sm:flex">
               {'–'}
             </span>

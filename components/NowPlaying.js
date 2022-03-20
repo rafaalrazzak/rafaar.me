@@ -9,14 +9,16 @@ export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
   return (
-    <div className="flex max-w-full flex-wrap items-center justify-center gap-1 sm:gap-2">
-      {data?.isPlaying && data?.songUrl ? (
+    <div className="flex max-w-full flex-wrap flex-col items-center justify-center gap-1 sm:gap-2">
+     <div className="flex flex-row">
+    {data?.isPlaying && data?.songUrl ? (
         <SongImage src={data.songImage} alt="song-image" size={20} quality={100} />
       ) : (
         <FaSpotify className="text-spotify-green" size={20} />
       )}
       {data?.isPlaying && data?.songUrl && <MusicEqualizer />}
-      <div className="flex max-w-full flex-wrap justify-center truncate flex-col">
+       </div>
+      <div className="flex max-w-full flex-wrap justify-center truncate">
         {data?.songUrl ? (
           <Link
             className="max-w-max truncate text-xs hover:text-spotify-green

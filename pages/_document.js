@@ -60,6 +60,8 @@ class MyDocument extends Document {
           <link rel="manifest" href="/static/favicons/site.webmanifest.json" />
           <meta name="msapplication-TileColor" content="#110B2B" />
           <meta name="theme-color" content="#110B2B" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
             href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;600;700;800&display=swap"
             rel="stylesheet"

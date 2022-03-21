@@ -11,7 +11,7 @@ export default function Track(track) {
               src={track.songImage}
               width="176"
               height="176"
-              alt="image-song"
+              alt={track.title}
               placeholder="blur"
               layout="fixed"
               blurDataURL=""

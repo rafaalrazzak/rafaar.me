@@ -2,12 +2,9 @@ import Image from './Image'
 import Link from './Link'
 
 export default function Track(track) {
-    console.log(track)
     const convertImage = ({w, h}) => `
-        <div class="track-image">
-            <Image src="${track.songImage}" width="${w}" height="${h}" quality="1"/>
-        </div>
-      `
+       <Image src="${track.songImage}" width="${w}" height="${h}" quality="1"/>
+         `
     const toBase64 = (str) =>
       typeof window === 'undefined' ? Buffer.from(str).toString('base64') : window.btoa(str)
   return (

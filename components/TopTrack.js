@@ -5,7 +5,7 @@ export default function Tracks() {
   const { data } = useSWR('/api/top-tracks', fetcher)
 
   if (!data) {
-    return null
+    return <div className="text-lg flex justify-center items-cener">No top music for now!</div>
   }
   return (
     <>

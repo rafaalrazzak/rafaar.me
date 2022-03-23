@@ -61,7 +61,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#110B2B" />
           <meta name="theme-color" content="#110B2B" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link
             href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;600;700;800&display=swap"
             rel="stylesheet"
@@ -73,7 +73,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="bg-white text-black antialiased transition-all dark:bg-violet-1000 dark:text-white">
+        <body className="selection:bg-teal-200 selection:dark:bg-[#b816a9] selection:dark:text-white bg-white text-black antialiased transition-all dark:bg-violet-1000 dark:text-white ">
           <Main />
           <NextScript />
         </body>

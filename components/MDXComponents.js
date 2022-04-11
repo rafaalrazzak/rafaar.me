@@ -6,15 +6,15 @@ import Image from './Image'
 import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
-import { BlogNewsletterForm } from './NewsletterForm'
+
+const ImageMdx = <Image className="rounded-lg"/>
 
 export const MDXComponents = {
-  Image,
+  ImageMdx,
   Spotify,
   TOCInline,
   a: CustomLink,
   pre: Pre,
-  BlogNewsletterForm: BlogNewsletterForm,
   wrapper: ({ components, layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default
     return <Layout {...rest} />

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    font-family: Plus Jakarta Sans, system-ui, sans-serif;
+		font-weight: 800
+  },
+	p{
+    font-family: Inter, system-ui, sans-serif;
+		font-weight: 300
+	}
+}
+
 .task-list-item::before {
   @apply hidden;
 }

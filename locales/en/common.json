@@ -15,8 +15,11 @@
   "github": "View on GitHub",
   "hi": "Hi, I'm",
   "mini-bio": "A Software Engineer that codes for passion and designs for fun.",
-  "learning": "Learning Diary",
+  "learning": "Learning",
   "about": "About me",
   "about-description": "Learn about me, my career and a timeline of my lifetime.",
-  "not-playing": "Not playing"
+  "not-playing": "Not playing",
+	"minute":"Minute",
+	"minutes":"Minutes",
+  "read":"Read"
 }

@@ -35,7 +35,8 @@ module.exports = {
         'texture-pattern': "url('/static/images/right-dark-gradient.svg')",
       },
       fontFamily: {
-        sans: ['Be Vietnam Pro', ...defaultTheme.fontFamily.sans],
+				pjs:['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
 
       gradientColorStops: {
@@ -82,7 +83,7 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             h1: {
-              fontWeight: '700',
+							fontWeight: '800',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
@@ -97,6 +98,11 @@ module.exports = {
             },
             'h4,h5,h6': {
               color: theme('colors.gray.900'),
+            },
+            'p': {
+							fontWeight: '400',
+              
+							color: theme('colors.gray.600'),
             },
             code: {
               color: theme('colors.pink.500'),
@@ -146,8 +152,10 @@ module.exports = {
               },
               code: { color: theme('colors.primary.400') },
             },
-            h1: {
-              fontWeight: '700',
+           h1:{
+						 
+					  fontFamily: theme('fontFamily.Inter'),
+							fontWeight: '800',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
@@ -162,6 +170,9 @@ module.exports = {
             },
             'h4,h5,h6': {
               color: theme('colors.gray.100'),
+            },
+						'p': {
+							color: theme('colors.gray.200'),
             },
             code: {
               backgroundColor: theme('colors.gray.800'),

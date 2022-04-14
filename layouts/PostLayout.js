@@ -10,6 +10,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 
+
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -22,8 +23,9 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, tags } = frontMatter
-  const { t } = useTranslation()
+  const { slug, fileName, date, title, tags, readingTime}= frontMatter
+	const roundedRead = Math.round(readingTime);
+	const { t } = useTranslation()
   const { locale } = useRouter()
 
   return (
@@ -44,6 +46,10 @@ export default function PostLayout({
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(new Date(date), locale)}</time>
                   </dd>
+									<span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+            	  {roundedRead}{" "}
+								        {roundedRead == 1 ? 'minute' : 'minutes' + ' read'}
+						          </span>
                 </div>
               </dl>
               <div>

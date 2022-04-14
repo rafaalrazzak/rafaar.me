@@ -20,8 +20,9 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title } = frontMatter
-  const { t } = useTranslation()
+  const { slug, fileName, date, title,readingTime } = frontMatter
+	const roundedRead = Math.round(readingTime);
+	const { t } = useTranslation()
   const { locale } = useRouter()
   const AuthorLayout = () => {
     return(
@@ -77,7 +78,11 @@ export default function PostLayout({
                   <dt className="sr-only">{t('common:pub')}</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(date, locale)}</time>
-                  </dd>
+                 </dd>
+									<span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+								        {roundedRead}{" "}
+								        {roundedRead == 1 ? 'minute' : 'minutes' + ' read'}</
+						          span>
                   <AuthorLayout />
                 </div>
               </dl>

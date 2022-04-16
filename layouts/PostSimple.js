@@ -81,7 +81,7 @@ export default function PostLayout({
                   </dd>
 	           <span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
             	    {roundedRead}{" "}
-		    {roundedRead == 1 ? `{t('common:minute')}` : `{t('common:minutes')}` + `{t('common:read')}`}
+		    {roundedRead == 1 ? `${t('common:minute')}` : `${t('common:minutes')}` + " " + `${t('common:read')}`}
 	           </span>
                  <AuthorLayout />
                 </div>

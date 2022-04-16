@@ -13,8 +13,8 @@ export const MDXComponents = {
   TOCInline,
   a: CustomLink,
   pre: Pre,
-  img:Image({...rest}) => {
-  return <Image {...rest} />
+  img:Image => {
+  return <Image className="rounded-lg" />
   },
   wrapper: ({ components, layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default

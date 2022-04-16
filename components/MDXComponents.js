@@ -11,11 +11,11 @@ export const MDXComponents = {
   
   Spotify,
   TOCInline,
-  Image:({...rest}) => {
-  return <Image {...rest} />
-  },
   a: CustomLink,
   pre: Pre,
+  img:Image({...rest}) => {
+  return <Image {...rest} />
+  },
   wrapper: ({ components, layout, ...rest }) => {
     const Layout = require(`../layouts/${layout}`).default
     return <Layout {...rest} />

@@ -1,5 +1,4 @@
 import useTranslation from 'next-translate/useTranslation'
-import Image from '@/components/Image'
 export default function noTrack(){
 	  const { t } = useTranslation()
 	return(
@@ -16,4 +15,4 @@ export default function noTrack(){
         </div>
       </div>
 	)
-}4
+}

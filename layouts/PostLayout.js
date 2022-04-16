@@ -46,10 +46,10 @@ export default function PostLayout({
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(new Date(date), locale)}</time>
                   </dd>
-									<span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-            	  {roundedRead}{" "}
-								        {roundedRead == 1 ? 'minute' : 'minutes' + ' read'}
-						          </span>
+	           <span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+            	    {roundedRead}{" "}
+		    {roundedRead == 1 ? `{t('common:minute')}` : `{t('common:minutes')}` + `{t('common:read')}`}
+	           </span>
                 </div>
               </dl>
               <div>

@@ -32,7 +32,7 @@ export default function Home({ posts, locale, availableLocales }) {
           <div className="h-screen w-full">
               <Hero />
             </div>
-          <h1 className="py-3 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 xl:text-6xl">
+          <h1 className="py-3 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-5xl md:leading-14 xl:text-6xl">
             {t('common:hi')} <span className="animate-fade-text">Rafa Al Razzak</span>
           </h1>
           <p className="px-2 text-xl font-light leading-6 text-gray-500 dark:text-gray-400 sm:px-6 xl:px-0">

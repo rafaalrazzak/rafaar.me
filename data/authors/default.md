@@ -1,7 +1,7 @@
 ---
 name: Rafa Al Razzak
 avatar: /static/images/profile.png
-occupation: Siswa di Sekolah Menengah Kejuruan Al-Asiyah
+occupation: Students at Al-Asiyah Vocational High School
 company: 📍 Bogor, Indonesia
 email: contact.rafaalrazzak@gmail.com
 twitter: https://twitter.com/rafa_ar_id

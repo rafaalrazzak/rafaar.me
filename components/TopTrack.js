@@ -2,12 +2,12 @@ import useSWR from 'swr'
 import fetcher from '@/lib/fetcher'
 import Track from '@/components/Track'
 
-import noTrack from '@/components/notFound/noTrack'
+import NoTrack from '@/components/notFound/NoTrack'
 export default function Tracks() {
   const { data } = useSWR('/api/top-tracks', fetcher)
 
   if (!data) {
-    return <noTrack/>
+    return <NoTrack/>
   }
   return (
     <>

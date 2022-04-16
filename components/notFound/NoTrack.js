@@ -13,7 +13,7 @@ export default function noTrack(){
 									{t("404:noTrackParagraph")}</p> 
 							</div>
             <div className="mt-4">
-              <Image src="./static/images/ghost.png" alt="img" className="w-full p-4" w="40" h="40"/>
+              <Image src="static/images/ghost.png" alt="img" className="w-full p-4" width="40" height="40"/>
             </div>
           </div>
         </div>

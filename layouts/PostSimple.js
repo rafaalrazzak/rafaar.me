@@ -78,12 +78,12 @@ export default function PostLayout({
                   <dt className="sr-only">{t('common:pub')}</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(date, locale)}</time>
-                 </dd>
-									<span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-								        {roundedRead}{" "}
-								        {roundedRead == 1 ? 'minute' : 'minutes' + ' read'}</
-						          span>
-                  <AuthorLayout />
+                  </dd>
+	           <span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+            	    {roundedRead}{" "}
+		    {roundedRead == 1 ? `{t('common:minute')}` : `{t('common:minutes')}` + `{t('common:read')}`}
+	           </span>
+                 <AuthorLayout />
                 </div>
               </dl>
               <div>

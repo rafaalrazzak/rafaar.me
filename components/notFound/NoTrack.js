@@ -1,5 +1,5 @@
 import useTranslation from 'next-translate/useTranslation'
-export default function noTrack(){
+export default function NoTrack(){
   const { t } = useTranslation()
     return(
        <div className="flex items-center justify-center w-full"> 

@@ -20,7 +20,7 @@ const MobileNav = ({ navShow, onToggleNav }) => {
         ></button>
         <nav className="relative z-40 mt-8 space-y-8">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12">
+            <div key={link.title} className="px-6">
               <Link
                 href={link.href}
                 title={link.title}

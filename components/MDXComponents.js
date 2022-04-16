@@ -7,10 +7,8 @@ import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 
-const ImageMdx = <Image className="rounded-lg"/>
-
 export const MDXComponents = {
-  ImageMdx,
+  Image,
   Spotify,
   TOCInline,
   a: CustomLink,

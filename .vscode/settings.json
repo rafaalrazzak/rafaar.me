@@ -11,5 +11,8 @@
     "source.fixAll.eslint": true
   },
   "eslint.alwaysShowStatus": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "[plaintext]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

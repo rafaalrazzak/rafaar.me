@@ -42,30 +42,22 @@ export default function PostLayout({
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">{t('common:pub')}</dt>
-<<<<<<< HEAD
                   <dd className="text-sm font-medium leading-6 text-gray-500 dark:text-gray-400 flex justify-center items-center divide-x-2 divide-gray-500 dark:divide-gray-400">
                     <time className="pr-2" dateTime={date}>{formatDate(date, locale)}</time>
                     <span className="pl-2">
-=======
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400 flex flex-row w-full">
                    <span className="w-1/2" dateTime={date}>{formatDate(new Date(date), locale)}
                     </span>
 
                     <span className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
->>>>>>> b-raf/main
-                    {roundedRead}{' '}
+                     {roundedRead}{' '}
                     {roundedRead == 1
                       ? `${t('common:minute')}`
                       : `${t('common:minutes')}` + ' ' + `${t('common:read')}`}
                   </span>
-<<<<<<< HEAD
+                  </dd> 
                   </dd>
-=======
-                  
-                  </dd>
-                  
->>>>>>> b-raf/main
-                </div>
+               </div>
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>

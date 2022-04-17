@@ -20,44 +20,43 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title,readingTime } = frontMatter
-	const roundedRead = Math.round(readingTime);
-	const { t } = useTranslation()
+  const { slug, fileName, date, title, readingTime } = frontMatter
+  const roundedRead = Math.round(readingTime)
+  const { t } = useTranslation()
   const { locale } = useRouter()
   const AuthorLayout = () => {
-    return(
-      <ul className="flex my-4 justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-       {authorDetails.map((author) => (
-                    <li className="flex items-center space-x-2 justify-center" key={author.name}>
-                      {author.avatar && (
-                        <Image
-                          src={author.avatar}
-                          width="38px"
-                          height="38px"
-                          alt="avatar"
-                          className="h-10 w-10 rounded-full"
-                        />
-                      )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dt className="sr-only">{t('common:name')}</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                        <dt className="sr-only">Twitter</dt>
-                        <dd>
-                          {author.twitter && (
-                            <Link
-                              href={author.twitter}
-                              className="flex text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-xs"
-                            >
-                              <FaTwitter size={15} className="mr-1" />
-                              {author.twitter.replace('https://twitter.com/', '@')}
-                            </Link>
-                          )}
-                        </dd>
-                      </dl>
-                    </li>
-                  ))}
-                  </ul>
-                
+    return (
+      <ul className="my-4 flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
+        {authorDetails.map((author) => (
+          <li className="flex items-center justify-center space-x-2" key={author.name}>
+            {author.avatar && (
+              <Image
+                src={author.avatar}
+                width="38px"
+                height="38px"
+                alt="avatar"
+                className="h-10 w-10 rounded-full"
+              />
+            )}
+            <dl className="whitespace-nowrap text-sm font-medium leading-5">
+              <dt className="sr-only">{t('common:name')}</dt>
+              <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
+              <dt className="sr-only">Twitter</dt>
+              <dd>
+                {author.twitter && (
+                  <Link
+                    href={author.twitter}
+                    className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  >
+                    <FaTwitter size={15} className="mr-1" />
+                    {author.twitter.replace('https://twitter.com/', '@')}
+                  </Link>
+                )}
+              </dd>
+            </dl>
+          </li>
+        ))}
+      </ul>
     )
   }
 
@@ -72,33 +71,36 @@ export default function PostLayout({
       <article>
         <div>
           <header>
-            <div className="pb-10 space-y-1 text-center">
+            <div className="space-y-1 pb-10 text-center">
               <dl>
                 <div>
                   <dt className="sr-only">{t('common:pub')}</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(date, locale)}</time>
+                  <dd className="text-sm font-medium leading-6 text-gray-500 dark:text-gray-400 flex justify-center items-center divide-x-2 divide-gray-500 dark:divide-gray-400">
+                    <time className="pr-2" dateTime={date}>{formatDate(date, locale)}</time>
+                    <span className="pl-2">
+                    {roundedRead}{' '}
+                    {roundedRead == 1
+                      ? `${t('common:minute')}`
+                      : `${t('common:minutes')}` + ' ' + `${t('common:read')}`}
+                  </span>
                   </dd>
-	           <span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-            	    {roundedRead}{" "}
-		    {roundedRead == 1 ? `${t('common:minute')}` : `${t('common:minutes')}` + " " + `${t('common:read')}`}
-	           </span>
-                 <AuthorLayout />
+                  
+                  <AuthorLayout />
                 </div>
               </dl>
               <div>
-               <PageTitle>{title}</PageTitle>
+                <PageTitle>{title}</PageTitle>
               </div>
             </div>
           </header>
           <div
-            className="pb-8 divide-y divide-transparent xl:divide-y-0"
+            className="divide-y divide-transparent pb-8 xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <div className="divide-y divide-transparent xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
+            <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
+              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
-            <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300 hover:underline ">
+            <div className="pt-6 pb-6 text-sm text-gray-700 hover:underline dark:text-gray-300 ">
               <Link className="flex items-center" href={editUrl(fileName)}>
                 <FaGithub size={20} className="mr-3" />
                 {t('common:github')}

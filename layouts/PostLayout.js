@@ -10,7 +10,6 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 
-
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -23,9 +22,9 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, tags, readingTime}= frontMatter
-	const roundedRead = Math.round(readingTime);
-	const { t } = useTranslation()
+  const { slug, fileName, date, title, tags, readingTime } = frontMatter
+  const roundedRead = Math.round(readingTime)
+  const { t } = useTranslation()
   const { locale } = useRouter()
 
   return (
@@ -37,19 +36,25 @@ export default function PostLayout({
         {...frontMatter}
       />
       <article>
-        <div className="xl:divide-y divide-transparent">
+        <div className="divide-transparent xl:divide-y">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">{t('common:pub')}</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(new Date(date), locale)}</time>
+                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400 flex flex-row w-full">
+                   <span className="w-1/2" dateTime={date}>{formatDate(new Date(date), locale)}
+                    </span>
+
+                    <span className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    {roundedRead}{' '}
+                    {roundedRead == 1
+                      ? `${t('common:minute')}`
+                      : `${t('common:minutes')}` + ' ' + `${t('common:read')}`}
+                  </span>
+                  
                   </dd>
-	           <span className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-            	    {roundedRead}{" "}
-		    {roundedRead == 1 ? `${t('common:minute')}` : `${t('common:minutes')}` + " " + `${t('common:read')}`}
-	           </span>
+                  
                 </div>
               </dl>
               <div>
@@ -84,7 +89,7 @@ export default function PostLayout({
                           {author.twitter && (
                             <Link
                               href={author.twitter}
-                              className="flex text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-xs"
+                              className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                             >
                               <FaTwitter size={15} className="mr-1" />
                               {author.twitter.replace('https://twitter.com/', '@')}
@@ -107,7 +112,7 @@ export default function PostLayout({
               </div>
             </div>
             <footer>
-              <div className="divide-transparent text-sm font-medium leading-5xl:col-start-1 xl:row-start-2 xl:divide-y">
+              <div className="leading-5xl:col-start-1 divide-transparent text-sm font-medium xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">

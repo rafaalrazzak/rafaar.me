@@ -21,7 +21,7 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   images: {
-    domains: ['i.scdn.co',"images.unsplash.com"],
+    domains: ['i.scdn.co',"source.unsplash.com"],
   },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts', 'context'],

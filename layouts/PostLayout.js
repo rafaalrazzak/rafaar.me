@@ -36,7 +36,7 @@ export default function PostLayout({
         {...frontMatter}
       />
       <article>
-        <div className="divide-transparent xl:divide-y">
+        <div className="divide-transparent xl:divide-y w-full">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center flex justify-center">
               <dl className="space-y-10">
@@ -46,8 +46,8 @@ export default function PostLayout({
                     <span className="pl-2">
                     {roundedRead}{' '}
                     {roundedRead == 1
-                      ? `${t('common:minute')}`
-                      : `${t('common:minutes')}` + ' ' + `${t('common:read')}`}
+                      ? `${t('common:minute')} ${t('common:to')} ${t('common:read')}`
+                      : `${t('common:minutes')} ${t('common:to')} ${t('common:read')}` }
                   </span>
                  </dd>
                 </dl>
@@ -99,7 +99,7 @@ export default function PostLayout({
             <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={editUrl(fileName)} className="w-full flex flex-wrap justify-start" >
+                <Link href={editUrl(fileName)} className="flex flex-wrap justify-start" >
                   <FaGithub size={20} className="mr-3" />
                   {t('common:github')}
                 </Link>
@@ -108,7 +108,7 @@ export default function PostLayout({
             <footer>
               <div className="leading-5xl:col-start-1 divide-transparent text-sm font-medium xl:row-start-2 xl:divide-y">
                 {tags && (
-                  <div className="py-4 xl:py-8">
+                  <div  className="pt-4 xl:pt-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                       Tags
                     </h2>

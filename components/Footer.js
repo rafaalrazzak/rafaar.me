@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="mt-16 flex flex-col items-center justify-center">
+      <div className="mt-4 flex flex-col items-center justify-center">
         <div className="mb-4 flex space-x-3 px-4 pt-6 md:px-6 md:pt-0">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={5} />
           <SocialIcon kind="github" href={siteMetadata.github} size={5} />

@@ -71,30 +71,28 @@ export default function PostLayout({
       <article>
         <div>
           <header>
-            <div className="space-y-1 pb-10 text-center">
+            <div className="space-y-1 pb-8 text-center">
               <dl>
-                <div>
                   <dt className="sr-only">{t('common:pub')}</dt>
                   <dd className="text-sm font-medium leading-6 text-gray-500 dark:text-gray-400 flex justify-center items-center divide-x-2 divide-gray-500 dark:divide-gray-400">
                     <time className="pr-2" dateTime={date}>{formatDate(date, locale)}</time>
                     <span className="pl-2">
                     {roundedRead}{' '}
                     {roundedRead == 1
-                      ? `${t('common:minute')}`
-                      : `${t('common:minutes')}` + ' ' + `${t('common:read')}`}
+                      ? `${t('common:minute')} ${t('common:to')} ${t('common:read')}`
+                      : `${t('common:minutes')} ${t('common:to')} ${t('common:read')}` }
                   </span>
                   </dd>
-                  
-                  <AuthorLayout />
-                </div>
-              </dl>
-              <div>
+									</dl>
+              <div className="space-y-4" >
                 <PageTitle>{title}</PageTitle>
+								<AuthorLayout />
               </div>
+							
             </div>
           </header>
           <div
-            className="divide-y divide-transparent pb-8 xl:divide-y-0"
+            className="divide-y divide-transparent xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
@@ -109,7 +107,7 @@ export default function PostLayout({
             <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && (
-                  <div className="pt-4 xl:pt-8">
+                  <div  className="pt-4 xl:pt-8">
                     <Link
                       href={`/blog/${prev.slug}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

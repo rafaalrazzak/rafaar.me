@@ -38,7 +38,7 @@ export default function PostLayout({
       <article>
         <div className="divide-transparent xl:divide-y">
           <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center">
+            <div className="space-y-1 text-center flex justify-center">
               <dl className="space-y-10">
                 <dt className="sr-only">{t('common:pub')}</dt>
                   <dd className="text-sm font-medium leading-6 text-gray-500 dark:text-gray-400 flex justify-center items-center divide-x-2 divide-gray-500 dark:divide-gray-400">
@@ -50,13 +50,11 @@ export default function PostLayout({
                       : `${t('common:minutes')}` + ' ' + `${t('common:read')}`}
                   </span>
                  </dd>
-              </dl>
-               </div>
-              </dl>
-              <div>
+                </dl>
+						</div>
+               <div className="text-center" >
                 <PageTitle>{title}</PageTitle>
               </div>
-            </div>
           </header>
           <div
             className="divide-y divide-transparent pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
@@ -101,7 +99,7 @@ export default function PostLayout({
             <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={editUrl(fileName)}>
+                <Link href={editUrl(fileName)} className="w-full flex flex-wrap justify-start" >
                   <FaGithub size={20} className="mr-3" />
                   {t('common:github')}
                 </Link>

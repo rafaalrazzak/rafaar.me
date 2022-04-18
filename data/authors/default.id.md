@@ -49,6 +49,6 @@ arget="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldk
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=raf-ar&" alt="raf-ar" /></p>
 
-<h3 align="left">MendukungMendukungMendukungMendukungMendukungMendukungMendukungMendukung:</h3>
+<h3 align="left">Dukung Saya Dengan Donasi:</h3>
 <p><a href="https://trakteer.id/rafaar"><img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMBJUrG1xcGEyclqpfwooQD8VsSugFioyZ_CMOsp0c4NXbh1ulgIP3Lk&s=10" height="60" width="135" alt="rafaar" /></a><a href="https://saweria.co/rafaar"> <img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkVSdZ6TXvhkBUdw1q1yv8hYzcBuaIPrcgw&usqp=CAU" height="60" width="135" alt="rafaar" /></a></p>
 

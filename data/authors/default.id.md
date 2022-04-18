@@ -9,14 +9,14 @@ instagram: https://instagram.com/rafa.ar.id
 github: https://github.com/raf-ar
 ---
 
-<h1 align="center">Hi 👋, I'm Rafa Al Razzak</h1>
-<h3 align="center">Saya seorang siswa di SMK AL-ASIYAH</h3>
+# Hi 👋, I'm Rafa Al Razzak
+### Saya seorang siswa di SMK AL-ASIYAH
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=raf-ar&label=Profile%20views&color=0e75b6&style=flat" alt="raf-ar" /> </p>
+[!raf-ar](https://komarev.com/ghpvc/?username=raf-ar&label=Profile%20views&color=0e75b6&style=flat)
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=raf-ar" alt="raf-ar" /></a> </p>
+[!tropy](https://github-profile-trophy.vercel.app/?username=raf-ar)
 
-<p align="left"> <a href="https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge" alt="rafa_ar_id" /></a> </p>
+[!twitter](https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge)
 
 - 🌱 Saya sedang belajar **react.js | next.js | tailwindcss**
 

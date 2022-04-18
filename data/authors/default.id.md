@@ -12,11 +12,11 @@ github: https://github.com/raf-ar
 # Hi 👋, I'm Rafa Al Razzak
 ### Saya seorang siswa di SMK AL-ASIYAH
 
-[!raf-ar](https://komarev.com/ghpvc/?username=raf-ar&label=Profile%20views&color=0e75b6&style=flat)
+![raf-ar](https://komarev.com/ghpvc/?username=raf-ar&label=Profile%20views&color=0e75b6&style=flat)
 
-[!tropy](https://github-profile-trophy.vercel.app/?username=raf-ar)
+![tropy](https://github-profile-trophy.vercel.app/?username=raf-ar)
 
-[!twitter](https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge)
+![twitter](https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge)
 
 - 🌱 Saya sedang belajar **react.js | next.js | tailwindcss**
 

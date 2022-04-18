@@ -16,7 +16,7 @@ github: https://github.com/raf-ar
 
 ![tropy](https://github-profile-trophy.vercel.app/?username=raf-ar)
 
-![twitter](https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge)
+![twitter](https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge)
 
 - 🌱 Saya sedang belajar **react.js | next.js | tailwindcss**
 

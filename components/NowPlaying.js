@@ -9,7 +9,7 @@ export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
   return (
-    <div className="flex max-w-lg flex-wrap items-center justify-center gap-1 sm:gap-2">
+    <div className="flex max-w-lg flex-wrap items-center justify-center gap-1 sm:gap-2 transition-all">
      {data?.isPlaying && data?.songUrl ? (
       <SongImage src={data.songImage} alt="song-image" size={20}  />
       ) : (

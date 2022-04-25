@@ -60,19 +60,29 @@ class MyDocument extends Document {
           <link rel="manifest" href="/static/favicons/site.webmanifest.json" />
           <meta name="msapplication-TileColor" content="#110B2B" />
           <meta name="theme-color" content="#110B2B" />
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
 
-					<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet"/>
-            <link rel="stylesheet"
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="selection:bg-teal-200 selection:dark:bg-[#b816a9] selection:dark:text-white bg-white text-black antialiased transition-all dark:bg-violet-1000 dark:text-white ">
+        <body className="bg-white text-black antialiased transition-all selection:bg-teal-200 dark:bg-violet-1000 dark:text-white selection:dark:bg-[#b816a9] selection:dark:text-white selection:text-violet-1000">
           <Main />
           <NextScript />
         </body>

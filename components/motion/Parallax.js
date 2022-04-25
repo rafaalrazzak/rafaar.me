@@ -7,7 +7,7 @@ export default function Parallax({
 
     const [ref, inView] = useInView({
         /* Optional options */
-        threshold: 0.7,
+        threshold: 1,
         triggerOnce: false,
       })
     

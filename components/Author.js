@@ -2,7 +2,7 @@ import Image from '@/components/Image'
 import Link from '@/components/Link'
 
 import useTranslation from 'next-translate/useTranslation'
-import { FaTwitter } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 export default function Author({detail}){
 
   const { t } = useTranslation()
@@ -23,15 +23,15 @@ export default function Author({detail}){
             <dl className="whitespace-nowrap text-sm font-medium leading-5">
               <dt className="sr-only">{t('common:name')}</dt>
               <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-              <dt className="sr-only">Twitter</dt>
+              <dt className="sr-only">Instagram</dt>
               <dd>
-                {author.twitter && (
+                {author.instagram && (
                   <Link
-                    href={author.twitter}
+                    href={author.instagram}
                     className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                   >
-                    <FaTwitter size={15} className="mr-1" />
-                    {author.twitter.replace('https://twitter.com/', '@')}
+                    <FaInstagram size={15} className="mr-1" />
+                    {author.instagram.replace('https://instagram.com/','')}
                   </Link>
                 )}
               </dd>

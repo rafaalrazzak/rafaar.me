@@ -6,14 +6,12 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import Author from '@/components/Author'
 import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({
   frontMatter,
@@ -58,26 +56,17 @@ export default function PostLayout({
               </div>
           </header>
           <div
-            className="divide-y divide-transparent pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
+            className="divide-y divide-transparent pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0 relative flex"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+           <div className="sticky top-12">
+            <div className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">{t('common:authors')}</dt>
               <dd>
                 <Author detail={authorDetails} />
               </dd>
-            </dl>
-            <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={editUrl(fileName)} className="flex flex-wrap justify-start" >
-                  <FaGithub size={20} className="mr-3" />
-                  {t('common:github')}
-                </Link>
-              </div>
             </div>
-            <footer>
-              <div className="leading-5xl:col-start-1 divide-transparent text-sm font-medium xl:row-start-2 xl:divide-y">
+            <div className="leading-5xl:col-start-1 divide-transparent text-sm font-medium xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div  className="pt-4 xl:pt-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -123,7 +112,18 @@ export default function PostLayout({
                   &larr; {t('common:back')}
                 </Link>
               </div>
-            </footer>
+              </div>
+
+            <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
+              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
+              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                <Link href={editUrl(fileName)} className="flex flex-wrap justify-start" >
+                  <FaGithub size={20} className="mr-3" />
+                  {t('common:github')}
+                </Link>
+              </div>
+            </div>
+            
           </div>
         </div>
       </article>

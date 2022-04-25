@@ -6,6 +6,8 @@ import Link from './Link'
 import SongImage from './SongImage'
 import fetcher from '@/lib/fetcher'
 export default function NowPlaying() {
+
+
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
   return (
@@ -21,7 +23,7 @@ export default function NowPlaying() {
         {data?.songUrl ? (
           <Link
             className="max-w-max truncate text-sm hover:text-spotify-green
-              sm:text-sm"
+              sm:text-sm transition-all" 
             href={data.songUrl}
             title={data.title}
           >

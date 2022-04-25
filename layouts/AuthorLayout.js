@@ -5,7 +5,7 @@ import { PageSEO } from '@/components/SEO'
 import Card from '@/components/Card'
 
 export default function AuthorLayout({ children, frontMatter, availableLocales }) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
+  const { name, avatar, occupation, company, email, twitter, instagram, github } = frontMatter
   const { t } = useTranslation()
 
   return (
@@ -34,7 +34,7 @@ export default function AuthorLayout({ children, frontMatter, availableLocales }
             <div className="flex space-x-3 py-6 px-4 md:py-0 md:px-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} size={5} />
               <SocialIcon kind="github" href={github} size={5} />
-              <SocialIcon kind="linkedin" href={linkedin} size={5} />
+              <SocialIcon kind="instagram" href={instagram} size={5} />
               <SocialIcon kind="twitter" href={twitter} size={5} />
             </div>
           </div>

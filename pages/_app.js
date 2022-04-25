@@ -3,6 +3,7 @@ import '@/css/prism.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
+import {motion} from 'framer-motion'
 
 import { Globals } from '@react-spring/shared'
 import LayoutWrapper from '@/components/LayoutWrapper'
@@ -11,6 +12,7 @@ import { ClientReload } from '@/components/ClientReload'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
+
 
 export default function App({ Component, pageProps, router }) {
   // https://github.com/pmndrs/react-spring/issues/1586
@@ -21,6 +23,12 @@ export default function App({ Component, pageProps, router }) {
   })
 
   return (
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ ease: "easeOut", duration: 1.5 }}
+    key={router.route}
+    >
     <ThemeProvider attribute="class" enableSystem={true}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -31,5 +39,6 @@ export default function App({ Component, pageProps, router }) {
       </LayoutWrapper>
       <RSS />
     </ThemeProvider>
+    </motion.div>
   )
 }

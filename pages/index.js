@@ -46,7 +46,7 @@ export default function Home({ posts, locale, availableLocales }) {
       <div className="flex w-full flex-col items-center justify-center">
         <div>
           <div className="flex w-full flex-wrap pb-2">
-          <Parallax y={25} className="w-full flex">
+          <Parallax y={25} className="w-full flex flex-wrap">
             <Card
               title={t('common:learning')}
               description={t('learning:description')}

@@ -1,6 +1,6 @@
 ---
 name: Rafa Al Razzak
-avatar: /static/images/profile.png
+avatar: "https://instagram.fcgk32-1.fna.fbcdn.net/v/t51.2885-19/278654705_311905617755834_3109258292598851687_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fcgk32-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Vlf1maIfHjoAX8rwhKm&edm=ABfd0MgBAAAA&ccb=7-4&oh=00_AT9Dve7_-bF-X5vb-zbpZ0xqcm4D1_tsBwcE_FRS64QuKQ&oe=626D893B&_nc_sid=7bff83"
 occupation: Siswa di Sekolah Menengah Kejuruan Al-Asiyah
 company: 📍 Bogor, Indonesia
 email: contact.rafaalrazzak@gmail.com

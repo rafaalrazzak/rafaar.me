@@ -1,3 +1,4 @@
+import useTranslation from 'next-translate/useTranslation'
 import Image from '@/components/Image'
 import Link from '@/components/Link'
 

@@ -1,7 +1,7 @@
 {
   "locales": ["en", "id"],
   "defaultLocale": "en",
-  "localeDetection": false,
+  "localeDetection": true,
   "pages": {
     "*": ["common", "headerNavLinks", "404", "SEO", "learning"],
     "/projects": ["projects"]

@@ -76,9 +76,9 @@ arget="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldk
 
 <div className="w-full justify-center items-center">
 
-<a><img src="https://github-readme-stats.vercel.app/api/top-langs?username=raf-ar&show_icons=true&locale=en&layout=compact" alt="raf-ar" /></a>
+<a><img src="https://github-readme-stats.vercel.app/api/top-langs?username=raf-ar&show_icons=true&locale=id&layout=compact" alt="raf-ar" /></a>
 
-<a><img src="https://github-readme-stats.vercel.app/api?username=raf-ar&show_icons=true&locale=en" alt="raf-ar" /></a>
+<a><img src="https://github-readme-stats.vercel.app/api?username=raf-ar&show_icons=true&locale=id" alt="raf-ar" /></a>
 
 <a><img src="https://github-readme-streak-stats.herokuapp.com/?user=raf-ar&" alt="raf-ar" /></a>
 

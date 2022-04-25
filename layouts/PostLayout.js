@@ -115,7 +115,7 @@ export default function PostLayout({
             </div>
           </header>
           <div
-            className="xl:relative xl:flex divide-y divide-transparent pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
+            className="xl:relative divide-y divide-transparent pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <div className="pt-6 pb-10 xl:hidden xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">

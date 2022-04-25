@@ -15,8 +15,8 @@ export default function Tracks() {
   return (
     <>
       {data.tracks.map((track, index) => (
-        <Parallax y={20} visibleOpacity={1} hiddenOpacity={0}>
-          <Track ranking={index + 1} key={track.songUrl} {...track} />
+        <Parallax key={track.songUrl} y={20} visibleOpacity={1} hiddenOpacity={0} className="w-full">
+          <Track ranking={index + 1}  {...track} />
         </Parallax>
       ))}
     </>

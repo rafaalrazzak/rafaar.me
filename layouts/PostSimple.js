@@ -24,7 +24,7 @@ export default function PostLayout({
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
-  
+  console.log(readingTime)
 
   return (
     <SectionContainer>

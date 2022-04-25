@@ -9,7 +9,7 @@ export default function Track(track) {
       typeof window === 'undefined' ? Buffer.from(str).toString('base64') : window.btoa(str)
   return (
     <div className="group relative my-4 flex h-auto w-full flex-col justify-center overflow-hidden rounded-lg border-b bg-white/30 shadow-sm filter backdrop-blur-md transition-colors duration-500 ease-linear hover:bg-spotify-green/10 hover:text-white dark:border-gray-600/50 dark:bg-gray-800 dark:hover:bg-gray-700">
-      <Link href={track.songUrl} className="w-full">
+      <Link href={track.songUrl}>
         <div className="flex h-full w-full justify-start ">
           <div className="flex xs:hidden">
             <Image

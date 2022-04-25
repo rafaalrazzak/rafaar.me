@@ -1,9 +1,9 @@
 import useSWR from 'swr'
-import fetcher from '@/lib/fetcher'
-import Track from './Track'
 
+import Track from './Track'
 import NoTrack from './notFound/NoTrack'
 import Parallax from './motion/Parallax'
+import fetcher from '@/lib/fetcher'
 export default function Tracks() {
   //animation
 

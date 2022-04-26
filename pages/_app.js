@@ -25,7 +25,7 @@ export default function App({ Component, pageProps, router }) {
     <motion.div
       initial={{ opacity: 0, y:-20 }}
       animate={{ opacity: 1, y:0 }}
-      transition={{ ease: 'easeOut', duration: 1 }}
+      transition={{ ease: 'easeOut', duration: 0.5 }}
       key={router.route}
     >
       <ThemeProvider attribute="class" enableSystem={true}>

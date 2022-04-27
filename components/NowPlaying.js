@@ -22,7 +22,7 @@ export default function NowPlaying() {
       <div className="flex max-w-lg flex-wrap justify-center truncate">
         {data?.songUrl ? (
           <Link
-            className="max-w-max truncate text-sm hover:text-spotify-green
+            className="max-w-lg truncate text-sm hover:text-spotify-green
               sm:text-sm transition-all" 
             href={data.songUrl}
             title={data.title}

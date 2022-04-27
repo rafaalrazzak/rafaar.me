@@ -22,7 +22,7 @@ export default function NowPlaying() {
       <div className="flex max-w-lg flex-wrap justify-center truncate">
         {data?.songUrl ? (
           <Link
-            className="max-w-lg truncate text-sm hover:text-spotify-green
+            className="truncate text-sm hover:text-spotify-green
               sm:text-sm transition-all" 
             href={data.songUrl}
             title={data.title}
@@ -37,7 +37,7 @@ export default function NowPlaying() {
         <span className="mx-2 flex text-sm text-gray-500 dark:text-gray-400">
               {'–'}
             </span>
-        <p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
+        <p className='truncate dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
           {data?.artist ?? 'Spotify'}
         </p>
      </div>

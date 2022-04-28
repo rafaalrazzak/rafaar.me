@@ -61,16 +61,16 @@ export default function Home({ posts, locale, availableLocales }) {
             />
             </Parallax>
           </div>
-          <ul className="divide-y divide-transparent md:px-4">
+          <ul className="py-6 divide-y divide-transparent md:px-4">
           <Parallax y={15}>
-            <h1 className="py-3 text-lg font-semibold text-gray-900 dark:text-gray-100 lg:text-xl">
+            <h1 className=" text-2xl font-bold text-gray-900 dark:text-gray-100">
             {t('common:latest-article')}
           </h1>
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter
               return (
-                <li key={slug} className="pt-12 pb-6">
+                <li key={slug} className="py-4">
                   <article>
                     <div className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
                       <dl>
@@ -83,7 +83,7 @@ export default function Home({ posts, locale, availableLocales }) {
                       <div className="space-y-5 xl:col-span-2">
                         <div className="space-y-6">
                           <div className="flex flex-col xs:w-full xs:justify-center">
-                            <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                            <h2 className="text-xl font-semibold leading-8 tracking-tight">
                               <Link
                                 href={`/blog/${slug}`}
                                 className="text-gray-900 dark:text-gray-100"

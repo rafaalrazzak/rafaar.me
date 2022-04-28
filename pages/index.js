@@ -36,7 +36,7 @@ export default function Home({ posts, locale, availableLocales }) {
         </div>
         <Parallax y={20}>
           <h1 className="py-3 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-5xl md:leading-14 xl:text-6xl">
-            {t('common:hi')} <span className="animate-fade-text">Rafa Al Razzak</span>
+            {t('common:hi')} Rafa Al Razzak
           </h1>
           <p className="px-2 text-xl font-light leading-6 text-gray-500 dark:text-gray-400 sm:px-6 xl:px-0">
             {t('common:mini-bio')}
@@ -63,6 +63,9 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
           <ul className="divide-y divide-transparent md:px-4">
           <Parallax y={15}>
+            <h1 className="py-3 text-lg font-semibold text-gray-900 dark:text-gray-100 lg:text-xl">
+            {t('common:latest-article')}
+          </h1>
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter

@@ -52,6 +52,8 @@ export default function Home({ posts, locale, availableLocales }) {
               description={t('learning:description')}
               href={'/learning'}
               className="py-4 md:px-4"
+
+
             />
             <Card
               title={t('common:about')}

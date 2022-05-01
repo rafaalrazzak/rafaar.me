@@ -29,10 +29,12 @@ export default function Projects({ locale, availableLocales }) {
               <Card
                 key={d.title}
                 title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-                className="p-4"
+                imgSrc={d.image}
+								layout="fill"
+                href={d.image}
+								onlyImg="true"
+								textColor='flex justify-end bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
+                className="p-4 h-64"
               />
             ))}
           </div>

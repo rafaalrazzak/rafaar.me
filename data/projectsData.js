@@ -31,6 +31,7 @@ const projectsData = {
       description: `Alat digitalcean adalah proyek open source yang dibuat untuk memberikan kemampuan untuk menangani objek dari
       Ruang digital di DevOps Azure.`,
       href: 'https://github.com/marceloavf/digitalocean-tools-vsts',
+			image:'https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/flat.jpg'
     },
     {
       title: 'GitHub Tools',

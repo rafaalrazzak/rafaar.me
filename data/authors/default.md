@@ -34,13 +34,13 @@ github: https://github.com/raf-ar
 <a className="p-2" href="https://twitter.com/rafa_ar_id" t
 arget="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rafa_ar_id" height="30" width="30" /></a>
 <a className="p-2" href="https://stackoverflow.com/users/rafa al razzak" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="rafa al razzak" height="30" width="30" /></a>
-<a href="https://codesandbox.com/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="rafa_ar" height="30" width="30" /></a>
+<a className="p-2" href="https://codesandbox.com/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="rafa_ar" height="30" width="30" /></a>
 <a className="p-2" href="https://fb.com/rafa.ar.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="rafa.ar.id" height="30" width="30" /></a>
 <a className="p-2" href="https://instagram.com/rafa.ar.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="rafa.ar.id" height="30" width="30" /></a>
 </div>
 
 ### Language and tool
-<div class="flex flex-wrap w-full items-center">
+<div className="flex flex-wrap w-full items-center">
 
 <a className="p-2"  href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="30" height="30"/> </a> 
 

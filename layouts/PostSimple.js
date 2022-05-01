@@ -5,6 +5,7 @@ import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import Author from '@/components/Author'
+import Image from '@/components/Image'
 import { BlogSEO } from '@/components/SEO'
 import formatDate from '@/lib/utils/formatDate'
 import ScrollTop from '@/components/ScrollTop'
@@ -20,7 +21,7 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, readingTime } = frontMatter
+  const { slug, fileName, date, title, readingTime,images } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
@@ -62,6 +63,9 @@ export default function PostLayout({
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
+							{images && (
+							<Image alt={title} src={images} width={500} height={300} className="rounded-lg" objectFit="cover"/>
+						)}
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
             <div className="pt-6 pb-6 text-sm text-gray-700 hover:underline dark:text-gray-300 ">

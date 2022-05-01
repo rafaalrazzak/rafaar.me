@@ -5,6 +5,7 @@ import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import Author from '@/components/Author'
+import Image from '@/components/Image'
 import { BlogSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -20,7 +21,7 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, tags, readingTime } = frontMatter
+  const { slug, fileName, date, title, tags, readingTime,images } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
@@ -127,7 +128,10 @@ export default function PostLayout({
             <SideBar />
 
             <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
+             {images && (
+							<Image alt={title} src={images} width={500} height={300} className="rounded-lg" objectFit="cover"/>
+						)}
+            <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={editUrl(fileName)} className="flex flex-wrap justify-start">
                   <FaGithub size={20} className="mr-3" />

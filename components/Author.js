@@ -25,7 +25,7 @@ export default function Author({detail}){
                 {author.instagram && (
                   <Link
                     href={author.instagram}
-                    className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 items-center"
                   >
                     <FaInstagram size={15} className="mr-1" />
                     {author.instagram.replace('https://instagram.com/','')}

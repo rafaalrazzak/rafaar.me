@@ -7,7 +7,7 @@ import Card from '@/components/Card'
 export default function AuthorLayout({ children, frontMatter, availableLocales }) {
   const { name, avatar, occupation, company, email, twitter, instagram, github } = frontMatter
   const { t } = useTranslation()
-
+  let avatarDynamic = `https://res.cloudinary.com/dvs0hvjsf/image/upload/v1651370642/blog/avatars/${name.toLowerCase()}.jpg`
   return (
     <>
       <PageSEO
@@ -25,7 +25,7 @@ export default function AuthorLayout({ children, frontMatter, availableLocales }
           <div className="bg-slate-700 darK:bg-slate-100 bg-opacity-10 rounded-lg text-center flex flex-col items-center p-2 md:flex-row">
             <div>
               <Card onlyImg className="p-4">
-                <Image src={avatar} alt="avatar" objectFit="cover" layout="fill" />
+                <Image src={avatarDynamic} alt={name} objectFit="cover" layout="fill" />
               </Card>
             </div>
             <h3 className="py-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>

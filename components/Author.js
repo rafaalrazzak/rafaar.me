@@ -12,10 +12,10 @@ export default function Author({detail}){
           <li className="flex items-center justify-center space-x-2" key={author.name}>
             {author.avatar && (
               <Image
-                src={author.avatar}
+                src={`https://res.cloudinary.com/dvs0hvjsf/image/upload/v1651370642/blog/avatars/${author.name.toLowerCase()}.jpg`}
                 width="38px"
                 height="38px"
-                alt="avatar"
+                alt={author.name}
                 className="h-10 w-10 rounded-full"
               />
             )}

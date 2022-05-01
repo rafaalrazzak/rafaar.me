@@ -10,15 +10,13 @@ export default function Author({detail}){
       <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-4">
         {detail.map((author) => (
           <li className="flex items-center justify-center space-x-2" key={author.name}>
-            {author.avatar && (
-              <Image
+            <Image
                 src={`https://res.cloudinary.com/raf-ar/image/upload/v1651370642/blog/avatars/${author.name.toLowerCase()}.jpg`}
                 width="38px"
                 height="38px"
                 alt={author.name}
                 className="h-10 w-10 rounded-full"
               />
-            )}
             <dl className="whitespace-nowrap text-sm font-medium leading-5">
               <dt className="sr-only">{t('common:name')}</dt>
               <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>

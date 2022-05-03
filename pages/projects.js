@@ -1,15 +1,18 @@
 import useTranslation from 'next-translate/useTranslation'
 import siteMetadata from '@/data/siteMetadata'
 import projectsData from '@/data/projectsData'
-import Card from '@/components/Card'
+import ProjectCard from '@/components/ProjectCard'
 import { PageSEO } from '@/components/SEO'
 
 export async function getStaticProps({ locale, locales }) {
   return { props: { locale, availableLocales: locales } }
 }
 
+
+
 export default function Projects({ locale, availableLocales }) {
   const { t } = useTranslation()
+	
   return (
     <>
       <PageSEO
@@ -23,18 +26,15 @@ export default function Projects({ locale, availableLocales }) {
             {t('projects:title')}
           </h1>
         </div>
-        <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
-            {projectsData[locale]?.map((d) => (
-              <Card
+        <div className="container py-12 w-full flex flex-wrap">
+          <div className=" w-full flex flex-wrap ">
+            {projectsData.map((d) => (
+              <ProjectCard
                 key={d.title}
                 title={d.title}
-                imgSrc={d.image}
-								layout="fill"
-                href={d.image}
-								onlyImg="true"
-								textColor='flex justify-end bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
-                className="p-4 h-64"
+								description={d.description}
+                image={`https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/${d.title.toLowerCase()}.jpg`}
+								
               />
             ))}
           </div>

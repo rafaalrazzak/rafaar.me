@@ -52,12 +52,12 @@ const Card = ({
           after:mix-blend-hard-light after:will-change-auto after:bg-texture-pattern after:transition-opacity after:duration-500
           hover:after:opacity-100 hover:after:animate-hue-animation h-full z-20`}
           >
-            {imgSrc && <Image alt={title} src={imgSrc} className="relative -z-1 object-cover object-center bg-gradient-to-t from-slate-800" layout={layout} />
+            {imgSrc && <Image alt={title} src={imgSrc} className="-z-1 object-cover object-center" layout={layout} />
 						}
             {onlyImg && <>{children}</>}
             {!onlyImg && (
-              <div className="p-5">
-                <h2 className={`${textColor} mb-2 text-2xl font-bold leading-8 tracking-tight`}>{title}</h2>
+              <div className={`${textColor ? ' w-full p-5 items-center':'p-5'}`}>
+                <h2 className={`${textColor}  mb-2 text-2xl font-bold leading-8 tracking-tight`}>{title}</h2>
                 <p className="mb-2 prose text-gray-500 max-w-none dark:text-gray-400">
                   {description}
                 </p>

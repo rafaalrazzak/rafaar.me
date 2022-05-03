@@ -24,7 +24,7 @@ export default function Projects({ locale, availableLocales }) {
             {t('projects:title')}
           </h1>
         </div>
-        <div className="container flex flex-wrap w-full gap-4 justify-center py-12">
+        <div className="container justify-center py-12">
           {projectsData.map((d) => (
             <ProjectCard
               key={d.title}

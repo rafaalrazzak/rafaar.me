@@ -129,7 +129,7 @@ export default function PostLayout({
 
             <div className="divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
              {images && (
-							<Image alt={title} src={images} width={500} height={300} className="rounded-lg" objectFit="cover"/>
+							<Image alt={title} src={images} width={500} height={300} className="flex w-full rounded-lg justify-center items-center" objectFit="cover"/>
 						)}
             <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">

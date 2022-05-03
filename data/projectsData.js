@@ -18,6 +18,10 @@ const projectsData =
 			title:'KKPF',
 			description:'Manipulation'
 		},
+		{
+			title:'RI 76',
+			description:'Manipulation'
+		},
 
 
    

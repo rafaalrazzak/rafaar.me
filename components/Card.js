@@ -56,12 +56,12 @@ const Card = ({
 						}
             {onlyImg && <>{children}</>}
             {!onlyImg && (
-              <div className={`${textColor ? ' w-full p-5 items-center':'p-5'}`}>
-                <h2 className={`${textColor}  mb-2 text-2xl font-bold leading-8 tracking-tight`}>{title}</h2>
+              <div className='p-5'>
+                <h2 className="  mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
                 <p className="mb-2 prose text-gray-500 max-w-none dark:text-gray-400">
                   {description}
                 </p>
-                <div className={` ${textColor ? 'hidden' : 'text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'} text-2xl font-thin leading-6 `}>
+                <div className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-2xl font-thin leading-6'>
                   <svg
                     className="rotate-180"
                     width="24"

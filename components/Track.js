@@ -15,18 +15,20 @@ export default function Track(track) {
             <Image
               alt={track.title}
               placeholder="blur"
-	      src={track.songImage}
-              width="150"
-              height="150"
-	      blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}
-              priority
-            />
-          </div>
-          <div className="relative flex flex-col justify-start p-4 leading-normal">
-            <h5 className="text-md mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-xl">
+	            src={track.songImage}
+              width="160"
+              height="160"
+							objectFit="cover"
+						  className=" group-hover:scale-110 transiton duration-500" 	  							
+							blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}             
+							priority
+						/>
+					</div >         
+					<div className="relative flex flex-col p-4 leading-relaxed w-full">
+            <h5 className="text-md pb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-xl">
               {track.title}
             </h5>
-            <p className="md:text-md mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">
+            <p className="md:text-md text-sm text-gray-700 dark:text-gray-400">
               {track.artist}
             </p>
           </div>

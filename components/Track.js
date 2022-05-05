@@ -13,10 +13,10 @@ export default function Track(track) {
         <div className="flex h-full w-full justify-start ">
           <div className="flex xs:hidden">
             <Image
-              className="transform items-start justify-start overflow-hidden rounded-tl-lg bg-cover bg-center transition-all duration-500 ease-in-out group-hover:scale-[1.15] xs:absolute xs:hidden xs:rounded-full md:h-auto md:w-full md:rounded-l-lg "
+              className="transform overflow-hidden rounded-tl-lg bg-cover bg-center transition-all duration-500 ease-in-out group-hover:scale-[1.15] xs:absolute xs:hidden xs:rounded-full md:h-auto md:w-full md:rounded-l-lg "
               src={track.songImage}
-              width="176"
-              height="176"
+              width="150"
+              height="150"
               alt={track.title}
               placeholder="blur"
               layout="fixed"

@@ -8,7 +8,8 @@ const projectsData =
     },
 		{
 			title:'Kasumi Yoshizawa',
-			description:'Manipulation'
+			description:'Manipulation',
+            link:'https://google.com'
 		},
     {
 			title:'Keqing',

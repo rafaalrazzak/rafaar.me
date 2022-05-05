@@ -4,6 +4,7 @@ import Facebook from './facebook.svg'
 import Youtube from './youtube.svg'
 import Instagram from './instagram.svg'
 import Twitter from './twitter.svg'
+import ExternalLink from './external-link.svg'
 // Icons taken from: https://simpleicons.org/
 
 const components = {
@@ -13,9 +14,10 @@ const components = {
   facebook: Facebook,
   instagram: Instagram,
   youtube: Youtube,
+  external_link: ExternalLink 
 }
 
-const SocialIcon = ({ kind, href, size = 8 }) => {
+const SocialIcon = ({ kind,name, href, size = 8, className }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
 
@@ -23,14 +25,14 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
 
   return (
     <a
-      className="text-sm text-gray-500 transition hover:text-gray-600"
+      className={`${className} text-sm text-gray-500 transition hover:text-gray-600`}
       target="_blank"
       rel="noopener noreferrer"
       href={href}
     >
-      <span className="sr-only">{kind}</span>
+      <span className="sr-only">{name ?? kind}</span>
       <SocialSvg
-        className={`fill-current text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 h-${size} w-${size}`}
+        className={`${kind != 'external_link' ? `fill-current text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 w-${size}` : ` text-white w-${size}`}`}
       />
     </a>
   )

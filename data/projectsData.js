@@ -8,8 +8,7 @@ const projectsData =
     },
 		{
 			title:'Kasumi Yoshizawa',
-			description:'Manipulation',
-            link:'https://google.com'
+			description:'Manipulation'
 		},
     {
 			title:'Keqing',
@@ -22,6 +21,31 @@ const projectsData =
 		{
 			title:'RI 76',
 			description:'Manipulation'
+		},
+		{
+			title:'Van Gogh',
+			description:'Manipulation'
+		},
+		{
+			title:'Ambigram',
+			description:'Logo Design'
+		},
+		{
+			title:'RAF',
+			description:'Logo Design'
+		},
+		{
+			title:'CLSY',
+			description:'Logo Design'
+		},
+		{
+      title:'Capriccioso',
+			description:'Logo Design'
+		},
+    {
+			title:'Renaissance',
+			description:'Logo Design',
+      link:'https://instagram.com/renaissance12_'
 		},
 
 

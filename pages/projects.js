@@ -30,7 +30,8 @@ export default function Projects({ locale, availableLocales }) {
               key={d.title}
               title={d.title}
               description={d.description}
-              image={`https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/${d.title.toLowerCase()}.jpg ` || `https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/${d.title.toLowerCase()}.png`}
+              image={`https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/${d.title.toLowerCase()}.jpg`}
+              link={d.link}
             />
           ))}
         </div>

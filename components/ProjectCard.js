@@ -22,7 +22,7 @@ export default function ProjectCard({ title, description, image, link }) {
       </div>
       <Image
         alt={title}
-        className="aspect-auto  w-full object-cover transition duration-300 ease-in-out group-hover:scale-110"
+        className="aspect-auto w-full object-cover transition duration-300 ease-in-out group-hover:scale-110"
         src={image}
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}

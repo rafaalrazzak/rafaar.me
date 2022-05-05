@@ -2,6 +2,7 @@ import useTranslation from 'next-translate/useTranslation'
 import siteMetadata from '@/data/siteMetadata'
 import projectsData from '@/data/projectsData'
 import ProjectCard from '@/components/ProjectCard'
+import Parallax from '@/components/motion/Parallax'
 import { PageSEO } from '@/components/SEO'
 
 export async function getStaticProps({ locale, locales }) {
@@ -26,13 +27,15 @@ export default function Projects({ locale, availableLocales }) {
         </div>
         <div className="container justify-center py-12">
           {projectsData.map((d) => (
-            <ProjectCard
-              key={d.title}
-              title={d.title}
-              description={d.description}
-              image={`https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/${d.title.toLowerCase()}.jpg`}
-              link={d.link}
-            />
+            <Parallax key={d.title} y={20} visibleOpacity={1} hiddenOpacity={0} className="w-full">
+              <ProjectCard
+                key={d.title}
+                title={d.title}
+                description={d.description}
+                image={`https://res.cloudinary.com/raf-ar/image/upload/v1651409847/blog/projects/${d.title.toLowerCase()}.jpg`}
+                link={d.link}
+              />
+            </Parallax>
           ))}
         </div>
       </div>

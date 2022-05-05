@@ -15,11 +15,10 @@ export default function Track(track) {
             <Image
               alt={track.title}
               placeholder="blur"
-							 width="150"
+	      src={track.songImage}
+              width="150"
               height="150"
-              quality="50"
-							objectFit="cover"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}
+	      blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}
               priority
             />
           </div>

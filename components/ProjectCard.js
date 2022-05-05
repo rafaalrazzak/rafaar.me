@@ -16,7 +16,7 @@ export default function ProjectCard({ title, description, image, link }) {
             name={title}
             className="cursor-pointer opacity-60 transition duration-300 hover:opacity-100"
           />
-          '<div className="font-bold">{title}</div>
+          <div className="font-bold">{title}</div>
           <div className="text-sm opacity-60 ">{description}</div>
         </div>
       </div>

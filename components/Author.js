@@ -19,13 +19,15 @@ export default function Author({detail}){
               />
             <dl className="whitespace-nowrap text-sm font-medium leading-5">
               <dt className="sr-only">{t('common:name')}</dt>
-              <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
+                <dd>
+						     	<Link className="text-gray-900 dark:text-gray-100 hover:text-primary-500 dark:hover:text-primary-400 transition" href='/about'>{author.name}</Link>
+								</dd>
               <dt className="sr-only">Instagram</dt>
               <dd>
                 {author.instagram && (
                   <Link
                     href={author.instagram}
-                    className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 items-center"
+                    className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition items-center"
                   >
                     <FaInstagram size={15} className="mr-1" />
                     {author.instagram.replace('https://instagram.com/','')}

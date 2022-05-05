@@ -18,7 +18,10 @@ const Card = ({
   href,
   onlyImg = false,
   className,
+	textColor,
+	layout,
   mdSize = true,
+	...rest
 }) => {
   const ref = useRef(null)
   const [xys, set] = useState([0, 0, 1])
@@ -49,15 +52,16 @@ const Card = ({
           after:mix-blend-hard-light after:will-change-auto after:bg-texture-pattern after:transition-opacity after:duration-500
           hover:after:opacity-100 hover:after:animate-hue-animation h-full z-20`}
           >
-            {imgSrc && <Image alt={title} src={imgSrc} className="object-cover object-center" />}
+            {imgSrc && <Image alt={title} src={imgSrc} className="-z-1 object-cover object-center" layout={layout} />
+						}
             {onlyImg && <>{children}</>}
             {!onlyImg && (
-              <div className="p-5">
-                <h2 className="mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
+              <div className='p-5'>
+                <h2 className="  mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
                 <p className="mb-2 prose text-gray-500 max-w-none dark:text-gray-400">
                   {description}
                 </p>
-                <div className="text-2xl font-thin leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                <div className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-2xl font-thin leading-6'>
                   <svg
                     className="rotate-180"
                     width="24"

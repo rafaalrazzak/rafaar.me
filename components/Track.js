@@ -13,15 +13,12 @@ export default function Track(track) {
         <div className="flex h-full w-full justify-start ">
           <div className="flex xs:hidden">
             <Image
-              className="transform items-start justify-start overflow-hidden rounded-tl-lg bg-cover bg-center transition-all duration-500 ease-in-out group-hover:scale-[1.15] xs:absolute xs:hidden xs:rounded-full md:h-auto md:w-full md:rounded-l-lg "
-              src={track.songImage}
-              width="176"
-              height="176"
               alt={track.title}
               placeholder="blur"
-              layout="fixed"
-              quality="50"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}
+	      src={track.songImage}
+              width="150"
+              height="150"
+	      blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(10, 10))}`}
               priority
             />
           </div>

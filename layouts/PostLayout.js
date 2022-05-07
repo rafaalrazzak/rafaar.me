@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import { FaGithub } from 'react-icons/fa'
 import TimeAgo from '@/components/TimeAgo'
@@ -15,6 +16,22 @@ import formatDate from '@/lib/utils/formatDate'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 
+function useIsScrollTop() {
+  const [isTop, setIsTop] = useState(true)
+  useEffect(() => {
+    function onScroll() {
+      setIsTop(window.scrollY <= 255)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [])
+
+  return isTop
+}
+
 export default function PostLayout({
   frontMatter,
   authorDetails,
@@ -29,9 +46,14 @@ export default function PostLayout({
   const { t } = useTranslation()
 
   function SideBar() {
+    const isTop = useIsScrollTop()
     return (
-      <div className="hidden xl:sticky xl:top-12 xl:block">
-        <div className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+      <div className={`${
+            isTop ? 'xl:flex xl:flex-col xl:top-0 ' : 'xl:flex xl:flex-col xl:top-12 xl:sticky'
+          } hidden`}>
+        <div
+          className={`${isTop ? 'mt-0' : 'mt-12'} transition-all duration-700 pb-6 xl:border-b xl:border-gray-200 xl:dark:border-gray-700`}
+        >
           <dt className="sr-only">{t('common:authors')}</dt>
           <dd>
             <Author detail={authorDetails} />
@@ -39,7 +61,7 @@ export default function PostLayout({
         </div>
         <div className="leading-5xl:col-start-1 divide-transparent text-sm font-medium xl:row-start-2 xl:divide-y">
           {tags && (
-            <div className="pt-4 xl:pt-8">
+            <div className="xl:pt-4">
               <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                 Tags
               </h2>
@@ -75,14 +97,12 @@ export default function PostLayout({
             </div>
           )}
         </div>
-        <div className="pt-4 xl:pt-8">
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
           >
             &larr; {t('common:back')}
           </Link>
-        </div>
       </div>
     )
   }
@@ -106,12 +126,16 @@ export default function PostLayout({
                   <time className="px-2" dateTime={date}>
                     {formatDate(date, locale)}
                   </time>
-                  <ReadTime time={roundedRead} className="px-2" />
+                  <ReadTime time={roundedRead} className="hidden px-2 md:flex" />
                 </dd>
               </dl>
             </div>
             <div className="text-center">
               <PageTitle>{title}</PageTitle>
+              <ReadTime
+                time={roundedRead}
+                className="dark:text-gray-40 flex items-center justify-center divide-x-2 divide-gray-500 px-2 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 md:hidden"
+              />
             </div>
           </header>
           <div
@@ -131,9 +155,9 @@ export default function PostLayout({
                 <div className="flex w-full justify-center">
                   <Image
                     alt={title}
+                    width="900"
+                    height="500"
                     src={`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}
-                    width={900}
-                    height={500}
                     className="rounded-lg"
                     objectFit="cover"
                   />

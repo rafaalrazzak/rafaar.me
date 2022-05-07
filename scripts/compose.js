@@ -22,23 +22,19 @@ const getLayouts = () => {
 
 const genFrontMatter = (answers) => {
   let d = new Date()
-  const date = [
-    d.getFullYear(),
-    ('0' + (d.getMonth() + 1)).slice(-2),
-    ('0' + d.getDate()).slice(-2),
-  ].join('-')
+  const date = d.toLocaleString()
   const tagArray = answers.tags.split(',')
   tagArray.forEach((tag, index) => (tagArray[index] = tag.trim()))
   const tags = "'" + tagArray.join("','") + "'"
   const authorArray = answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
 
   let frontMatter = dedent`---
-  title: ${answers.title ? answers.title : 'Untitled'}
+  title: '${answers.title ? answers.title : 'Untitled'}'
   date: '${date}'
   tags: [${answers.tags ? tags : ''}]
   draft: ${answers.draft === 'yes' ? true : false}
-  summary: ${answers.summary ? answers.summary : ' '}
-  images: []
+  summary: '${answers.summary ? answers.summary : ' '}'
+  thumbnail: ${answers.thumbnail === 'yes' ? true : false}
   layout: ${answers.layout}
   `
 
@@ -87,6 +83,12 @@ inquirer
       type: 'input',
     },
     {
+      name: 'thumbnail',
+      message: 'thumbnail true or false?',
+      type: 'list',
+      choices: ['yes', 'no'],
+    },
+    {
       name: 'layout',
       message: 'Select layout',
       type: 'list',
@@ -116,6 +118,6 @@ inquirer
     if (error.isTtyError) {
       console.log("Prompt couldn't be rendered in the current environment")
     } else {
-      console.log('Something went wrong, sorry!')
+      console.log('Something went wrong, sorry!', error)
     }
   })

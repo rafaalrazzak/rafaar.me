@@ -23,7 +23,7 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, readingTime, thumbnail } = frontMatter
+  const { slug, fileName, date, title, tags, readingTime, thumbnail } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
@@ -44,37 +44,36 @@ export default function PostLayout({
                 <dt className="sr-only">{t('common:pub')}</dt>
                 <dd className="flex items-center justify-center divide-x-2 divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400">
                   <TimeAgo datetime={date} className="px-2" locale={locale} />
-                  <time className="pr-2" dateTime={date}>
+                  <time className="px-2" dateTime={date}>
                     {formatDate(date, locale)}
                   </time>
-                  <ReadTime time={roundedRead} className="px-2" />
+                  <ReadTime time={roundedRead} className="px-2 hidden md:flex" />
+                  
                 </dd>
               </dl>
               <div className="space-y-4">
                 <PageTitle>{title}</PageTitle>
+                
+                  <ReadTime time={roundedRead} className="px-2 flex items-center justify-center divide-x-2 divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400 md:hidden" />
+                
                 <Author detail={authorDetails} />
               </div>
             </div>
           </header>
-          <div
-            className="divide-y divide-transparent xl:divide-y-0"
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <div className="flex items-center justify-center  divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
-              {thumbnail && (
-                <div className="`w-full flex justify-center">
-                  <Image
-                    alt={title}
-                    src={`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}
-                    width={900}
-                    height={500}
-                    className="rounded-lg"
-                    objectFit="cover"
-                  />
-                </div>
-              )}
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-            </div>
+          <div className=" container w-full">
+            {thumbnail && (
+              <div className="flex w-full justify-center">
+                <Image
+                  alt={title}
+                  src={`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}
+                  width={900}
+                  height={500}
+                  className="w-full rounded-lg"
+                  objectFit="cover"
+                />
+              </div>
+            )}
+            <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             <div className="pt-6 pb-6 text-sm text-gray-700 hover:underline dark:text-gray-300 ">
               <Link className="flex items-center" href={editUrl(fileName)}>
                 <FaGithub size={20} className="mr-3" />

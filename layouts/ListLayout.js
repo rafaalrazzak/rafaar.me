@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
+import TimeAgo from '@/components/TimeAgo'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import Pagination from '@/components/Pagination'
@@ -60,7 +61,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                   <dl>
                     <dt className="sr-only">{t('common:pub')}</dt>
-                    <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                    <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                       <TimeAgo datetime={date} className="text-gray-600 dark:text-gray-500" locale={locale} />
                       <time dateTime={date}>{formatDate(date, locale)}</time>
                     </dd>
                   </dl>

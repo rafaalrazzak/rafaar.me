@@ -7,7 +7,7 @@
   "authors": "Penulis.",
   "name": "Nama",
   "nexta": "Artikel Berikutnya",
-  "preva": "Sebelumnya",
+  "preva": "Artikel Sebelumnya",
   "nextp": "Lanjut",
   "prevp": "Depan",
   "of": "Dari",
@@ -19,11 +19,9 @@
   "about": "Tentang saya",
   "about-description": "Pelajari lebih lanjut tentang saya, karier saya dan melihat timeline dalam hidup saya.",
   "not-playing": "Tidak ada yang sedang diputar",
-  "minute":"menit",
-  "minutes":"menit",
-  "to":"untuk",
-  "read":"dibaca",
-  "latest-article":"Artikel terbaru"
-
+  "minute": "menit",
+  "minutes": "menit",
+  "to": "untuk",
+  "read": "dibaca",
+  "latest-article": "Artikel terbaru"
 }
-

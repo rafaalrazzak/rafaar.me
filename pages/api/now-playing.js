@@ -10,15 +10,16 @@ export default async function handler(_, res) {
   if (nowPlaying.currently_playing_type === 'track') {
     // song
     const isPlaying = nowPlaying.is_playing
+    const isPause = nowPlaying.actions.disallows.pausing
     const title = nowPlaying.item.name
     const artist = nowPlaying.item.artists.map((_artist) => _artist.name).join(', ')
     const songUrl = nowPlaying.item.external_urls.spotify
     const songImage = nowPlaying.item.album.images[0].url
-
     res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=30')
     return res.status(200).json({
       artist,
       isPlaying,
+      isPause,
       songUrl,
       title,
       songImage,

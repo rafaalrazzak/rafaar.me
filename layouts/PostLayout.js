@@ -133,8 +133,8 @@ export default function PostLayout({
                   <Image
                     alt={title}
                     src={images}
-                    width={500}
-                    height={300}
+                    width={900}
+                    height={500}
                     className="rounded-lg"
                     objectFit="cover"
                   />

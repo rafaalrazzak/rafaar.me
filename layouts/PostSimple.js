@@ -51,7 +51,7 @@ export default function PostLayout({
                 </dd>
               </dl>
               <div className="space-y-4">
-                <PageTitle className="py-4 md:py-2">{title}</PageTitle>
+                <PageTitle className="py-2">{title}</PageTitle>
 
                 <ReadTime
                   time={roundedRead}

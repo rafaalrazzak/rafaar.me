@@ -134,7 +134,7 @@ export default function PostLayout({
               <PageTitle>{title}</PageTitle>
               <ReadTime
                 time={roundedRead}
-                className="dark:text-gray-40 flex items-center justify-center divide-x-2 divide-gray-500 px-2 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 md:hidden"
+                className="dark:text-gray-40 flex items-center justify-center divide-x-2 divide-gray-500 p-4 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 md:hidden"
               />
             </div>
           </header>

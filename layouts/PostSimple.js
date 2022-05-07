@@ -1,6 +1,8 @@
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import { FaGithub } from 'react-icons/fa'
+import TimeAgo from '@/components/TimeAgo'
+import ReadTime from '@/components/ReadTime'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
@@ -21,11 +23,10 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, readingTime, images } = frontMatter
+  const { slug, fileName, date, title, readingTime, thumbnail } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
-  console.log(readingTime)
 
   return (
     <SectionContainer>
@@ -42,15 +43,11 @@ export default function PostLayout({
               <dl>
                 <dt className="sr-only">{t('common:pub')}</dt>
                 <dd className="flex items-center justify-center divide-x-2 divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400">
+                  <TimeAgo datetime={date} className="px-2" locale={locale} />
                   <time className="pr-2" dateTime={date}>
                     {formatDate(date, locale)}
                   </time>
-                  <span className="pl-2">
-                    {roundedRead}{' '}
-                    {roundedRead == 1
-                      ? `${t('common:minute')} ${t('common:to')} ${t('common:read')}`
-                      : `${t('common:minutes')} ${t('common:to')} ${t('common:read')}`}
-                  </span>
+                  <ReadTime time={roundedRead} className="px-2" />
                 </dd>
               </dl>
               <div className="space-y-4">
@@ -64,13 +61,13 @@ export default function PostLayout({
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <div className="flex items-center justify-center  divide-y divide-transparent xl:col-span-3 xl:row-span-2 xl:pb-0">
-              {images && (
+              {thumbnail && (
                 <div className="`w-full flex justify-center">
                   <Image
                     alt={title}
-                    src={images}
-                    width={500}
-                    height={300}
+                    src={`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}
+                    width={900}
+                    height={500}
                     className="rounded-lg"
                     objectFit="cover"
                   />

@@ -1,5 +1,5 @@
 import TopTrack from './TopTrack'
-import Parallax from './motion/Parallax'
+import Parallax from '@/components/motion/Parallax'
 export default function TopTracks() {
   return (
     <div className="my-4 flex w-full flex-col items-center justify-center">

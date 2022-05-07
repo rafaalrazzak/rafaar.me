@@ -1,8 +1,8 @@
 import useSWR from 'swr'
 
 import Track from './Track'
-import NoTrack from './notFound/NoTrack'
-import Parallax from './motion/Parallax'
+import NoTrack from './NoTrack'
+import Parallax from '@/components/motion/Parallax'
 import fetcher from '@/lib/fetcher'
 export default function Tracks() {
   //animation
@@ -15,8 +15,14 @@ export default function Tracks() {
   return (
     <>
       {data.tracks.map((track, index) => (
-        <Parallax key={track.songUrl} y={20} visibleOpacity={1} hiddenOpacity={0} className="w-full">
-          <Track ranking={index + 1}  {...track} />
+        <Parallax
+          key={track.songUrl}
+          y={20}
+          visibleOpacity={1}
+          hiddenOpacity={0}
+          className="w-full"
+        >
+          <Track ranking={index + 1} {...track} />
         </Parallax>
       ))}
     </>

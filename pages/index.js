@@ -72,7 +72,7 @@ export default function Home({ posts, locale, availableLocales }) {
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter
               return (
-                <Parallax y={15}>
+                <Parallax y={15} key={slug}>
                   <ul key={slug}>
                     <li key={slug} className="py-4">
                       <article>

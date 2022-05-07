@@ -131,10 +131,10 @@ export default function PostLayout({
               </dl>
             </div>
             <div className="text-center">
-              <PageTitle>{title}</PageTitle>
+              <PageTitle className="py-4 md:py-2">{title}</PageTitle>
               <ReadTime
                 time={roundedRead}
-                className="dark:text-gray-40 flex items-center justify-center divide-x-2 divide-gray-500 px-2 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 md:hidden"
+                className="dark:text-gray-40 flex items-center justify-center divide-x-2 divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 md:hidden"
               />
             </div>
           </header>

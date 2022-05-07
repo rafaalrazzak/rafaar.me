@@ -47,15 +47,17 @@ export default function PostLayout({
                   <time className="px-2" dateTime={date}>
                     {formatDate(date, locale)}
                   </time>
-                  <ReadTime time={roundedRead} className="px-2 hidden md:flex" />
-                  
+                  <ReadTime time={roundedRead} className="hidden px-2 md:flex" />
                 </dd>
               </dl>
               <div className="space-y-4">
-                <PageTitle>{title}</PageTitle>
-                
-                  <ReadTime time={roundedRead} className="px-2 flex items-center justify-center divide-x-2 divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400 md:hidden" />
-                
+                <PageTitle className="py-4 md:py-2">{title}</PageTitle>
+
+                <ReadTime
+                  time={roundedRead}
+                  className="flex items-center justify-center divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400 md:hidden"
+                />
+
                 <Author detail={authorDetails} />
               </div>
             </div>

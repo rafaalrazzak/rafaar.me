@@ -63,14 +63,16 @@ export default function Home({ posts, locale, availableLocales }) {
             </Parallax>
           </div>
           <ul className="divide-y divide-transparent py-6 md:px-4">
-            <Parallax y={15}>
-              <h1 className=" text-2xl font-bold text-gray-900 dark:text-gray-100">
+            <Parallax y="15">
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
                 {t('common:latest-article')}
               </h1>
-              {!posts.length && 'No posts found.'}
-              {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-                const { slug, date, title, summary, tags } = frontMatter
-                return (
+            </Parallax>
+            {!posts.length && 'No posts found.'}
+            {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+              const { slug, date, title, summary, tags } = frontMatter
+              return (
+                <Parallax y={15}>
                   <ul key={slug}>
                     <li key={slug} className="py-4">
                       <article>
@@ -80,7 +82,7 @@ export default function Home({ posts, locale, availableLocales }) {
                             <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                               <TimeAgo
                                 datetime={date}
-                                className="text-gray-600 dark:text-gray-500"
+                                className="text-primary-700 dark:text-primary-500"
                                 locale={locale}
                               />
                               <time dateTime={date}>{formatDate(date, locale)}</time>
@@ -123,9 +125,9 @@ export default function Home({ posts, locale, availableLocales }) {
                       </article>
                     </li>
                   </ul>
-                )
-              })}
-            </Parallax>
+                </Parallax>
+              )
+            })}
           </ul>
         </div>
         {posts.length >= 3 && (

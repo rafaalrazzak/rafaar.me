@@ -51,11 +51,11 @@ export default function PostLayout({
                 </dd>
               </dl>
               <div className="space-y-4">
-                <PageTitle>{title}</PageTitle>
+                <PageTitle className="py-4 md:py-2">{title}</PageTitle>
 
                 <ReadTime
                   time={roundedRead}
-                  className="flex items-center justify-center divide-gray-500 p-4 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400 md:hidden"
+                  className="flex items-center justify-center divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400 md:hidden"
                 />
 
                 <Author detail={authorDetails} />

@@ -34,6 +34,10 @@ const projectsData = [
     description: 'Manipulation'
   },
   {
+    title: 'YZ',
+    description:'Manipulation'
+  },
+  {
     title: 'KKPF',
     description: 'Manipulation'
   },

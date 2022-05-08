@@ -1,1 +1,1 @@
-[Vercel][https://raf-a.vercel.app]
+[Vercel](https://raf-a.vercel.app)

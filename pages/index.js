@@ -1,12 +1,12 @@
 import useTranslation from 'next-translate/useTranslation'
 import dynamic from 'next/dynamic'
+import { RiArticleLine } from 'react-icons/ri'
 import Parallax from '@/components/motion/Parallax'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
 import TimeAgo from '@/components/TimeAgo'
 import Card from '@/components/Card'
 import Track from '@/components/Spotify/Track'
@@ -44,7 +44,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </p>
         </Parallax>
       </div>
-      <div className="flex w-full flex-col items-center justify-center">
+      <div className="flex w-full flex-col">
         <div>
           <div className="flex w-full flex-wrap pb-2">
             <Parallax y={25} className="flex w-full flex-wrap">
@@ -72,20 +72,19 @@ export default function Home({ posts, locale, availableLocales }) {
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter
               return (
-                <Parallax y={15} key={slug}>
-                  <ul key={slug}>
-                    <li key={slug} className="py-4">
+                <Parallax
+                  y={15}
+                  key={slug}
+                  className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-gray-300/30 dark:hover:bg-slate-600/30"
+                >
+                  <ul className="transition-all duration-1000 ease-in-out group-hover:p-4">
+                    <li className="py-4">
                       <article>
                         <div className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
                           <dl>
                             <dt className="sr-only">{t('common:pub')}</dt>
                             <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                              <TimeAgo
-                                datetime={date}
-                                className="text-primary-700 dark:text-primary-500"
-                                locale={locale}
-                              />
-                              <time dateTime={date}>{formatDate(date, locale)}</time>
+                              <TimeAgo datetime={date} locale={locale} />
                             </dd>
                           </dl>
 
@@ -137,7 +136,9 @@ export default function Home({ posts, locale, availableLocales }) {
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
               aria-label="all posts"
             >
-              {t('common:all')} &rarr;
+              <div className="flex items-center space-x-2">
+                <RiArticleLine /> <span>{t('common:all')}</span>
+              </div>
             </Link>
           </div>
         )}

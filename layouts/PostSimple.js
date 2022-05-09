@@ -33,6 +33,7 @@ export default function PostLayout({
       <BlogSEO
         availableLocales={availableLocales}
         url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`}
+        thumbImg={`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}
         {...frontMatter}
       />
       <ScrollTop />

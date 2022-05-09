@@ -35,7 +35,7 @@ module.exports = {
         'texture-pattern': "url('/static/images/right-dark-gradient.svg')",
       },
       fontFamily: {
-				pjs:['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
+        pjs: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
 
@@ -83,7 +83,7 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             h1: {
-							fontWeight: '800',
+              fontWeight: '800',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
@@ -99,10 +99,10 @@ module.exports = {
             'h4,h5,h6': {
               color: theme('colors.gray.900'),
             },
-            'p': {
-							fontWeight: '400',
-              
-							color: theme('colors.gray.600'),
+            p: {
+              fontWeight: '400',
+
+              color: theme('colors.gray.600'),
             },
             code: {
               color: theme('colors.pink.500'),
@@ -113,12 +113,13 @@ module.exports = {
               paddingBottom: '2px',
               borderRadius: '0.25rem',
             },
-            'code:before': {
+            'code::before': {
               content: 'none',
             },
-            'code:after': {
+            'code::after': {
               content: 'none',
             },
+
             details: {
               backgroundColor: theme('colors.gray.100'),
               paddingLeft: '4px',
@@ -152,10 +153,9 @@ module.exports = {
               },
               code: { color: theme('colors.primary.400') },
             },
-           h1:{
-						 
-					  fontFamily: theme('fontFamily.Inter'),
-							fontWeight: '800',
+            h1: {
+              fontFamily: theme('fontFamily.Inter'),
+              fontWeight: '800',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
@@ -171,12 +171,13 @@ module.exports = {
             'h4,h5,h6': {
               color: theme('colors.gray.100'),
             },
-						'p': {
-							color: theme('colors.gray.200'),
+            p: {
+              color: theme('colors.gray.200'),
             },
             code: {
               backgroundColor: theme('colors.gray.800'),
             },
+
             details: {
               backgroundColor: theme('colors.gray.800'),
             },

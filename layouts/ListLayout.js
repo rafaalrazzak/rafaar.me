@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
+import Parallax from '@/components/motion/Parallax'
 import TimeAgo from '@/components/TimeAgo'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
@@ -24,8 +25,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   return (
     <>
       <div className="divide-y divide-transparent">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5 ">
+          <h1 className="py-3 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
           <div className="relative">
@@ -34,7 +35,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder={t('common:search')}
-              className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+              className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
             />
             <svg
               className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
@@ -52,42 +53,53 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             </svg>
           </div>
         </div>
-        <ul>
-          {!filteredBlogPosts.length && `No articles found for: "${searchValue}"`}
-          {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
-            return (
-              <li key={slug} className="py-4">
-                <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                  <dl>
-                    <dt className="sr-only">{t('common:pub')}</dt>
-                    <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                       <TimeAgo datetime={date} className="text-primary-700 dark:text-primary-500" locale={locale} />
-                      <time dateTime={date}>{formatDate(date, locale)}</time>
-                    </dd>
-                  </dl>
-                  <div className="space-y-3 xl:col-span-3">
-                    <div>
-                      <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                        <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
-                          {title}
-                        </Link>
-                      </h3>
-                      <div className="flex flex-wrap">
-                        {tags.map((tag) => (
-                          <Tag key={tag} text={tag} />
-                        ))}
+
+        {!filteredBlogPosts.length && `No articles found for: "${searchValue}"`}
+        {displayPosts.map((frontMatter) => {
+          const { slug, date, title, summary, tags } = frontMatter
+          return (
+            <Parallax
+              y={15}
+              key={slug}
+              className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-slate-300/30 dark:hover:bg-slate-600/30"
+            >
+              <ul className="transition-all duration-1000 ease-in-out group-hover:p-4">
+                <li className="py-4">
+                  <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                    <dl>
+                      <dt className="sr-only">{t('common:pub')}</dt>
+                      <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                        <TimeAgo
+                          datetime={date}
+                          className="text-primary-700 dark:text-primary-500"
+                          locale={locale}
+                        />
+                        <time dateTime={date}>{formatDate(date, locale)}</time>
+                      </dd>
+                    </dl>
+                    <div className="space-y-3 xl:col-span-3">
+                      <div>
+                        <h3 className="text-2xl font-bold leading-8 tracking-tight">
+                          <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                            {title}
+                          </Link>
+                        </h3>
+                        <div className="flex flex-wrap">
+                          {tags.map((tag) => (
+                            <Tag key={tag} text={tag} />
+                          ))}
+                        </div>
+                      </div>
+                      <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        {summary}
                       </div>
                     </div>
-                    <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                      {summary}
-                    </div>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
+                  </article>
+                </li>
+              </ul>
+            </Parallax>
+          )
+        })}
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination

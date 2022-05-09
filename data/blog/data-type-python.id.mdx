@@ -1,0 +1,76 @@
+---
+title: 'Tipe data Python'
+date: '5/9/2022, 12:14:47 PM'
+tags: ['python', 'dasar']
+draft: false
+summary: 'Tipe data dalam bahasa pemrograman Python'
+thumbnail: true
+layout: PostLayout
+---
+
+Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi.
+
+Python sendiri mempunyai tipe data yang cukup unik bila kita bandingkan dengan bahasa pemrograman yang lain.
+
+Berikut adalah tipe data dari bahasa pemrograman Python :
+
+| Tipe Data   | Contoh                               | Penjelasan                                                                           |
+| ----------- | ------------------------------------ | ------------------------------------------------------------------------------------ |
+| Boolean     | `True` atau `False`                  | Menyatakan benar `True` yang bernilai `1`, atau salah `False` yang bernilai `0`      |
+| String      | `"Ayo belajar Python"`               | Menyatakan karakter/kalimat bisa berupa huruf angka, dll (diapit tanda `"` atau `'`) |
+| Integer     | `25` atau `1209`                     | Menyatakan bilangan bulat                                                            |
+| Float       | `3.14` atau `0.99`                   | Menyatakan bilangan yang mempunyai koma                                              |
+| Hexadecimal | `9a` atau `1d3`                      | Menyatakan bilangan dalam format heksa (bilangan berbasis 16)                        |
+| Complex     | `1 + 5j `                            | Menyatakan pasangan angka real dan imajiner                                          |
+| List        | `['xyz', 786, 2.23]`                 | Data untaian yang menyimpan berbagai tipe data dan isinya bisa diubah-ubah           |
+| Tuple       | `('xyz', 768, 2.23)`                 | Data untaian yang menyimpan berbagai tipe data tapi isinya tidak bisa diubah         |
+| Dictionary  | `{'nama': 'Ilham Kurniawa ','id':2}` | Data untaian yang menyimpan berbagai tipe data berupa pasangan penunjuk dan nilai    |
+
+Untuk mencoba berbagai macam tipe data, silahkan coba script Python dibawah ini.
+
+```python:tipe-data.py
+#tipe data Boolean
+#tipe data boolean ada 2 macam yaitu true atau false
+print(true)
+print(false)
+
+#tipe data String
+#diawali dan diakhiri dengan kutip dua " "  atau kutip satu ' '
+print("Ayo belajar Python")
+print('Belajar Python Sangat Mudah')
+
+#tipe data Integer
+#bilangan bulat
+print(20)
+
+#tipe data Float
+#bilangan desimal
+print(3.14)
+
+#tipe data Hexadecimal
+#bilangan hexadesinal
+print(9a)
+
+#tipe data Complex
+#bilangan komplex
+print(5j)
+
+#tipe data List
+#diawali dan diakhiri dengan buka kurung siku [ ]
+print([1,2,3,4,5])
+print(["satu", "dua", "tiga"])
+
+#tipe data Tuple
+#diawali dan diakhiri dengan buka kurung ( )
+print((1,2,3,4,5))
+print(("satu", "dua", "tiga"))
+
+#tipe data Dictionary
+#diawali dan diakhiri dengan kurung kurawal { }
+print({"nama":"Ilham", "umur":20})
+
+#tipe data Dictionary dimasukan ke dalam variabel biodata
+biodata = {"nama":"Kurniawan", "umur":21} #proses inisialisasi variabel biodata
+print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary
+print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary
+```

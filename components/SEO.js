@@ -145,7 +145,7 @@ export const BlogSEO = ({
   lastmod,
   url,
   availableLocales,
-  thumbImg = [],
+  thumbImg,
 }) => {
   const router = useRouter()
   const publishedAt = new Date(date).toISOString()

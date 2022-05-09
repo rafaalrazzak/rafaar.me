@@ -72,20 +72,19 @@ export default function Home({ posts, locale, availableLocales }) {
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter
               return (
-                <Parallax y={15} key={slug}>
-                  <ul key={slug}>
-                    <li key={slug} className="py-4">
+                <Parallax
+                  y={15}
+                  key={slug}
+                  className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-gray-300/30 dark:hover:bg-slate-600/30"
+                >
+                  <ul className="transition-all duration-1000 ease-in-out group-hover:p-4">
+                    <li className="py-4">
                       <article>
                         <div className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
                           <dl>
                             <dt className="sr-only">{t('common:pub')}</dt>
                             <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                              <TimeAgo
-                                datetime={date}
-                                className="text-primary-700 dark:text-primary-500"
-                                locale={locale}
-                              />
-                              <time dateTime={date}>{formatDate(date, locale)}</time>
+                              <TimeAgo datetime={date} locale={locale} />
                             </dd>
                           </dl>
 

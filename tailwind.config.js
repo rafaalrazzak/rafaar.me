@@ -113,12 +113,13 @@ module.exports = {
               paddingBottom: '2px',
               borderRadius: '0.25rem',
             },
-            'code:before': {
-              content: ' ',
+            'code::before': {
+              content: 'none',
             },
-            'code:after': {
-              content: ' ',
+            'code::after': {
+              content: 'none',
             },
+
             details: {
               backgroundColor: theme('colors.gray.100'),
               paddingLeft: '4px',
@@ -176,6 +177,7 @@ module.exports = {
             code: {
               backgroundColor: theme('colors.gray.800'),
             },
+
             details: {
               backgroundColor: theme('colors.gray.800'),
             },

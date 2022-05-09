@@ -113,7 +113,7 @@ export default function PostLayout({
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
         availableLocales={availableLocales}
-        thumbImg=[{`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}]
+        thumbImg={[`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`]}
         {...frontMatter}
       />
       <article>

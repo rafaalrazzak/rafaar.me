@@ -145,19 +145,19 @@ export const BlogSEO = ({
   lastmod,
   url,
   availableLocales,
-  images = [],
+  thumbImg = [],
 }) => {
   const router = useRouter()
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
-  let imagesArr =
-    images.length === 0
+  let thumbImgArr =
+    thumbImg.length === 0
       ? [siteMetadata.socialBanner]
-      : typeof images === 'string'
-      ? [images]
-      : images
+      : typeof thumbImg === 'string'
+      ? [thumbImg]
+      : thumbImg
 
-  const featuredImages = imagesArr.map((img) => {
+  const featuredImages = thumbImgArr.map((img) => {
     return {
       '@type': 'ImageObject',
       url: `${siteMetadata.siteUrl}${img}`,

@@ -1,5 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import dynamic from 'next/dynamic'
+import { RiArticleLine } from 'react-icons/ri'
 import Parallax from '@/components/motion/Parallax'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
@@ -43,7 +44,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </p>
         </Parallax>
       </div>
-      <div className="flex w-full flex-col items-center justify-center">
+      <div className="flex w-full flex-col">
         <div>
           <div className="flex w-full flex-wrap pb-2">
             <Parallax y={25} className="flex w-full flex-wrap">
@@ -135,7 +136,9 @@ export default function Home({ posts, locale, availableLocales }) {
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
               aria-label="all posts"
             >
-              {t('common:all')} &rarr;
+              <div className="flex items-center space-x-2">
+                <RiArticleLine /> <span>{t('common:all')}</span>
+              </div>
             </Link>
           </div>
         )}

@@ -190,8 +190,9 @@ export default function PostLayout({
                     </div>
                   </div>
                 )}
+                
                 {(next || prev) && (
-                  <div className="flex justify-between py-4">
+                  <div className="flex justify-between space-x-4 py-4">
                     {prev && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -203,7 +204,7 @@ export default function PostLayout({
                       </div>
                     )}
                     {next && (
-                      <div>
+                      <div className="text-right items-end">
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
                           {t('common:nexta')}
                         </h2>
@@ -214,6 +215,7 @@ export default function PostLayout({
                     )}
                   </div>
                 )}
+                
               </div>
               <div className="pt-4">
                 <Link

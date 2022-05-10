@@ -15,12 +15,7 @@ const ThemeSwitch = () => {
       className="ml-1 flex h-11 w-11 items-center justify-center bg-transparent p-0 text-lg sm:ml-4"
       whileHover={{
         scale: 1.2,
-        transition: { duration: 0.2 },
-      }}
-      whileTap={{
-        scale: 0.7,
-        rotate: 360,
-        transition: { duration: 0.2 },
+        transition: { duration: 0.5 },
       }}
       aria-label="Toggle Dark Mode"
       type="button"

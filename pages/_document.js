@@ -82,7 +82,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="bg-white text-black antialiased transition-all selection:bg-teal-200 dark:bg-violet-1000 dark:text-white selection:dark:bg-[#b816a9] selection:dark:text-white selection:text-violet-1000">
+        <body className="bg-white text-black antialiased selection:bg-teal-200 dark:bg-violet-1000 dark:text-white selection:dark:bg-[#b816a9] selection:dark:text-white selection:text-violet-1000">
           <Main />
           <NextScript />
         </body>

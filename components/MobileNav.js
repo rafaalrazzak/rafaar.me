@@ -1,9 +1,7 @@
-import useTranslation from 'next-translate/useTranslation'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
 
 const MobileNav = ({ navShow, onToggleNav }) => {
-  const { t } = useTranslation()
 
   return (
     <div className="sm:hidden">
@@ -27,7 +25,7 @@ const MobileNav = ({ navShow, onToggleNav }) => {
                 className="text-xl font-semibold leading-8 tracking-wide text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
                 onClick={onToggleNav}
               >
-                {t(`headerNavLinks:${link.title.toLowerCase()}`)}
+								{link.title}
               </Link>
             </div>
           ))}

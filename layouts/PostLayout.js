@@ -48,11 +48,15 @@ export default function PostLayout({
   function SideBar() {
     const isTop = useIsScrollTop()
     return (
-      <div className={`${
-            isTop ? 'xl:flex xl:flex-col xl:top-0 ' : 'xl:flex xl:flex-col xl:top-12 xl:sticky'
-          } hidden`}>
+      <div
+        className={`${
+          isTop ? 'xl:top-0 xl:flex xl:flex-col ' : 'xl:sticky xl:top-12 xl:flex xl:flex-col'
+        } hidden`}
+      >
         <div
-          className={`${isTop ? 'mt-0' : 'mt-12'} transition-all duration-700 pb-6 xl:border-b xl:border-gray-200 xl:dark:border-gray-700`}
+          className={`${
+            isTop ? 'mt-0' : 'mt-12'
+          } pb-6 transition-all duration-700 xl:border-b xl:border-gray-200 xl:dark:border-gray-700`}
         >
           <dt className="sr-only">{t('common:authors')}</dt>
           <dd>
@@ -97,12 +101,12 @@ export default function PostLayout({
             </div>
           )}
         </div>
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-          >
-            &larr; {t('common:back')}
-          </Link>
+        <Link
+          href="/blog"
+          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+        >
+          &larr; {t('common:back')}
+        </Link>
       </div>
     )
   }
@@ -113,7 +117,7 @@ export default function PostLayout({
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
         availableLocales={availableLocales}
-        thumbImg={`https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg`}
+        thumbImg={`/_next/image?url=https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg&w=1080&q=100`}
         {...frontMatter}
       />
       <article>

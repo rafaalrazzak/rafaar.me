@@ -24,7 +24,7 @@ function useIsScrollTop() {
 export default function Header() {
   const router = useRouter()
   const [navShow, setNavShow] = useState(false)
-  const { locale, locales, defaultLocale } = router
+  const { locale, locales } = router
   const isTop = useIsScrollTop()
 
   const changeLanguage = (locale) => {

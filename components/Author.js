@@ -2,7 +2,7 @@ import useTranslation from 'next-translate/useTranslation'
 import { FaInstagram } from 'react-icons/fa';
 import Image from '@/components/Image'
 import Link from '@/components/Link'
-export default function Author({detail, justify}){
+export default function Author({detail}){
 
   const { t } = useTranslation()
 

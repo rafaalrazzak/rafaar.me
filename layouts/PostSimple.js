@@ -23,7 +23,7 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, tags, readingTime, thumbnail } = frontMatter
+  const { fileName, date, title, tags, readingTime, thumbnail } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()

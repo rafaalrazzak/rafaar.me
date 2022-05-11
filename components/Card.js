@@ -18,10 +18,10 @@ const Card = ({
   href,
   onlyImg = false,
   className,
-	textColor,
-	layout,
+
+  layout,
   mdSize = true,
-	...rest
+  ...rest
 }) => {
   const ref = useRef(null)
   const [xys, set] = useState([0, 0, 1])
@@ -35,7 +35,7 @@ const Card = ({
       <div
         className={`rounded-md ${
           onlyImg ? 'p-0.5' : 'p-0.5 dark:p-px'
-        } bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-full -z-10`}
+        } -z-10 h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500`}
       >
         <Link href={href} aria-label={`Link to ${title}`}>
           <animated.div
@@ -46,22 +46,28 @@ const Card = ({
               set(calc(e.clientX, e.clientY, rect, onlyImg))
             }}
             className={`${
-              onlyImg && 'w-32 h-32'
-            } will-change-transform overflow-hidden relative rounded-md bg-violet-30 dark:bg-violet-950
-          after:absolute after:inset-0 after:z-10 after:bg-cover after:bg-no-repeat after:opacity-0 after:pointer-events-none
-          after:mix-blend-hard-light after:will-change-auto after:bg-texture-pattern after:transition-opacity after:duration-500
-          hover:after:opacity-100 hover:after:animate-hue-animation h-full z-20`}
+              onlyImg && 'h-32 w-32'
+            } hover:after:animate-hue-animation relative z-20 h-full overflow-hidden rounded-md
+          bg-violet-30 will-change-transform after:pointer-events-none after:absolute after:inset-0 after:z-10 after:bg-texture-pattern
+          after:bg-cover after:bg-no-repeat after:opacity-0 after:mix-blend-hard-light after:transition-opacity
+          after:duration-500 after:will-change-auto hover:after:opacity-100 dark:bg-violet-950`}
           >
-            {imgSrc && <Image alt={title} src={imgSrc} className="-z-1 object-cover object-center" layout={layout} />
-						}
+            {imgSrc && (
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="-z-1 object-cover object-center"
+                layout={layout}
+              />
+            )}
             {onlyImg && <>{children}</>}
             {!onlyImg && (
-              <div className='p-5'>
+              <div className="p-5">
                 <h2 className="  mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
-                <p className="mb-2 prose text-gray-500 max-w-none dark:text-gray-400">
+                <p className="prose mb-2 max-w-none text-gray-500 dark:text-gray-400">
                   {description}
                 </p>
-                <div className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-2xl font-thin leading-6'>
+                <div className="text-2xl font-thin leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                   <svg
                     className="rotate-180"
                     width="24"

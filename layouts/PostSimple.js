@@ -31,6 +31,7 @@ export default function PostLayout({
   return (
     <SectionContainer>
       <BlogSEO
+        title={`${frontMatter.title} | ${siteMetadata.author}`}
         availableLocales={availableLocales}
         url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`}
         thumbImg={`_next/image?url=https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg&w=1080&q=100}`}

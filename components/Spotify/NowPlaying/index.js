@@ -9,7 +9,7 @@ export default function NowPlaying() {
   const { t } = useTranslation()
   const { data } = useSWR('/api/now-playing', fetcher)
   return (
-    <div className="flex max-w-lg flex-wrap items-center justify-center space-x-2 sm:space-x-1 md:space-x-0 transition-all sm:gap-2">
+    <div className="flex max-w-lg flex-wrap items-center justify-center space-x-2 transition-all sm:gap-2 sm:space-x-1 md:space-x-0">
       {data?.isPlaying && data?.songUrl && (
         <SongImage src={data.songImage} alt={`${data.title} - ${data.artist}`} size={20} />
       )}
@@ -19,27 +19,21 @@ export default function NowPlaying() {
         <FaSpotify className="text-spotify-green" />
       )}
       {data?.songUrl ? (
-          <Link
-            className="truncate text-sm transition-all hover:text-spotify-green sm:text-sm"
-            href={data.songUrl}
-            title={data.title}
-          >
-            {data.title}
-          </Link>
-        ) : (
-          <p className="flex text-sm text-gray-500 dark:text-gray-400">{t('common:not-playing')}</p>
-        )}
-			{data?.artist.length <= 30 ? (
-        <span className="lex text-sm text-gray-500 dark:text-gray-400">{'–'}</span>
-			) : (
-			<span className="hidden md:flex md:flex-col text-sm text-gray-500 dark:text-gray-400">{'–'}</span>
-			
-			)
-			}
-			
-			<p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
-          {data?.artist ?? 'Spotify'}
-        </p>
+        <Link
+          className="truncate text-sm transition-all hover:text-spotify-green sm:text-sm"
+          href={data.songUrl}
+          title={data.title}
+        >
+          {data.title}
+        </Link>
+      ) : (
+        <p className="flex text-sm text-gray-500 dark:text-gray-400">{t('common:not-playing')}</p>
+      )}
+      <span className="flex text-sm text-gray-500 dark:text-gray-400">{'–'}</span>
+
+      <p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
+        {data?.artist ?? 'Spotify'}
+      </p>
     </div>
   )
 }

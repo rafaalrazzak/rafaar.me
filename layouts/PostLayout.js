@@ -114,6 +114,7 @@ export default function PostLayout({
   return (
     <SectionContainer>
       <BlogSEO
+        title={`${frontMatter.title} | ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
         availableLocales={availableLocales}

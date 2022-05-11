@@ -1,5 +1,5 @@
 import useTranslation from 'next-translate/useTranslation'
-import { FaInstagram } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 import Image from '@/components/Image'
 import Link from '@/components/Link'
 export default function Author({detail}){
@@ -11,26 +11,31 @@ export default function Author({detail}){
         {detail.map((author) => (
           <li className="flex items-center justify-center space-x-2" key={author.name}>
             <Image
-                src={`https://res.cloudinary.com/raf-ar/image/upload/v1651370642/blog/avatars/${author.name.toLowerCase()}.jpg`}
-                width="38px"
-                height="38px"
-                alt={author.name}
-                className="h-10 w-10 rounded-full"
-              />
+              src={`https://res.cloudinary.com/raf-ar/image/upload/v1651370642/blog/avatars/${author.name.toLowerCase()}.jpg`}
+              width="38px"
+              height="38px"
+              alt={author.name}
+              className="h-10 w-10 rounded-full"
+            />
             <dl className="whitespace-nowrap text-sm font-medium leading-5">
               <dt className="sr-only">{t('common:name')}</dt>
-                <dd>
-						     	<Link className="text-gray-900 dark:text-gray-100 hover:text-primary-500 dark:hover:text-primary-400 transition" href='/about'>{author.name}</Link>
-								</dd>
-              <dt className="sr-only">Instagram</dt>
               <dd>
-                {author.instagram && (
+                <Link
+                  className="text-gray-900 transition hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+                  href="/about"
+                >
+                  {author.name}
+                </Link>
+              </dd>
+              <dt className="sr-only">Twitter</dt>
+              <dd>
+                {author.twitter && (
                   <Link
-                    href={author.instagram}
-                    className="flex text-xs text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition items-center"
+                    href={author.twitter.replace('https://twitter.com/', '')}
+                    className="flex items-center text-xs text-primary-500 transition hover:text-primary-600 dark:hover:text-primary-400"
                   >
-                    <FaInstagram size={15} className="mr-1" />
-                    {author.instagram.replace('https://instagram.com/','')}
+                    <FaTwitter size={15} className="mr-1" />
+                    {author.twitter.replace('@', '')}
                   </Link>
                 )}
               </dd>

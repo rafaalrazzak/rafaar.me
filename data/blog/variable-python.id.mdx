@@ -1,57 +1,57 @@
 ---
-title: 'Variable Python'
+title: 'Variabel Python'
 date: '2022-05-11T09:05:01.000Z'
 tags: ['python']
 draft: false
-summary: 'Variable in Python programing language'
+summary: 'Variabel di dalam bahasa pemrograman Python'
 thumbnail: true
 layout: PostLayout
 ---
 
-Variable is the location of memory that is reserved to store values. This means that when you make a variable you order some space in memory. Variables store data carried out during the program executed, which later the contents of these variables can be changed by certain operations on programs that use variables.
+Variabel adalah lokasi memori yang dicadangkan untuk menyimpan nilai-nilai. Ini berarti bahwa ketika Anda membuat sebuah variabel Anda memesan beberapa ruang di memori. Variabel menyimpan data yang dilakukan selama program dieksekusi, yang nantinya isi dari variabel tersebut dapat diubah oleh operasi - operasi tertentu pada program yang menggunakan variabel.
 
-Variables can store various data types. In Python programming, variables have dynamic properties, meaning that the python variable does not need to be declared certain data type and the python variable can be changed when the program is run.
+Variabel dapat menyimpan berbagai macam tipe data. Di dalam pemrograman Python, variabel mempunyai sifat yang dinamis, artinya variabel Python tidak perlu didekralasikan tipe data tertentu dan variabel Python dapat diubah saat program dijalankan.
 
-Writing the Python variable itself also has certain rules, namely:
+Penulisan variabel Python sendiri juga memiliki aturan tertentu, yaitu :
 
-1. The first character must be in the form of letters or undererscore `_`
-2. The next character can be in the form of letters, underlines/underscore `_` or numbers
-3. Character in the name of the variable is sensitive (case-sensitive). This means that lowercase letters and capital letters are distinguished. For example, the variables 'names' and 'names' are different variables.
+1. Karakter pertama harus berupa huruf atau garis bawah/underscore `_`
+2. Karakter selanjutnya dapat berupa huruf, garis bawah/underscore `_` atau angka
+3. Karakter pada nama variabel bersifat sensitif (case-sensitif). Artinya huruf kecil dan huruf besar dibedakan. Sebagai contoh, variabel `namaDepan` dan `namadepan` adalah variabel yang berbeda.
 
-To start making variables in Python very easy, you can simply write down the variable and fill it with a value by adding the same sign as '=' followed by the value you want to enter.
+Untuk mulai membuat variabel di Python caranya sangat mudah, Anda cukup menuliskan variabel lalu mengisinya dengan suatu nilai dengan cara menambahkan tanda sama dengan `=` diikuti dengan nilai yang ingin dimasukan.
 
-Below is an example of the use of variables in the Python programming language
+Dibawah ini adalah contoh penggunaan variabel dalam bahasa pemrograman Python
 
-```python:variable.py
-#process entering data into variables
-name = "john doe"
-#process print variables
-print (name)
+```python:variabel.py
+#proses memasukan data ke dalam variabel
+nama = "Ilham Kurniawan"
+#proses mencetak variabel
+print(nama)
 
-#The value and type of data in variables can be changed
-age = 20 #Initial Value
-print(age) #printing age value
-type(age) #check the age type data type
-age = "twenty -one" #value after change
-print(age) #printing age value
-type(age) #check the age type data type
+#nilai dan tipe data dalam variabel  dapat diubah
+umur = 20 #nilai awal
+print(umur) #mencetak nilai umur
+type(umur) #mengecek tipe data umur
+umur = "dua puluh satu" #nilai setelah diubah
+print(umur)  #mencetak nilai umur
+type(umur) #mengecek tipe data umur
 
-front_name = "Ilham"
-back_name = "Kurniawan"
-name = front_name + "" + back_name
-age = 22
-hobby = "Coding"
-print("biodata \ n", name, "\ n", age, "\ n", hobby)
+nama_depan = "Ilham"
+nama_belakang = "Kurniawan"
+nama = nama_depan + " " + nama_belakang
+umur = 22
+hobi = "Coding"
+print("Biodata\n", nama, "\n", umur, "\n", hobi)
 
 #contoh variabel lainya
-variable = "Halo"
-this_also_variable = "Hai"
-_thisalsovariable = "Hi"
-thisvariable123 = "Bye"
-123variable = "invalid_variable" #invalid variable
+inivariabel = "Halo"
+ini_juga_variabel = "Hai"
+_inivariabeljuga = "Hi"
+inivariabel222 = "Bye"
+123variabel= "variabel tidak valid" #variabel tidak valid
 
-length = 10
-Width = 5
-area = length * width
-print(area)
+panjang = 10
+lebar = 5
+luas = panjang * lebar
+print(luas)
 ```

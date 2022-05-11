@@ -21,7 +21,6 @@ const Card = ({
 
   layout,
   mdSize = true,
-  ...rest
 }) => {
   const ref = useRef(null)
   const [xys, set] = useState([0, 0, 1])

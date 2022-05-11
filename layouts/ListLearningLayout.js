@@ -1,7 +1,6 @@
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
 import Link from '@/components/Link'
 import Pagination from '@/components/Pagination'
 import Image from '@/components/Image'

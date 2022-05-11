@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 import Link from './Link'
 import MobileNav from './MobileNav'
@@ -23,7 +22,6 @@ function useIsScrollTop() {
 }
 
 export default function Header() {
-  const { t } = useTranslation()
   const router = useRouter()
   const [navShow, setNavShow] = useState(false)
   const { locale, locales, defaultLocale } = router
@@ -62,7 +60,7 @@ export default function Header() {
                   href={link.href}
                   className=" p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 sm:py-4 sm:px-3 xl:first:pl-0"
                 >
-                  {t(`headerNavLinks:${link.title.toLowerCase()}`)}
+                  {link.title}
                 </Link>
               ))}
             </div>

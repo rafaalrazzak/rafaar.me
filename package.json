@@ -17,6 +17,7 @@
     "@mdx-js/react": "^1.6.22",
     "@react-three/fiber": "^7.0.18",
     "@react-three/postprocessing": "^2.0.5",
+    "clsx": "^1.1.1",
     "esbuild": "^0.14.11",
     "framer-motion": "^6.3.1",
     "github-slugger": "^1.4.0",

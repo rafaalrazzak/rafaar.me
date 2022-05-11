@@ -44,7 +44,6 @@ export default function PostLayout({
   const roundedRead = Math.round(readingTime)
   const { locale } = useRouter()
   const { t } = useTranslation()
-
   function SideBar() {
     const isTop = useIsScrollTop()
     return (
@@ -114,6 +113,7 @@ export default function PostLayout({
   return (
     <SectionContainer>
       <BlogSEO
+        title={`${frontMatter.title} | ${authorDetails.name}`}
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
         availableLocales={availableLocales}

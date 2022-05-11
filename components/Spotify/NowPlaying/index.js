@@ -30,15 +30,7 @@ export default function NowPlaying() {
         <p className="flex text-sm text-gray-500 dark:text-gray-400">{t('common:not-playing')}</p>
       )}
 
-      {data?.title?.length || data?.artist?.length <= 20 ? (
-        <span className="flex text-sm text-gray-500 dark:text-gray-400">{'–'}</span>
-      ) : (
-        <span className="hidden text-sm text-gray-500 dark:text-gray-400 md:flex md:flex-col">
-          {'–'}
-        </span>
-      )}
-
-      {!data?.title && <span className=" flex text-sm text-gray-500 dark:text-gray-400">{'–'}</span>}
+      <span className=" flex text-sm text-gray-500 dark:text-gray-400">{'-'}</span>
 
       <p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
         {data?.artist ?? 'Spotify'}

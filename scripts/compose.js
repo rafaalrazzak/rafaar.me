@@ -24,7 +24,7 @@ const getLayouts = () => {
 const genFrontMatter = (answers) => {
   const t = titleCase(answers.title ? answers.title : 'Untitled')
   let d = new Date()
-  const date = d.toLocaleString()
+  const date = d.toISOString()
   const tagArray = answers.tags.split(',')
   tagArray.forEach((tag, index) => (tagArray[index] = tag.trim()))
   const tags = "'" + tagArray.join("','") + "'"

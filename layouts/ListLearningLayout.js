@@ -1,7 +1,6 @@
 import { useMemo } from 'react'
 import { getMDXComponent } from 'mdx-bundler/client'
 import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
 import Link from '@/components/Link'
 import Pagination from '@/components/Pagination'
 import Image from '@/components/Image'
@@ -12,23 +11,16 @@ const HeadingTwo = (props) => {
   return (
     <span className="not-prose">
       <h2
-        className="text-2xl font-extrabold inline-block bg-clip-text text-transparent 
-        bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 md:text-3xl"
+        className="inline-block bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+        bg-clip-text text-2xl font-extrabold text-transparent md:text-3xl"
         {...props}
       />
     </span>
   )
 }
 
-export default function ListLearningLayout({
-  posts,
-  post,
-  title,
-  initialDisplayPosts = [],
-  pagination,
-}) {
+export default function ListLearningLayout({ post, title, initialDisplayPosts = [], pagination }) {
   const { t } = useTranslation()
-  const { locale } = useRouter()
 
   const MDXComponents = {
     Image,
@@ -53,7 +45,7 @@ export default function ListLearningLayout({
         </div>
         <ul>
           {initialDisplayPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const { slug } = frontMatter
 
             return (
               <li key={slug} className="py-4">
@@ -62,7 +54,7 @@ export default function ListLearningLayout({
                     <dt className="sr-only">{t('common:pub')}</dt>
                   </dl>
                   <div className="space-y-3">
-                    <div className="prose dark:prose-dark max-w-none">
+                    <div className="prose max-w-none dark:prose-dark">
                       <MDXLayout components={MDXComponents} />
                     </div>
                   </div>

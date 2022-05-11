@@ -13,7 +13,7 @@ import formatDate from '@/lib/utils/formatDate'
 import ScrollTop from '@/components/ScrollTop'
 import siteMetadata from '@/data/siteMetadata'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 
 export default function PostLayout({
   frontMatter,
@@ -23,7 +23,7 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { slug, fileName, date, title, tags, readingTime, thumbnail } = frontMatter
+  const { fileName, date, title, tags, readingTime, thumbnail } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
@@ -79,7 +79,7 @@ export default function PostLayout({
             )}
             <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             <div className="pt-6 pb-6 text-sm text-gray-700 hover:underline dark:text-gray-300 ">
-              <Link className="flex items-center" href={editUrl(fileName)}>
+              <Link className="flex items-center hover:text-primary-500" href={editUrl(fileName)}>
                 <FaGithub size={20} className="mr-3" />
                 {t('common:github')}
               </Link>

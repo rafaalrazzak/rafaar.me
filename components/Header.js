@@ -24,7 +24,7 @@ function useIsScrollTop() {
 export default function Header() {
   const router = useRouter()
   const [navShow, setNavShow] = useState(false)
-  const { locale, locales, defaultLocale } = router
+  const { locale, locales } = router
   const isTop = useIsScrollTop()
 
   const changeLanguage = (locale) => {
@@ -55,16 +55,16 @@ export default function Header() {
           <div className="flex w-full items-center justify-between text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className=" p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 sm:py-4 sm:px-3 xl:first:pl-0"
-                >
-                  {link.title}
-                </Link>
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className=" p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 sm:py-4 sm:px-3 xl:first:pl-0"
+                  >
+                    {link.title}
+                  </Link>
               ))}
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center space-x-1">
               {locales.map((e, index) => (
                 <span key={e}>
                   <button

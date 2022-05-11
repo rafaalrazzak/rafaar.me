@@ -1,0 +1,57 @@
+---
+title: 'Variable Python'
+date: '2022-05-11T09:05:01.000Z'
+tags: ['python']
+draft: false
+summary: 'Variable in Python programing language'
+thumbnail: true
+layout: PostLayout
+---
+
+Variable is the location of memory that is reserved to store values. This means that when you make a variable you order some space in memory. Variables store data carried out during the program executed, which later the contents of these variables can be changed by certain operations on programs that use variables.
+
+Variables can store various data types. In Python programming, variables have dynamic properties, meaning that the python variable does not need to be declared certain data type and the python variable can be changed when the program is run.
+
+Writing the Python variable itself also has certain rules, namely:
+
+1. The first character must be in the form of letters or undererscore `_`
+2. The next character can be in the form of letters, underlines/underscore `_` or numbers
+3. Character in the name of the variable is sensitive (case-sensitive). This means that lowercase letters and capital letters are distinguished. For example, the variables 'names' and 'names' are different variables.
+
+To start making variables in Python very easy, you can simply write down the variable and fill it with a value by adding the same sign as '=' followed by the value you want to enter.
+
+Below is an example of the use of variables in the Python programming language
+
+```python:variable.py
+#process entering data into variables
+name = "john doe"
+#process print variables
+print (name)
+
+#The value and type of data in variables can be changed
+age = 20 #Initial Value
+print(age) #printing age value
+type(age) #check the age type data type
+age = "twenty -one" #value after change
+print(age) #printing age value
+type(age) #check the age type data type
+
+front_name = "Ilham"
+back_name = "Kurniawan"
+name = front_name + "" + back_name
+age = 22
+hobby = "Coding"
+print("biodata \ n", name, "\ n", age, "\ n", hobby)
+
+#contoh variabel lainya
+variable = "Halo"
+this_also_variable = "Hai"
+_thisalsovariable = "Hi"
+thisvariable123 = "Bye"
+123variable = "invalid_variable" #invalid variable
+
+length = 10
+Width = 5
+area = length * width
+print(area)
+```

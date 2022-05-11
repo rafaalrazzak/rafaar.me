@@ -5,7 +5,7 @@ import { PageSEO } from '@/components/SEO'
 import Card from '@/components/Card'
 
 export default function AuthorLayout({ children, frontMatter, availableLocales }) {
-  const { name, avatar, occupation, company, email, twitter, instagram, github } = frontMatter
+  const { name, occupation, company, email, twitter, instagram, github } = frontMatter
   const { t } = useTranslation()
   let avatarDynamic = `https://res.cloudinary.com/raf-ar/image/upload/v1651370642/blog/avatars/${name.toLowerCase()}.jpg`
   return (

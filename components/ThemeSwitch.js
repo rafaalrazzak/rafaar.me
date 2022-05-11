@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
 
   return (
     <motion.button
-      className="ml-1 flex h-11 w-11 items-center justify-center bg-transparent p-0 text-lg sm:ml-4"
+      className="flex h-11 w-11 items-center justify-center bg-transparent p-0 text-lg"
       whileHover={{
         scale: 1.2,
         transition: { duration: 0.5 },

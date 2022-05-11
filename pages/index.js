@@ -10,6 +10,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import TimeAgo from '@/components/TimeAgo'
 import Card from '@/components/Card'
 import Track from '@/components/Spotify/Track'
+import formatDate from '@/lib/utils/formatDate'
 
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const MAX_DISPLAY = 3
@@ -84,7 +85,10 @@ export default function Home({ posts, locale, availableLocales }) {
                           <dl>
                             <dt className="sr-only">{t('common:pub')}</dt>
                             <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                              <TimeAgo datetime={date} locale={locale} />
+                              <TimeAgo datetime={date} locale={locale} className="text-primary-500" />
+                              <time dateTime={date}>
+                                {formatDate(date, locale)}
+                              </time>
                             </dd>
                           </dl>
 

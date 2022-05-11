@@ -17,8 +17,8 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'contact.rafaalrazzak@gmail.com',
   github: 'https://github.com/raf-ar',
-  twitter: 'https://twitter.com/rafa_ar_id',
-  instagram: 'https://instagram.com/rafa.ar.id',
+  twitter: 'rafa_ar_id',
+  instagram: 'rafa.ar.id',
   locale: 'en-US',
 }
 

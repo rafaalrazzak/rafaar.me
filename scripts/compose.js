@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const inquirer = require('inquirer')
 const dedent = require('dedent')
+const titleCase = require('../lib/utils/titleCase')
 
 const root = process.cwd()
 
@@ -21,6 +22,7 @@ const getLayouts = () => {
 }
 
 const genFrontMatter = (answers) => {
+  const t = titleCase(answers.title ? answers.title : 'Untitled')
   let d = new Date()
   const date = d.toLocaleString()
   const tagArray = answers.tags.split(',')
@@ -29,7 +31,7 @@ const genFrontMatter = (answers) => {
   const authorArray = answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
 
   let frontMatter = dedent`---
-  title: '${answers.title ? answers.title : 'Untitled'}'
+  title: '${t}'
   date: '${date}'
   tags: [${answers.tags ? tags : ''}]
   draft: ${answers.draft === 'yes' ? true : false}
@@ -60,6 +62,7 @@ inquirer
       type: 'list',
       choices: ['mdx', 'md'],
     },
+
     {
       name: 'authors',
       message: 'Choose authors:',
@@ -106,11 +109,21 @@ inquirer
     const filePath = `data/blog/${fileName ? fileName : 'untitled'}.${
       answers.extension ? answers.extension : 'md'
     }`
+    const idFilePath = `data/blog/${fileName ? fileName : 'untitled'}.${
+      answers.extension ? `id.${answers.extension}` : 'id.md'
+    }`
     fs.writeFile(filePath, frontMatter, { flag: 'wx' }, (err) => {
       if (err) {
         throw err
       } else {
         console.log(`Blog post generated successfully at ${filePath}`)
+      }
+    })
+    fs.writeFile(idFilePath, frontMatter, { flag: 'wx' }, (err) => {
+      if (err) {
+        throw err
+      } else {
+        console.log(`Blog post generated successfully at ${idFilePath}`)
       }
     })
   })

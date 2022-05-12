@@ -15,10 +15,11 @@ export default function Author({ detail }) {
         >
           <Image
             src={`https://res.cloudinary.com/raf-ar/image/upload/v1651370642/blog/avatars/${author.name.toLowerCase()}.jpg`}
-            width="38px"
-            height="38px"
+            width="36px"
+            height="36px"
             alt={author.name}
             type="circle"
+            circleSize="w-9 h-9"
             className="h-10 w-10 rounded-full"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(

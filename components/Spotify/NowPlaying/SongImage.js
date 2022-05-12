@@ -8,6 +8,7 @@ export default function SongImage({ alt, src, size }) {
       alt={alt}
       placeholder="blur"
       type="circle"
+      circleSize="w-5 h-5"
       width={size}
       height={size}
       objectFit="cover"

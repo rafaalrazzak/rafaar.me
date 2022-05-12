@@ -1,7 +1,7 @@
 import NextImage from "next/image";
 import { useState } from "react";
 // eslint-disable-next-line jsx-a11y/alt-text
-export default function Image({ type, avatarSize, ...rest }) {
+export default function Image({ type, circleSize, ...rest }) {
   const [isReady, setIsReady] = useState(false);
   function ready() {
     setTimeout(setReady, 3000);

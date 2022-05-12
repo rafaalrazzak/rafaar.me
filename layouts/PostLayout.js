@@ -14,6 +14,7 @@ import Tag from "@/components/Tag";
 import siteMetadata from "@/data/siteMetadata";
 import formatDate from "@/lib/utils/formatDate";
 import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
+import titleCase from "@/lib/utils/titleCase"
 
 const editUrl = (fileName) =>
   `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`;
@@ -119,7 +120,7 @@ export default function PostLayout({
   return (
     <SectionContainer>
       <BlogSEO
-        title={`${frontMatter.title} | ${siteMetadata.author}`}
+        title={`${frontMatter.title} - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
         availableLocales={availableLocales}
@@ -168,7 +169,7 @@ export default function PostLayout({
               {thumbnail && (
                 <div className="flex w-full justify-center">
                   <Image
-                    alt={title}
+                    alt={`${title} - ${titleCase(`${tags[0]}`)}`}
                     width="900"
                     height="500"
                     src={blogImage}

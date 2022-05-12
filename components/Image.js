@@ -1,9 +1,9 @@
 import NextImage from 'next/image'
 import { useState } from 'react'
 // eslint-disable-next-line jsx-a11y/alt-text
-export default function Image({ type, ...rest }) {
+export default function Image({ type, wight, height, ...rest }) {
   const [isReady, setIsReady] = useState(false)
-  function ready() {
+  const size =`w-[${width}] h-[${height}]`
     setTimeout(setReady, 3000)
   }
 
@@ -15,11 +15,11 @@ export default function Image({ type, ...rest }) {
   return (
     <>
       {isReady ? (
-        <NextImage {...rest} />
+        <NextImage width={width} height={height} {...rest} />
       ) : (
         <div
           className={`${type == 'topTrack' ? 'rounded-l-lg' : 'rounded-lg '} ${
-            type == 'circle' ? 'w-5 h-5 rounded-full ' : 'h-full w-full '
+            type == 'circle' ? `${size} rounded-full` : 'h-full w-full '
           }  animate-pulse bg-gray-200`}
         ></div>
       )}

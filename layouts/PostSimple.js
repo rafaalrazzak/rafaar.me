@@ -11,6 +11,7 @@ import Image from "@/components/Image";
 import { BlogSEO } from "@/components/SEO";
 import formatDate from "@/lib/utils/formatDate";
 import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
+import titleCase from "@/lib/utils/titleCase"
 import ScrollTop from "@/components/ScrollTop";
 import siteMetadata from "@/data/siteMetadata";
 
@@ -33,7 +34,7 @@ export default function PostLayout({
   return (
     <SectionContainer>
       <BlogSEO
-        title={`${frontMatter.title} | ${siteMetadata.author}`}
+        title={`${frontMatter.title} - ${siteMetadata.author}`}
         availableLocales={availableLocales}
         url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`}
         thumbImg={`_next/image?url=https://res.cloudinary.com/raf-ar/image/upload/v1650957837/blog/${tags[0]}.jpg&w=1080&q=100}`}
@@ -73,7 +74,7 @@ export default function PostLayout({
             {thumbnail && (
               <div className="flex w-full justify-center">
                 <Image
-                  alt={title}
+                  alt={`${title} - ${titleCase(`${tags[0]}`)}`}
                   src={blogImage}
                   width={900}
                   height={500}

@@ -2,8 +2,8 @@ import Image from '@/components/Image'
 import Link from '@/components/Link'
 
 export default function Track(track) {
-  const convertImage = ({ w, h }) => `
-       <Image src="${track.songImage}" width="${w}" height="${h}" quality="1"/>
+  const convertImage = ({ size }) => `
+       <Image src="${track.songImage}" width="${size}" height="${size}" quality="1"/>
          `
   const toBase64 = (str) =>
     typeof window === 'undefined' ? Buffer.from(str).toString('base64') : window.btoa(str)
@@ -16,11 +16,12 @@ export default function Track(track) {
               alt={track.title}
               placeholder="blur"
               src={track.songImage}
+              type="topTrack"
               width="160"
               height="160"
               objectFit="cover"
               className=" transiton w-40 duration-500 group-hover:scale-110"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(1, 1))}`}
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(50))}`}
             />
           </div>
           <div className="relative flex w-full flex-col p-4 leading-relaxed">

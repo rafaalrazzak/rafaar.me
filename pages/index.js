@@ -85,10 +85,12 @@ export default function Home({ posts, locale, availableLocales }) {
                           <dl>
                             <dt className="sr-only">{t('common:pub')}</dt>
                             <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                              <TimeAgo datetime={date} locale={locale} className="text-primary-500" />
-                              <time dateTime={date}>
-                                {formatDate(date, locale)}
-                              </time>
+                              <TimeAgo
+                                datetime={date}
+                                locale={locale}
+                                className="text-primary-500"
+                              />
+                              <time dateTime={date}>{formatDate(date, locale)}</time>
                             </dd>
                           </dl>
 

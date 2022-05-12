@@ -12,7 +12,7 @@ export default function Track({ title, image, url, artist  }) {
               alt={title}
               placeholder="blur"
               src={image}
-              alt={`${title} - ${artist}`}
+              alt={title}
               type="topTrack"
               width="160"
               height="160"

@@ -14,7 +14,7 @@ export default function Tracks() {
   }
   return (
     <>
-      {data.tracks.map((track, index) => (
+      {data.tracks.map((track) => (
         <Parallax
           key={track.songUrl}
           y={20}

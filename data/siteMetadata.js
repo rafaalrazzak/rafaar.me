@@ -10,7 +10,7 @@ const siteMetadata = {
     id: 'Front-End Web Developer dan mendesain untuk bersenang-senang.',
   },
   language: 'en-us',
-  siteUrl: 'https://raf-a.vercel.app',
+  siteUrl: 'https://rafaar.vercel.app',
   siteRepo: 'https://github.com/raf-ar/rafa',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',

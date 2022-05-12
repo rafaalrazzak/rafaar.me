@@ -10,7 +10,7 @@ import Author from "@/components/Author";
 import Image from "@/components/Image";
 import { BlogSEO } from "@/components/SEO";
 import formatDate from "@/lib/utils/formatDate";
-import { convertImage, toBase6 } from "@/lib/utils/imageBlur";
+import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
 import ScrollTop from "@/components/ScrollTop";
 import siteMetadata from "@/data/siteMetadata";
 

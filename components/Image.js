@@ -1,10 +1,12 @@
 import NextImage from "next/image";
 import { useState } from "react";
 // eslint-disable-next-line jsx-a11y/alt-text
-export default function Image({ type, wight, height, ...rest }) {
+export default function Image({ type, widht, height, ...rest }) {
   const [isReady, setIsReady] = useState(false);
   const size = `w-[${width}] h-[${height}]`;
-  setTimeout(setReady, 3000);
+  function ready() {
+    setTimeout(setReady, 3000);
+  }
 
   function setReady() {
     setIsReady(true);

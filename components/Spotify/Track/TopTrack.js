@@ -22,7 +22,7 @@ export default function Tracks() {
           hiddenOpacity={0}
           className="w-full"
         >
-          <Track ranking={index + 1} {...track} />
+          <Track title={track.title} image={track.songImage} alt={`${track.title} - ${track.artist}`}/>
         </Parallax>
       ))}
     </>

@@ -2,10 +2,10 @@ import Image from "@/components/Image";
 import Link from "@/components/Link";
 import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
 
-export default function Track({ title, image, alt }) {
+export default function Track({ title, image, alt, url  }) {
   return (
     <div className="group relative my-4 flex h-auto w-full flex-col justify-center overflow-hidden rounded-lg border-b bg-white/30 shadow-sm filter backdrop-blur-md transition-colors duration-500 ease-linear hover:bg-spotify-green/10 hover:text-white dark:border-gray-600/50 dark:bg-gray-800 dark:hover:bg-gray-700">
-      <Link href={track.songUrl}>
+      <Link href={url}>
         <div className="flex h-full w-full justify-start ">
           <div className="flex w-40 xs:hidden">
             <Image

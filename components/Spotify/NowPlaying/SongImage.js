@@ -1,5 +1,5 @@
 import Image from "../../Image";
-import { convertImage, toBase6 } from "@/lib/utils/imageBlur";
+import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
 
 export default function SongImage({ alt, src, size }) {
   return (

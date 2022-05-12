@@ -1,6 +1,28 @@
 import NextImage from 'next/image'
-
+import { useState } from 'react'
 // eslint-disable-next-line jsx-a11y/alt-text
-const Image = ({ ...rest }) => <NextImage {...rest}  />
+export default function Image({ type, ...rest }) {
+  const [isReady, setIsReady] = useState(false)
+  function ready() {
+    setTimeout(setReady, 3000)
+  }
 
-export default Image
+  function setReady() {
+    setIsReady(true)
+  }
+  
+  ready()
+  return (
+    <>
+      {isReady ? (
+        <NextImage {...rest} />
+      ) : (
+        <div
+          className={`${type == 'topTrack' ? 'rounded-l-lg' : 'rounded-lg '} ${
+            type == 'circle' ? 'h-5 w-5 rounded-full ' : 'h-full w-full '
+          }  animate-pulse bg-gray-200`}
+        ></div>
+      )}
+    </>
+  )
+}

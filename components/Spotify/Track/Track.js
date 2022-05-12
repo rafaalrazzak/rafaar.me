@@ -16,6 +16,7 @@ export default function Track(track) {
               alt={track.title}
               placeholder="blur"
               src={track.songImage}
+              type="topTrack"
               width="160"
               height="160"
               objectFit="cover"

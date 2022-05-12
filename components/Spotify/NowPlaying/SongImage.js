@@ -15,7 +15,7 @@ export default function SongImage({ alt, src, size }) {
       height={size}
       objectFit="cover"
       className="rounded-full"
-      blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(1))}`}
+      blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(20))}`}
     />
   )
 }

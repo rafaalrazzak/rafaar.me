@@ -19,7 +19,7 @@ export default function Image({ type, ...rest }) {
       ) : (
         <div
           className={`${type == 'topTrack' ? 'rounded-l-lg' : 'rounded-lg '} ${
-            type == 'circle' ? 'h-5 w-5 rounded-full ' : 'h-full w-full '
+            type == 'circle' ? 'w-5 h-5 rounded-full ' : 'h-full w-full '
           }  animate-pulse bg-gray-200`}
         ></div>
       )}

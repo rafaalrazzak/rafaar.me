@@ -60,6 +60,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/static/favicons/site.webmanifest.json" />
           <meta name="msapplication-TileColor" content="#110B2B" />
           <meta name="theme-color" content="#110B2B" />
+          <meta name="robots" content="noindex"/>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

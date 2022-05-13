@@ -1,21 +1,21 @@
-import Image from '../../Image'
+import Image from "../../Image";
+import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
+
 export default function SongImage({ alt, src, size }) {
-  const convertImage = ({ size }) => `
-         <Image src="${src}" width="${size}" height="${size}" quality="1"/>
-                  `
-  const toBase64 = (str) =>
-    typeof window === 'undefined' ? Buffer.from(str).toString('base64') : window.btoa(str)
   return (
     <Image
       src={src}
       alt={alt}
       placeholder="blur"
       type="circle"
+      circleSize="w-5 h-5"
       width={size}
       height={size}
       objectFit="cover"
       className="rounded-full"
-      blurDataURL={`data:image/svg+xml;base64,${toBase64(convertImage(20))}`}
+      blurDataURL={`data:image/svg+xml;base64,${toBase64(
+        convertImage({ src }, 15, 15)
+      )}`}
     />
-  )
+  );
 }

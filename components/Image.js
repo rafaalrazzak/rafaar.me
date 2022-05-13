@@ -24,6 +24,9 @@ export default function Image({
     <>
       {isReady ? (
         <NextImage
+          src={src}
+          width={width}
+          height={height}
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
             convertImage({ src }, { width }, { height })

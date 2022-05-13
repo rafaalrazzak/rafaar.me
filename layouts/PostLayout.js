@@ -13,8 +13,7 @@ import { BlogSEO } from "@/components/SEO";
 import Tag from "@/components/Tag";
 import siteMetadata from "@/data/siteMetadata";
 import formatDate from "@/lib/utils/formatDate";
-import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
-import titleCase from "@/lib/utils/titleCase"
+import titleCase from "@/lib/utils/titleCase";
 
 const editUrl = (fileName) =>
   `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`;
@@ -174,10 +173,6 @@ export default function PostLayout({
                     height="500"
                     src={blogImage}
                     className="rounded-lg"
-                    placeholder="blur"
-                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                      convertImage({ blogImage }, 10, 10)
-                    )}`}
                     objectFit="cover"
                   />
                 </div>

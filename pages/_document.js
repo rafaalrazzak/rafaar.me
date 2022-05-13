@@ -1,13 +1,29 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
       <Html className="scroll-smooth">
         <Head>
-          <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png" />
-          <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png" />
-          <link rel="apple-touch-icon" sizes="72x72" href="/static/favicons/apple-icon-72x72.png" />
-          <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-icon-76x76.png" />
+          <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="/static/favicons/apple-icon-57x57.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="/static/favicons/apple-icon-60x60.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="/static/favicons/apple-icon-72x72.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/static/favicons/apple-icon-76x76.png"
+          />
           <link
             rel="apple-touch-icon"
             sizes="114x114"
@@ -60,6 +76,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/static/favicons/site.webmanifest.json" />
           <meta name="msapplication-TileColor" content="#110B2B" />
           <meta name="theme-color" content="#110B2B" />
+          <meta name="robots" content="all" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -87,8 +104,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;

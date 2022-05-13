@@ -1,6 +1,5 @@
 import SocialIcon from "@/components/social-icons";
-import Image from "@/components/Image";
-import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
+import Image from "@/components/Image"
 export default function ProjectCard({ title, description, image, link }) {
   return (
     <div className=" group relative my-5 flex aspect-auto h-48 overflow-hidden rounded-xl  bg-primary-400/50 shadow-sm shadow-primary-500/30  drop-shadow-sm backdrop-blur-lg md:my-10 sm:h-96 lg:h-[26rem]">
@@ -20,10 +19,6 @@ export default function ProjectCard({ title, description, image, link }) {
         alt={title}
         className="aspect-auto w-full object-cover transition duration-300 ease-in-out group-hover:scale-110"
         src={image}
-        placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(
-          convertImage({ image }, 10, 10)
-        )}`}
         layout="fill"
       />
     </div>

@@ -1,4 +1,5 @@
 import SocialIcon from "@/components/social-icons";
+import Image from "@/components/Image"
 export default function ProjectCard({ title, description, image, link }) {
   return (
     <div className=" group relative my-5 flex aspect-auto h-48 overflow-hidden rounded-xl  bg-primary-400/50 shadow-sm shadow-primary-500/30  drop-shadow-sm backdrop-blur-lg md:my-10 sm:h-96 lg:h-[26rem]">

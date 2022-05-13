@@ -10,7 +10,6 @@ import Author from "@/components/Author";
 import Image from "@/components/Image";
 import { BlogSEO } from "@/components/SEO";
 import formatDate from "@/lib/utils/formatDate";
-import { convertImage, toBase64 } from "@/lib/utils/imageBlur";
 import titleCase from "@/lib/utils/titleCase"
 import ScrollTop from "@/components/ScrollTop";
 import siteMetadata from "@/data/siteMetadata";
@@ -78,12 +77,10 @@ export default function PostLayout({
                   src={blogImage}
                   width={900}
                   height={500}
-                  className="w-full rounded-lg"
+                  className="rounded-lg"
                   objectFit="cover"
                   placeholder="blur"
-                  blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                    convertImage({ blogImage }, 10, 10)
-                  )}`}
+                
                 />
               </div>
             )}

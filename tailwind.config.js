@@ -60,7 +60,7 @@ module.exports = {
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
-        'spotify-green': '#1DB954',
+        'spotify': '#1DB954',
       },
       hueRotate: {
         53: '53deg',

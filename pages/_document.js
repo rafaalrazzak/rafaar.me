@@ -1,29 +1,13 @@
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
       <Html className="scroll-smooth">
         <Head>
-          <link
-            rel="apple-touch-icon"
-            sizes="57x57"
-            href="/static/favicons/apple-icon-57x57.png"
-          />
-          <link
-            rel="apple-touch-icon"
-            sizes="60x60"
-            href="/static/favicons/apple-icon-60x60.png"
-          />
-          <link
-            rel="apple-touch-icon"
-            sizes="72x72"
-            href="/static/favicons/apple-icon-72x72.png"
-          />
-          <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="/static/favicons/apple-icon-76x76.png"
-          />
+          <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png" />
+          <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png" />
+          <link rel="apple-touch-icon" sizes="72x72" href="/static/favicons/apple-icon-72x72.png" />
+          <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-icon-76x76.png" />
           <link
             rel="apple-touch-icon"
             sizes="114x114"
@@ -99,13 +83,13 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="bg-white text-black antialiased transition-colors duration-300 selection:bg-teal-200 selection:text-violet-1000 dark:bg-violet-1000 dark:text-white selection:dark:bg-[#b816a9] selection:dark:text-white">
+        <body className="bg-white text-black antialiased transition-all duration-300 selection:bg-teal-200 selection:text-violet-1000 dark:bg-violet-1000 dark:text-white selection:dark:bg-[#b816a9] selection:dark:text-white">
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument

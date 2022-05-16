@@ -1,4 +1,4 @@
-import Image from "../../Image";
+import Image from "@/components/Image";
 export default function SongImage({ alt, src, size }) {
   return (
     <Image

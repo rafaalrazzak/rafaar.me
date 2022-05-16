@@ -3,7 +3,6 @@ import '@/css/prism.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import { Globals } from '@react-spring/shared'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import RSS from '@/components/Rss'

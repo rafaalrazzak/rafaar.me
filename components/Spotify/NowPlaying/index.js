@@ -27,12 +27,12 @@ export default function NowPlaying() {
           {data.title}
         </Link>
       ) : (
-        <p className="flex text-sm text-gray-500 dark:text-gray-400">{t('common:not-playing')}</p>
+        <p className="flex text-sm text-secondary-500 dark:text-secondary-400">{t('common:not-playing')}</p>
       )}
 
-      <span className=" flex text-sm text-gray-500 dark:text-gray-400">{'-'}</span>
+      <span className=" flex text-sm text-secondary-500 dark:text-secondary-400">{'-'}</span>
 
-      <p className='dark:text-gray-400" flex flex-wrap truncate text-sm text-gray-500 '>
+      <p className='dark:text-secondary-400" flex flex-wrap truncate text-sm text-secondary-500 '>
         {data?.artist ?? 'Spotify'}
       </p>
     </div>

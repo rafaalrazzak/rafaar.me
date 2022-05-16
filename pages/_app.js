@@ -7,7 +7,6 @@ import { Globals } from '@react-spring/shared'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import RSS from '@/components/Rss'
 import { ClientReload } from '@/components/ClientReload'
-
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 

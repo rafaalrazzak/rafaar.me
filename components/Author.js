@@ -34,7 +34,7 @@ export default function Author({ detail }) {
             <dt className="sr-only">{t("common:name")}</dt>
             <dd>
               <Link
-                className="text-gray-900 transition hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+                className="text-secondary-900 transition hover:text-primary-500 dark:text-secondary-100 dark:hover:text-primary-400"
                 href="/about"
               >
                 {author.name}

@@ -37,7 +37,7 @@ export default function Image({
         <div
           className={`${type == "topTrack" ? "rounded-l-lg" : "rounded-lg "} ${
             type == "circle" ? `${circleSize} rounded-full` : "h-full w-full "
-          }  animate-pulse bg-gray-200`}
+          }  animate-pulse bg-secondary-200`}
         ></div>
       )}
     </>

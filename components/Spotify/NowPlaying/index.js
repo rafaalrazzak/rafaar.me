@@ -20,14 +20,16 @@ export default function NowPlaying() {
       )}
       {data?.songUrl ? (
         <Link
-          className="truncate text-sm transition-all hover:text-spotify-green sm:text-sm"
+          className="hover:text-spotify-green truncate text-sm transition-all sm:text-sm"
           href={data.songUrl}
           title={data.title}
         >
           {data.title}
         </Link>
       ) : (
-        <p className="flex text-sm text-secondary-500 dark:text-secondary-400">{t('common:not-playing')}</p>
+        <p className="flex text-sm text-secondary-500 dark:text-secondary-400">
+          {t('common:not-playing')}
+        </p>
       )}
 
       <span className=" flex text-sm text-secondary-500 dark:text-secondary-400">{'-'}</span>

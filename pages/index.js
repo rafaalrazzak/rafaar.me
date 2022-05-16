@@ -64,7 +64,7 @@ export default function Home({ posts, locale, availableLocales }) {
               />
             </Parallax>
           </div>
-          <ul className="divide-y divide-transparent py-6 md:px-4">
+          <div className="divide-y divide-transparent py-6 md:px-4">
             <Parallax y="15">
               <h1 className="text-2xl font-bold text-secondary-900 dark:text-secondary-100">
                 {t('common:latest-article')}
@@ -79,62 +79,64 @@ export default function Home({ posts, locale, availableLocales }) {
                   key={slug}
                   className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary-300/30 dark:hover:bg-secondary-600/30"
                 >
-                  <ul className="transition-all duration-1000 ease-in-out group-hover:p-4">
-                    <li className="py-4">
-                      <article>
-                        <div className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
-                          <dl>
-                            <dt className="sr-only">{t('common:pub')}</dt>
-                            <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-secondary-500 dark:text-secondary-400">
-                              <TimeAgo
-                                datetime={date}
-                                locale={locale}
-                                className="text-primary-500"
-                              />
-                              <time dateTime={date}>{formatDate(date, locale)}</time>
-                            </dd>
-                          </dl>
+                  <div className="transition-all duration-1000 ease-in-out group-hover:p-4">
+                    <ul>
+                      <li className="py-4">
+                        <article>
+                          <div className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
+                            <dl>
+                              <dt className="sr-only">{t('common:pub')}</dt>
+                              <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-secondary-500 dark:text-secondary-400">
+                                <TimeAgo
+                                  datetime={date}
+                                  locale={locale}
+                                  className="text-primary-500"
+                                />
+                                <time dateTime={date}>{formatDate(date, locale)}</time>
+                              </dd>
+                            </dl>
 
-                          <div className="space-y-5 xl:col-span-2">
-                            <div className="space-y-6">
-                              <div className="flex flex-col xs:w-full xs:justify-center">
-                                <h2 className="text-xl font-semibold leading-8 tracking-tight">
-                                  <Link
-                                    href={`/blog/${slug}`}
-                                    className="text-secondary-900 dark:text-secondary-100"
-                                  >
-                                    {title}
-                                  </Link>
-                                </h2>
-                                <div className="flex flex-wrap">
-                                  {tags.map((tag) => (
-                                    <Tag key={tag} text={tag} />
-                                  ))}
+                            <div className="space-y-5 xl:col-span-2">
+                              <div className="space-y-6">
+                                <div className="flex flex-col xs:w-full xs:justify-center">
+                                  <h2 className="text-xl font-semibold leading-8 tracking-tight">
+                                    <Link
+                                      href={`/blog/${slug}`}
+                                      className="text-secondary-900 dark:text-secondary-100"
+                                    >
+                                      {title}
+                                    </Link>
+                                  </h2>
+                                  <div className="flex flex-wrap">
+                                    {tags.map((tag) => (
+                                      <Tag key={tag} text={tag} />
+                                    ))}
+                                  </div>
+                                </div>
+
+                                <div className="prose max-w-none text-secondary-500 dark:text-secondary-400">
+                                  {summary}
                                 </div>
                               </div>
-
-                              <div className="prose max-w-none text-secondary-500 dark:text-secondary-400">
-                                {summary}
+                              <div className="text-base font-medium leading-6">
+                                <Link
+                                  href={`/blog/${slug}`}
+                                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                                  aria-label={`Read "${title}"`}
+                                >
+                                  {t('common:more')} &rarr;
+                                </Link>
                               </div>
                             </div>
-                            <div className="text-base font-medium leading-6">
-                              <Link
-                                href={`/blog/${slug}`}
-                                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                                aria-label={`Read "${title}"`}
-                              >
-                                {t('common:more')} &rarr;
-                              </Link>
-                            </div>
                           </div>
-                        </div>
-                      </article>
-                    </li>
-                  </ul>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
                 </Parallax>
               )
             })}
-          </ul>
+          </div>
         </div>
         {posts.length >= 3 && (
           <div className="flex justify-end text-base font-medium leading-6">

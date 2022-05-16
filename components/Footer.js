@@ -6,7 +6,6 @@ import NowPlaying from '@/components/Spotify/NowPlaying'
 
 export default function Footer() {
   const { locale } = useRouter()
-
   return (
     <footer>
       <div className="mt-4 flex flex-col items-center justify-center">
@@ -19,7 +18,7 @@ export default function Footer() {
         <div className="mb-3 flex">
           <NowPlaying />
         </div>
-        <div className="mb-8 flex flex-row space-x-2 text-sm text-gray-500 dark:text-gray-400 xs:space-x-1 xs:text-xs">
+        <div className="mb-8 flex flex-row space-x-2 text-sm text-secondary-500 dark:text-secondary-400 xs:space-x-1 xs:text-xs">
           <div>{siteMetadata.author}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>

@@ -8,11 +8,12 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import TimeAgo from '@/components/TimeAgo'
-import Card from '@/components/Card'
-import Track from '@/components/Spotify/Track'
 import formatDate from '@/lib/utils/formatDate'
 
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
+const Card = dynamic(() => import('@/components/Card'), { ssr: true })
+const Track = dynamic(() => import('@/components/Spotify/Track'), { ssr: true })
+
 const MAX_DISPLAY = 3
 
 export async function getStaticProps({ locale, defaultLocale, locales }) {
@@ -37,10 +38,10 @@ export default function Home({ posts, locale, availableLocales }) {
           <Hero />
         </div>
         <Parallax y={20}>
-          <h1 className="py-3 text-4xl font-extrabold leading-relaxed tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-5xl md:leading-14 xl:text-6xl">
+          <h1 className="py-3 text-4xl font-extrabold leading-relaxed tracking-tight text-secondary-900 dark:text-secondary-100 sm:text-4xl md:text-5xl md:leading-14 xl:text-6xl">
             {t('common:hi')} Rafa Al Razzak
           </h1>
-          <p className="px-2 text-xl font-light leading-6 text-gray-500 dark:text-gray-400 sm:px-6 xl:px-0">
+          <p className="px-2 text-xl font-light leading-6 text-secondary-500 dark:text-secondary-400 sm:px-6 xl:px-0">
             {t('common:mini-bio')}
           </p>
         </Parallax>
@@ -65,7 +66,7 @@ export default function Home({ posts, locale, availableLocales }) {
           </div>
           <ul className="divide-y divide-transparent py-6 md:px-4">
             <Parallax y="15">
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+              <h1 className="text-2xl font-bold text-secondary-900 dark:text-secondary-100">
                 {t('common:latest-article')}
               </h1>
             </Parallax>
@@ -76,7 +77,7 @@ export default function Home({ posts, locale, availableLocales }) {
                 <Parallax
                   y={15}
                   key={slug}
-                  className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-gray-300/30 dark:hover:bg-slate-600/30"
+                  className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary-300/30 dark:hover:bg-secondary-600/30"
                 >
                   <ul className="transition-all duration-1000 ease-in-out group-hover:p-4">
                     <li className="py-4">
@@ -84,7 +85,7 @@ export default function Home({ posts, locale, availableLocales }) {
                         <div className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0">
                           <dl>
                             <dt className="sr-only">{t('common:pub')}</dt>
-                            <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                            <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-secondary-500 dark:text-secondary-400">
                               <TimeAgo
                                 datetime={date}
                                 locale={locale}
@@ -100,7 +101,7 @@ export default function Home({ posts, locale, availableLocales }) {
                                 <h2 className="text-xl font-semibold leading-8 tracking-tight">
                                   <Link
                                     href={`/blog/${slug}`}
-                                    className="text-gray-900 dark:text-gray-100"
+                                    className="text-secondary-900 dark:text-secondary-100"
                                   >
                                     {title}
                                   </Link>
@@ -112,7 +113,7 @@ export default function Home({ posts, locale, availableLocales }) {
                                 </div>
                               </div>
 
-                              <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                              <div className="prose max-w-none text-secondary-500 dark:text-secondary-400">
                                 {summary}
                               </div>
                             </div>

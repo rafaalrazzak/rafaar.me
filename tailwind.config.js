@@ -50,7 +50,7 @@ module.exports = {
       },
       colors: {
         primary: colors.violet,
-        gray: colors.slate,
+        secondary: colors.gray,
         violet: {
           ...colors.violet,
           30: '#f9f4fc',

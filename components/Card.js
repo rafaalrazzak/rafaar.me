@@ -63,7 +63,7 @@ const Card = ({
             {!onlyImg && (
               <div className="p-5">
                 <h2 className="  mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
-                <p className="prose mb-2 max-w-none text-gray-500 dark:text-gray-400">
+                <p className="prose mb-2 max-w-none text-secondary-500 dark:text-secondary-400">
                   {description}
                 </p>
                 <div className="text-2xl font-thin leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">

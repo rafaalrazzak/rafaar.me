@@ -16,7 +16,7 @@ export default function NowPlaying() {
       {data?.isPause && data?.songUrl && <FaPauseCircle className="text-spotify-green" />}
       {data?.isPlaying && data?.songUrl && <MusicEqualizer />}
       {!data?.isPlaying && !data?.isPause && !data?.songUrl && (
-        <FaSpotify className="text-spotify-green" />
+        <FaSpotify className="text-spotify" />
       )}
       {data?.songUrl ? (
         <Link

@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
+  "name": "rafa",
   "version": "1.1.2",
   "private": true,
   "scripts": {
@@ -89,5 +89,7 @@
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
     ]
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

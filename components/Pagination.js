@@ -21,7 +21,7 @@ export default function Pagination({ pageSlug, totalPages, currentPage }) {
             <button rel="previous">{t('common:prevp')}</button>
           </Link>
         )}
-        <span>
+        <span className="justify-center items-center">
           {currentPage} {t('common:of')} {totalPages}
         </span>
         {!nextPage && (

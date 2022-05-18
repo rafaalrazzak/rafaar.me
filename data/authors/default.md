@@ -21,11 +21,9 @@ github: https://github.com/raf-ar
 
 - 👨💻 All my projects are available at [https://s.id/ra-fa](https://s.id/rafa)
 
-- 📝 I regularly write articles about [https://s.id/b-raf](https://s.id/b-raf)
-
 - 📫 How to contact me? **contact.rafaalrazzak@gmail.com**
 
-- ⚡ interesting facts **I am very curious about everything interesting**
+- ⚡ interesting facts **I am very curious about everything interesting and cool**
 
 ### Connect with me
 <div className="flex flex-wrap w-full items-center">

@@ -21,11 +21,10 @@ github: https://github.com/raf-ar
 
 - 👨‍💻 Semua proyek saya tersedia di [https://s.id/ra-fa](https://s.id/ra-fa)
 
-- 📝 Saya secara teratur menulis artikel tentang [https://s.id/b-raf](https://s.id/b-raf)
 
 - 📫 Bagaimana cara menghubungi saya? **contact.rafaalrazzak@gmail.com**
 
-- ⚡ Fakta menarik **Saya sangat ingin tahu akan segala sesuatu yang menarik**
+- ⚡ Fakta menarik **Saya sangat ingin tahu akan segala sesuatu yang menarik dan keren**
 
 ### Terhubung dengan saya:
 <div className="flex flex-wrap w-full items-center">

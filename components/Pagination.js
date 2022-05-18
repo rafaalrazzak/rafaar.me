@@ -9,7 +9,7 @@ export default function Pagination({ pageSlug, totalPages, currentPage }) {
   return (
     <div className="space-y-2 pt-6 pb-8 md:space-y-5">
       <nav className="flex">
-        <div>
+        <div className="mr-6 md: mr-12">
         {!prevPage && (
           <button rel="previous" className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
             {t('common:prevp')}
@@ -26,7 +26,7 @@ export default function Pagination({ pageSlug, totalPages, currentPage }) {
         <span className="justify-center items-center">
           {currentPage} {t('common:of')} {totalPages}
         </span>
-        <div className="justify-end">
+        <div className="ml-6 md:ml-12 justify-end">
         {!nextPage && (
           <button rel="next" className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
             {t('common:nextp')}

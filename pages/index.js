@@ -47,9 +47,9 @@ export default function Home({ posts, locale, availableLocales }) {
         </Parallax>
       </div>
       <div className="flex w-full flex-col">
-        <div>
+        
           <div className="flex w-full flex-wrap pb-2">
-            <Parallax y={25} className="flex w-full flex-wrap">
+            <Parallax y={25} className="flex flex-wrap">
               <Card
                 title={t('common:learning')}
                 description={t('learning:description')}
@@ -63,7 +63,7 @@ export default function Home({ posts, locale, availableLocales }) {
                 className="py-4 md:px-4"
               />
             </Parallax>
-          </div>
+          
           <div className="divide-y divide-transparent py-6 md:px-4">
             <Parallax y="15">
               <h1 className="text-2xl font-bold text-secondary-900 dark:text-secondary-100">

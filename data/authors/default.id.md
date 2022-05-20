@@ -15,7 +15,7 @@ github: https://github.com/raf-ar
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=raf-ar" alt="raf-ar" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/rafaalrazzak" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge" alt="rafaalrazzak" /></a> </p>
+<p align="left"> <a href="https://twitter.com/rafaalrazzak" target="blank"><img src="https://img.shields.io/twitter/follow/rafaalrazzak?logo=twitter&style=for-the-badge" alt="rafaalrazzak" /></a> </p>
 
 - 🌱 Saya sedang belajar **react.js | next.js | tailwindcss**
 

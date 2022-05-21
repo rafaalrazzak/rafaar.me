@@ -30,8 +30,8 @@ github: https://github.com/raf-ar
 <div className="flex flex-wrap w-full items-center">
 <a className="p-2" href="https://codepen.io/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="rafa_ar" height="30" width="30" /></a>
 <a className="p-2" href="https://dev.to/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="rafa_ar" height="30" width="30" /></a>
-<a className="p-2" href="https://twitter.com/rafa_ar_id" t
-arget="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rafa_ar_id" height="30" width="30" /></a>
+<a className="p-2" href="https://twitter.com/rafaalrazzak" t
+arget="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rafaalrazzak" height="30" width="30" /></a>
 <a className="p-2" href="https://stackoverflow.com/users/rafa al razzak" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="rafa al razzak" height="30" width="30" /></a>
 <a className="p-2" href="https://codesandbox.com/rafa_ar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="rafa_ar" height="30" width="30" /></a>
 <a className="p-2" href="https://fb.com/rafa.ar.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="rafa.ar.id" height="30" width="30" /></a>

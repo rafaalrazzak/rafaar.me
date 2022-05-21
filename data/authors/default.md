@@ -3,8 +3,8 @@ name: Rafa Al Razzak
 occupation: Students at Al-Asiyah Vocational High School
 company: 📍 Bogor, Indonesia
 email: contact.rafaalrazzak@gmail.com
-twitter: rafa_ar_id
-instagram: rafa.ar.id
+twitter: rafaalrazzak
+instagram: rafaalrazzak
 github: https://github.com/raf-ar
 ---
 
@@ -15,17 +15,15 @@ github: https://github.com/raf-ar
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=raf-ar" alt="raf-ar" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/rafa_ar_id" target="blank"><img src="https://img.shields.io/twitter/follow/rafa_ar_id?logo=twitter&style=for-the-badge" alt="rafa_ar_id" /></a> </p>
+<p align="left"> <a href="https://twitter.com/rafaalrazzak" target="blank"><img src="https://img.shields.io/twitter/follow/rafaalrazzak?logo=twitter&style=for-the-badge" alt="rafaalrazzak" /></a> </p>
 
 - 🌱I'm studying **react.js | Next.js | tailwindcss**
 
 - 👨💻 All my projects are available at [https://s.id/ra-fa](https://s.id/rafa)
 
-- 📝 I regularly write articles about [https://s.id/b-raf](https://s.id/b-raf)
-
 - 📫 How to contact me? **contact.rafaalrazzak@gmail.com**
 
-- ⚡ interesting facts **I am very curious about everything interesting**
+- ⚡ interesting facts **I am very curious about everything interesting and cool**
 
 ### Connect with me
 <div className="flex flex-wrap w-full items-center">

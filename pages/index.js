@@ -77,9 +77,9 @@ export default function Home({ posts, locale, availableLocales }) {
                 <Parallax
                   y={15}
                   key={slug}
-                  className="group rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary-300/30 dark:hover:bg-secondary-600/30"
+                  className="w-full group rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary-300/30 dark:hover:bg-secondary-600/30"
                 >
-                  <div className="transition-all duration-1000 ease-in-out group-hover:p-4">
+                  <div className="w-full transition-all duration-1000 ease-in-out group-hover:p-4">
                     <ul>
                       <li className="py-4">
                         <article>

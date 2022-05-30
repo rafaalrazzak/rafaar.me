@@ -1,6 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import dynamic from 'next/dynamic'
-import { RiArticleLine, RiSimCard2Fill } from 'react-icons/ri'
+import { RiArticleLine } from 'react-icons/ri'
 import Parallax from '@/components/motion/Parallax'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
@@ -9,7 +9,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import TimeAgo from '@/components/TimeAgo'
 import formatDate from '@/lib/utils/formatDate'
-import { FaSimCard } from 'react-icons/fa'
 
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const Card = dynamic(() => import('@/components/Card'), { ssr: true })

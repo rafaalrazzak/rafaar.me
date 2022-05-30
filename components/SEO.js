@@ -207,7 +207,7 @@ export const BlogSEO = ({
   return (
     <>
       <CommonSEO
-        title={title}
+        title={`Blog - ${title}`}
         description={summary}
         ogType="article"
         ogImage={featuredImages}

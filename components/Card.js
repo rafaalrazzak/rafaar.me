@@ -32,7 +32,7 @@ const Card = ({
       ref={ref}
     >
       <div
-        className={`rounded-md ${
+        className={`rounded-xl ${
           onlyImg ? 'p-0.5' : 'p-0.5 dark:p-px'
         } -z-10 h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500`}
       >
@@ -46,7 +46,7 @@ const Card = ({
             }}
             className={`${
               onlyImg && 'h-32 w-32'
-            } hover:after:animate-hue-animation relative z-20 h-full overflow-hidden rounded-md
+            } hover:after:animate-hue-animation relative z-20 w-full overflow-hidden rounded-xl
           bg-violet-30 will-change-transform after:pointer-events-none after:absolute after:inset-0 after:z-10 after:bg-texture-pattern
           after:bg-cover after:bg-no-repeat after:opacity-0 after:mix-blend-hard-light after:transition-opacity
           after:duration-500 after:will-change-auto hover:after:opacity-100 dark:bg-violet-950`}
@@ -62,7 +62,7 @@ const Card = ({
             {onlyImg && <>{children}</>}
             {!onlyImg && (
               <div className="p-5">
-                <h2 className="  mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
+                <h1 className="mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h1>
                 <p className="prose mb-2 max-w-none text-secondary-500 dark:text-secondary-400">
                   {description}
                 </p>

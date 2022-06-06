@@ -26,7 +26,7 @@ export default function Image({ type, circleSize, src, width, height, ...rest })
         />
       ) : (
         <div
-          className={`${type == 'topTrack' ? 'rounded-l-lg' : 'rounded-lg '} ${
+          className={`${
             type == 'circle' ? `${circleSize} rounded-full` : 'h-full w-full '
           }  animate-pulse bg-secondary-200`}
         ></div>

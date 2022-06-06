@@ -78,7 +78,7 @@ export default function Home({ posts, locale, availableLocales }) {
                 <Parallax
                   y={15}
                   key={slug}
-                  className="group w-full rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary-300/30 dark:hover:bg-secondary-600/30"
+                  className="group w-full rounded-xl transition-all duration-300 ease-in-out hover:bg-secondary-300/30 dark:hover:bg-secondary-600/30"
                 >
                   <div className="w-full transition-all duration-1000 ease-in-out group-hover:p-4">
                     <ul>
@@ -100,14 +100,14 @@ export default function Home({ posts, locale, availableLocales }) {
                             <div className="space-y-5 xl:col-span-2">
                               <div className="space-y-6">
                                 <div className="flex flex-col xs:w-full xs:justify-center">
-                                  <h2 className="text-xl font-semibold leading-8 tracking-tight">
+                                  <h1 className="text-xl font-bold leading-8 tracking-tight">
                                     <Link
                                       href={`/blog/${slug}`}
                                       className="text-secondary-900 dark:text-secondary-100"
                                     >
                                       {title}
                                     </Link>
-                                  </h2>
+                                  </h1>
                                   <div className="flex flex-wrap">
                                     {tags.map((tag) => (
                                       <Tag key={tag} text={tag} />
@@ -115,11 +115,11 @@ export default function Home({ posts, locale, availableLocales }) {
                                   </div>
                                 </div>
 
-                                <div className="prose max-w-none text-secondary-500 dark:text-secondary-400">
+                                <div className="prose text-sm text-secondary-500 dark:text-secondary-400">
                                   {summary}
                                 </div>
                               </div>
-                              <div className="text-base font-medium leading-6">
+                              <div className="text-sm font-medium leading-6">
                                 <Link
                                   href={`/blog/${slug}`}
                                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

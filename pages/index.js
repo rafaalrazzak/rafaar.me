@@ -115,7 +115,7 @@ export default function Home({ posts, locale, availableLocales }) {
                                   </div>
                                 </div>
 
-                                <div className="prose text-sm text-secondary-500 dark:text-secondary-400">
+                                <div className="prose text-base text-secondary-500 dark:text-secondary-400">
                                   {summary}
                                 </div>
                               </div>

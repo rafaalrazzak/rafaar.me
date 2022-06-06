@@ -16,9 +16,9 @@ export default function Track({ title, image, url, artist }) {
             />
           </div>
           <div className="relative flex w-full flex-col p-4 leading-relaxed">
-            <h5 className="pb-2 font-bold tracking-tight text-secondary-900 transition-all duration-500 group-hover:text-spotify dark:text-white">
+            <h1 className="pb-2 font-bold tracking-tight text-secondary-900 transition-all duration-500 group-hover:text-spotify dark:text-white">
               {title}
-            </h5>
+            </h1>
             <p className="text-sm text-secondary-700 dark:text-secondary-400">{artist}</p>
           </div>
         </div>

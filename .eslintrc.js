@@ -9,7 +9,7 @@ module.exports = {
   plugins: ['unused-imports'],
   extends: ['eslint:recommended', 'plugin:prettier/recommended', 'next', 'next/core-web-vitals'],
   rules: {
-    'prettier/prettier': 'off',
+    'prettier/prettier': 'on',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 0,
     'no-unused-vars': 0,

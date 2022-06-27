@@ -11,15 +11,20 @@ export default function Tracks() {
   }
   return (
     <>
-      {data.tracks.map((track) => (
+      {data.tracks.map((track, k) => (
         <Parallax
-          key={track.songUrl}
+          key={k}
           y={20}
           visibleOpacity={1}
           hiddenOpacity={0}
-          className="w-full"
+          className="flex flex-wrap w-full md:w-1/2 px-4"
         >
-          <Track title={track.title} image={track.songImage} url={track.songUrl} artist={track.artist} />
+          <Track
+            title={track.title}
+            image={track.songImage}
+            url={track.songUrl}
+            artist={track.artist}
+          />
         </Parallax>
       ))}
     </>

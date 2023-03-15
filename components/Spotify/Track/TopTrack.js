@@ -1,16 +1,18 @@
 import useSWR from 'swr'
 import Track from './Track'
-import NoTrack from './NoTrack'
 import Parallax from '@/components/motion/Parallax'
 import fetcher from '@/lib/fetcher'
 export default function Tracks() {
   const { data } = useSWR('/api/top-tracks', fetcher)
-  
+
   if (!data) {
-    return <NoTrack />
+    return 
   }
   return (
-    <>
+    <Parallax y={10} visibleOpacity={1} hiddenOpacity={1}>
+      <h1 className=" flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+        My <span className="mx-1 text-spotify">Spotify</span> Top Song
+      </h1>
       {data.tracks.map((track, k) => (
         <Parallax
           key={k}
@@ -27,6 +29,6 @@ export default function Tracks() {
           />
         </Parallax>
       ))}
-    </>
+    </Parallax>
   )
 }

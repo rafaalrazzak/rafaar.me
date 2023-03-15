@@ -152,12 +152,7 @@ export default function Home({ posts, locale, availableLocales }) {
             </Link>
           </div>
         )}
-        <Parallax y={10} visibleOpacity={1} hiddenOpacity={1}>
-          <h1 className=" flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-            My <span className="mx-1 text-spotify">Spotify</span> Top Song
-          </h1>
-        </Parallax>
-        <Track />
+          <Track />
       </div>
     </>
   )

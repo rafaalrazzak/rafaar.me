@@ -25,7 +25,7 @@ export default function AuthorLayout({ children, frontMatter, availableLocales }
           <div className="flex flex-col items-center rounded-2xl bg-secondary-500/10 p-2 text-center dark:bg-secondary-600/10 md:flex-row">
             <div>
               <Card onlyImg className="p-4">
-                <Image src={avatarDynamic} alt={name} objectFit="cover" layout="fill" />
+                <Image src={avatarDynamic} alt={name} className="object-cover" fill />
               </Card>
             </div>
             <h1 className="py-2 text-2xl font-bold leading-8 tracking-tight">{name}</h1>

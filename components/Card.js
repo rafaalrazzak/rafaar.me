@@ -59,7 +59,7 @@ const Card = ({
                 layout={layout}
               />
             )}
-            {onlyImg && <>{children}</>}
+            {onlyImg && <div className="w-32 h-64">{children}</div>}
             {!onlyImg && (
               <div className="p-5">
                 <h1 className="mb-2 text-2xl font-bold leading-8 tracking-tight">{title}</h1>

@@ -6,23 +6,22 @@ const withPlugins = require('next-compose-plugins')
 
 const withTM = require('next-transpile-modules')([
   'three',
-  'react-spring',
-  '@react-spring/three',
-  '@react-spring/web',
-  '@react-three/fiber',
-  '@react-three/postprocessing',
-  '@react-three/drei',
 ])
 
-const nextTranslate = require('next-translate')
+const nextTranslate = require('next-translate-plugin')
 
 const nextConfig = {
   compress: true,
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   images: {
-		domains: ['i.scdn.co',"source.unsplash.com" ,'encrypted-tbn0.gstatic.com','res.cloudinary.com'],
-	},
+    domains: [
+      'i.scdn.co',
+      'source.unsplash.com',
+      'encrypted-tbn0.gstatic.com',
+      'res.cloudinary.com',
+    ],
+  },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts', 'context'],
   },

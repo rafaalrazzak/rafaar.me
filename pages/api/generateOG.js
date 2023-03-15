@@ -3,11 +3,11 @@ import * as React from 'react'
 import { ImageResponse } from '@vercel/og'
 
 const JakartaSans = fetch(
-  new URL('../../public/static/fonts/PlusJakartaSans-Regular.ttf', import.meta.url)
+  new URL('./public/static/fonts/PlusJakartaSans-Regular.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 const JakartaSansBold = fetch(
-  new URL('../../public/static/fonts/PlusJakartaSans-Bold.ttf', import.meta.url)
+  new URL('./public/static/fonts/PlusJakartaSans-Bold.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 export const config = {

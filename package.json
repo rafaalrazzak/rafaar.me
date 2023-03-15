@@ -19,6 +19,8 @@
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@notionhq/client": "^2.2.3",
+    "@react-spring/shared": "^9.7.1",
+    "@react-spring/web": "^9.7.1",
     "@react-three/postprocessing": "^2.7.0",
     "@vercel/og": "^0.4.0",
     "cloudinary-react": "^1.8.1",

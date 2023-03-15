@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { Children } from 'react'
 
 // Destructure props for easier readability and add comments for each variable
-const ActiveLink = ({ children, activeClassName, ...props }) => {
+const ActiveLink = ({ children, className: activeClassName, ...props }) => {
   // Use destructuring to get asPath from the router object
   const { asPath } = useRouter()
 
@@ -40,7 +40,7 @@ const CustomLink = ({ href, children, isActive, activeClassName, ...rest }) => {
   // Return the appropriate link based on the link type
   if (isInternalLink) {
     return (
-      <BaseLink href={href} activeClassName={activeClassName} {...rest}>
+      <BaseLink href={href} className={activeClassName} {...rest}>
         {children}
       </BaseLink>
     )

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap",
+    "build": "next build && next-sitemap",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint",
@@ -37,6 +37,7 @@
     "next": "^13.2.4",
     "next-compose-plugins": "^2.2.1",
     "next-mdx-remote": "^4.4.1",
+    "next-sitemap": "^4.0.5",
     "next-themes": "^0.2.1",
     "next-translate": "^2.0.2",
     "next-transpile-modules": "^10.0.0",

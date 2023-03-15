@@ -47,7 +47,7 @@ export default function Header() {
     <>
       <header
         className={clsx(
-          'fixed w-full top-0 z-30 flex items-center justify-between  bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 dark:bg-transparent bg-transparent',
+          'sticky w-full top-0 z-30 flex items-center justify-between  bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 dark:bg-transparent bg-transparent',
           {
             'border-none': isTop,
             'border-b border-secondary-200 bg-white dark:border-secondary-800 dark:bg-violet-1000 ':

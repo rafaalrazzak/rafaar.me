@@ -11,7 +11,7 @@ const LayoutWrapper = ({ children }) => {
       <Header />
       <SectionContainer>
         <div className="flex min-h-screen flex-col justify-between">
-          <main className="mb-auto">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
         <div className="fixed -bottom-11 -left-28 -z-10 h-full w-full opacity-60 sm:-bottom-0 sm:-left-64">

@@ -38,6 +38,7 @@ specifiers:
   inquirer: ^9.1.4
   javascript-time-ago: ^2.5.9
   lint-staged: ^13.2.0
+  mdast-util-to-string: ^3.1.1
   mdx-bundler: ^9.2.1
   mdx-embed: ^1.1.2
   next: ^13.2.4
@@ -95,6 +96,7 @@ dependencies:
   gray-matter: 4.0.3
   image-size: 1.0.2
   javascript-time-ago: 2.5.9
+  mdast-util-to-string: 3.1.1
   mdx-bundler: 9.2.1_esbuild@0.17.11
   mdx-embed: 1.1.2_i6ate376bdxko7atobb3ut6bgq
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y

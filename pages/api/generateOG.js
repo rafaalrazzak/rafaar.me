@@ -7,11 +7,11 @@ const JakartaSans = fetch(
 ).then((res) => res.arrayBuffer())
 
 const JakartaSansBold = fetch(
-  new URL('../../public/fonts/PlusJakartaSans-Bold.ttf', import.meta.url)
+  new URL('../../public/static/fonts/PlusJakartaSans-Bold.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
 export const config = {
-  runtime: 'experimental-edge',
+  runtime: 'edge',
 }
 
 export default async function OGImage(req) {

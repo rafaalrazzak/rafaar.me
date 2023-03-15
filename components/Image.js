@@ -29,7 +29,7 @@ export default function Image({ type, circleSize, src, width, height, ...rest })
           className={`${
             type == 'circle' ? `${circleSize} rounded-full` : 'h-full w-full '
           }  animate-pulse bg-secondary-200`}
-        ></div>
+        />
       )}
     </>
   )

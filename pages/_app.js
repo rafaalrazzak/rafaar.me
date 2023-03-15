@@ -1,6 +1,7 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
 
+import localFont from 'next/font/local'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 import { Globals } from '@react-spring/shared'
@@ -10,8 +11,11 @@ import { ClientReload } from '@/components/ClientReload'
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
+const JakartaSans = localFont({
+  src: '../public/static/fonts/PlusJakartaSans-VariableFont_wght.ttf',
+})
+
 export default function App({ Component, pageProps, router }) {
-  // https://github.com/pmndrs/react-spring/issues/1586
   console.warn = function () {}
 
   Globals.assign({
@@ -25,7 +29,7 @@ export default function App({ Component, pageProps, router }) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <LayoutWrapper>
-        <Component {...pageProps} key={router.route} />
+        <Component {...pageProps} key={router.route} className={JakartaSans.className} />
       </LayoutWrapper>
       <RSS />
     </ThemeProvider>

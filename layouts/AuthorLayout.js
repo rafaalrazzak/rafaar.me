@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, frontMatter, availableLocales }
             {t('headerNavLinks:about')}
           </h1>
         </div>
-        <div className="items-start">
+        <div>
           <div className="flex flex-col items-center rounded-2xl bg-secondary-500/10 p-2 text-center dark:bg-secondary-600/10 md:flex-row">
             <div>
               <Card onlyImg className="p-4">

@@ -152,7 +152,7 @@ export default function Home({ posts, locale, availableLocales }) {
             </Link>
           </div>
         )}
-          <Track />
+        <Track />
       </div>
     </>
   )

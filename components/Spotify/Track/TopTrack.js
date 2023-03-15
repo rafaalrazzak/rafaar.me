@@ -6,7 +6,7 @@ export default function Tracks() {
   const { data } = useSWR('/api/top-tracks', fetcher)
 
   if (!data) {
-    return 
+    return
   }
   return (
     <Parallax y={10} visibleOpacity={1} hiddenOpacity={1}>

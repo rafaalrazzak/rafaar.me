@@ -13,22 +13,24 @@ export default function Tracks() {
       <h1 className=" flex justify-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
         My <span className="mx-1 text-spotify">Spotify</span> Top Song
       </h1>
-      {data.tracks.map((track, k) => (
-        <Parallax
-          key={k}
-          y={20}
-          visibleOpacity={1}
-          hiddenOpacity={0}
-          className="flex flex-wrap w-full md:w-1/2 px-4"
-        >
-          <Track
-            title={track.title}
-            image={track.songImage}
-            url={track.songUrl}
-            artist={track.artist}
-          />
-        </Parallax>
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
+        {data.tracks.map((track, k) => (
+          <Parallax
+            key={k}
+            y={20}
+            visibleOpacity={1}
+            hiddenOpacity={0}
+            className="flex flex-wrap w-full px-4"
+          >
+            <Track
+              title={track.title}
+              image={track.songImage}
+              url={track.songUrl}
+              artist={track.artist}
+            />
+          </Parallax>
+        ))}
+      </div>
     </Parallax>
   )
 }

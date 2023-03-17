@@ -24,7 +24,7 @@ export default function PostLayout({
   availableLocales,
   children,
 }) {
-  const { fileName, date, title, tags, readingTime, thumbnail } = frontMatter
+  const { fileName, created_time, title, tags, readingTime, thumbnail } = frontMatter
   const roundedRead = Math.round(readingTime)
   const { t } = useTranslation()
   const { locale } = useRouter()
@@ -46,9 +46,9 @@ export default function PostLayout({
               <dl>
                 <dt className="sr-only">{t('common:pub')}</dt>
                 <dd className="flex items-center justify-center divide-x-2 divide-gray-500 text-sm font-medium leading-6 text-gray-500 dark:divide-gray-400 dark:text-gray-400">
-                  <TimeAgo datetime={date} className="px-2" locale={locale} />
-                  <time className="px-2" dateTime={date}>
-                    {formatDate(date, locale)}
+                  <TimeAgo created_timetime={created_time} className="px-2" locale={locale} />
+                  <time className="px-2" created_timeTime={created_time}>
+                    {formatDate(created_time, locale)}
                   </time>
                   <ReadTime time={roundedRead} className="hidden px-2 md:flex" />
                 </dd>

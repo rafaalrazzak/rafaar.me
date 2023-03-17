@@ -7,65 +7,15 @@
       <language>id</language>
       <managingEditor>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</managingEditor>
       <webMaster>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</webMaster>
-      <lastBuildDate>22/6/2022</lastBuildDate>
+      <lastBuildDate>9/5/2022</lastBuildDate>
       <atom:link href="https://rafaar.me/feed.id.xml" rel="self" type="application/rss+xml"/>
       
-  <item>
-    <guid>https://rafaar.me/id/blog/looping-python</guid>
-    <title>Looping Python</title>
-    <link>https://rafaar.me/id/blog/looping-python</link>
-    <description>Perulangan dalam bahasa pemrograman Python </description>
-    <pubDate>22/6/2022</pubDate>
-    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
-    <category>python</category>
-  </item>
-
-  <item>
-    <guid>https://rafaar.me/id/blog/kondisi-python</guid>
-    <title>Kondisi Python</title>
-    <link>https://rafaar.me/id/blog/kondisi-python</link>
-    <description>Kondisi pada bahasa pemrograman Python </description>
-    <pubDate>30/5/2022</pubDate>
-    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
-    <category>python</category>
-  </item>
-
-  <item>
-    <guid>https://rafaar.me/id/blog/operator-python</guid>
-    <title>Operator Python</title>
-    <link>https://rafaar.me/id/blog/operator-python</link>
-    <description>Operator dalam bahasa pemrograman Python </description>
-    <pubDate>18/5/2022</pubDate>
-    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
-    <category>python</category>
-  </item>
-
-  <item>
-    <guid>https://rafaar.me/id/blog/variable-python</guid>
-    <title>Variabel Python</title>
-    <link>https://rafaar.me/id/blog/variable-python</link>
-    <description>Variabel di dalam bahasa pemrograman Python</description>
-    <pubDate>11/5/2022</pubDate>
-    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
-    <category>python</category>
-  </item>
-
   <item>
     <guid>https://rafaar.me/id/blog/data-type-python</guid>
     <title>Tipe Data Python</title>
     <link>https://rafaar.me/id/blog/data-type-python</link>
     <description>Tipe data dalam bahasa pemrograman Python</description>
     <pubDate>9/5/2022</pubDate>
-    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
-    <category>python</category>
-  </item>
-
-  <item>
-    <guid>https://rafaar.me/id/blog/write-a-comment-on-python</guid>
-    <title>Menulis Komentar Pada Python</title>
-    <link>https://rafaar.me/id/blog/write-a-comment-on-python</link>
-    <description>Menulis sebuah komentar dalam bahasa pemrograman python</description>
-    <pubDate>7/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
     <category>python</category>
   </item>
@@ -81,11 +31,61 @@
   </item>
 
   <item>
+    <guid>https://rafaar.me/id/blog/kondisi-python</guid>
+    <title>Kondisi Python</title>
+    <link>https://rafaar.me/id/blog/kondisi-python</link>
+    <description>Kondisi pada bahasa pemrograman Python </description>
+    <pubDate>30/5/2022</pubDate>
+    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
+    <category>python</category>
+  </item>
+
+  <item>
+    <guid>https://rafaar.me/id/blog/looping-python</guid>
+    <title>Looping Python</title>
+    <link>https://rafaar.me/id/blog/looping-python</link>
+    <description>Perulangan dalam bahasa pemrograman Python </description>
+    <pubDate>22/6/2022</pubDate>
+    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
+    <category>python</category>
+  </item>
+
+  <item>
+    <guid>https://rafaar.me/id/blog/operator-python</guid>
+    <title>Operator Python</title>
+    <link>https://rafaar.me/id/blog/operator-python</link>
+    <description>Operator dalam bahasa pemrograman Python </description>
+    <pubDate>18/5/2022</pubDate>
+    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
+    <category>python</category>
+  </item>
+
+  <item>
     <guid>https://rafaar.me/id/blog/python-introduction</guid>
     <title>Pengenalan Python</title>
     <link>https://rafaar.me/id/blog/python-introduction</link>
     <description>Pengenalan bahasa pemrograman python 🐍</description>
     <pubDate>17/4/2022</pubDate>
+    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
+    <category>python</category>
+  </item>
+
+  <item>
+    <guid>https://rafaar.me/id/blog/variable-python</guid>
+    <title>Variabel Python</title>
+    <link>https://rafaar.me/id/blog/variable-python</link>
+    <description>Variabel di dalam bahasa pemrograman Python</description>
+    <pubDate>11/5/2022</pubDate>
+    <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
+    <category>python</category>
+  </item>
+
+  <item>
+    <guid>https://rafaar.me/id/blog/write-a-comment-on-python</guid>
+    <title>Menulis Komentar Pada Python</title>
+    <link>https://rafaar.me/id/blog/write-a-comment-on-python</link>
+    <description>Menulis sebuah komentar dalam bahasa pemrograman python</description>
+    <pubDate>7/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
     <category>python</category>
   </item>

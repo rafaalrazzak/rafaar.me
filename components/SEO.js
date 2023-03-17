@@ -41,7 +41,7 @@ const generateLinks = (router, availableLocales) =>
 //         availableLocales
 //           .filter((locale) => locale !== router.locale)
 //           .map((locale) => <meta key={locale} property="og:locale:alternate" content={locale} />)}
-//       <meta name="twitter:card" content="summary_large_image" />
+//       <meta name="twitter:card" content="description_large_image" />
 //       <meta name="twitter:site" content={siteMetadata.twitter} />
 //       <meta name="twitter:title" content={title} />
 //       <meta name="twitter:description" content={description} />
@@ -73,7 +73,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, availableLoca
         availableLocales
           .filter((locale) => locale !== router.locale)
           .map((locale) => <meta key={locale} property="og:locale:alternate" content={locale} />)}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="description_large_image" />
       <meta name="twitter:site" content={siteMetadata.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
@@ -86,7 +86,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, availableLoca
 // export const BlogSeo = ({
 //   authorDetails,
 //   title,
-//   summary,
+//   description,
 //   date,
 //   lastmod,
 //   url,
@@ -140,7 +140,7 @@ export const TagSEO = ({ title, description, availableLocales }) => {
 export const BlogSEO = ({
   authorDetails,
   title,
-  summary,
+  description,
   created_time,
   last_edited_time,
   url,
@@ -151,7 +151,7 @@ export const BlogSEO = ({
   const publishedAt = new Date(created_time).toISOString()
   const modifiedAt = new Date(last_edited_time || created_time).toISOString()
   let thumbImgArr =
-    thumbImg.length === 0
+    thumbImg?.length === 0
       ? [siteMetadata.socialBanner]
       : typeof thumbImg === 'string'
       ? [thumbImg]
@@ -199,7 +199,7 @@ export const BlogSEO = ({
         url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
       },
     },
-    description: summary,
+    description: description,
   }
 
   const twImageUrl = featuredImages[0].url
@@ -208,7 +208,7 @@ export const BlogSEO = ({
     <>
       <CommonSEO
         title={`Blog - ${title}`}
-        description={summary}
+        description={description}
         ogType="article"
         ogImage={featuredImages}
         twImage={twImageUrl}
@@ -217,11 +217,11 @@ export const BlogSEO = ({
       <Head>
         {/* <title>{`${title}`}</title>
         <meta name="robots" content="follow, index" />
-        <meta name="description" content={summary} />
+        <meta name="description" content={description} />
         <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content={siteMetadata.title[router.locale]} />
-        <meta property="og:description" content={summary} />
+        <meta property="og:description" content={description} />
         <meta property="og:title" content={title} />
         {featuredImages.map((img) => (
           <meta property="og:image" content={img.url} key={img.url} />
@@ -231,10 +231,10 @@ export const BlogSEO = ({
           availableLocales
             .filter((locale) => locale !== router.locale)
             .map((locale) => <meta key={locale} property="og:locale:alternate" content={locale} />)}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="description_large_image" />
         <meta name="twitter:site" content={siteMetadata.twitter} />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={summary} />
+        <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={featuredImages[0].url} /> */}
         {created_time && <meta property="article:published_time" content={publishedAt} />}
         {last_edited_time && <meta property="article:modified_time" content={modifiedAt} />}

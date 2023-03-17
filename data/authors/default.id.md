@@ -6,6 +6,7 @@ email: contact.rafaalrazzak@gmail.com
 twitter: rafaalrazzak
 instagram: rafa.ar.id
 github: rafalrazzak
+avatar: https://res.cloudinary.com/raf-ar/image/upload/v1651370642/blog/avatars/rafa al razzak.jpg
 ---
 
 <h1 align="center"> Hai 👋, Saya Rafa Al Razzak </h1>

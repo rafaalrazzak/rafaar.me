@@ -73,7 +73,7 @@ export default function Home({ posts, locale, availableLocales }) {
 
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-              const { slug, date, title, summary, tags } = frontMatter
+              const { slug, created_time, title, description, tags } = frontMatter
               return (
                 <Parallax
                   y={15}
@@ -89,11 +89,11 @@ export default function Home({ posts, locale, availableLocales }) {
                               <dt className="sr-only">{t('common:pub')}</dt>
                               <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-secondary-500 dark:text-secondary-400">
                                 <TimeAgo
-                                  datetime={date}
+                                  datetime={created_time}
                                   locale={locale}
                                   className="text-primary-500"
                                 />
-                                <time dateTime={date}>{formatDate(date, locale)}</time>
+                                <time dateTime={created_time}>{formatDate(created_time, locale)}</time>
                               </dd>
                             </dl>
 
@@ -116,7 +116,7 @@ export default function Home({ posts, locale, availableLocales }) {
                                 </div>
 
                                 <div className="prose text-base text-secondary-500 dark:text-secondary-400">
-                                  {summary}
+                                  {description}
                                 </div>
                               </div>
                               <div className="text-sm font-medium leading-6">

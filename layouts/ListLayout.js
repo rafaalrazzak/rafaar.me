@@ -11,7 +11,7 @@ import formatDate from '@/lib/utils/formatDate'
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
+    const searchContent = frontMatter.title + frontMatter.description + frontMatter.tags.join(' ')
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
@@ -56,7 +56,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
         {!filteredBlogPosts.length && `No articles found for: "${searchValue}"`}
         {displayPosts.map((frontMatter) => {
-          const { slug, date, title, summary, tags } = frontMatter
+          const { slug, created_time, title, description, tags } = frontMatter
           return (
             <Parallax
               y={15}
@@ -70,11 +70,11 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                       <dt className="sr-only">{t('common:pub')}</dt>
                       <dd className="flex flex-col gap-1 text-base font-medium leading-6 text-secondary-500 dark:text-secondary-400">
                         <TimeAgo
-                          datetime={date}
+                          datetime={created_time}
                           className="text-primary-700 dark:text-primary-500"
                           locale={locale}
                         />
-                        <time dateTime={date}>{formatDate(date, locale)}</time>
+                        <time dateTime={created_time}>{formatDate(created_time, locale)}</time>
                       </dd>
                     </dl>
                     <div className="space-y-3 xl:col-span-3">
@@ -94,7 +94,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         </div>
                       </div>
                       <div className="prose text-sm text-secondary-500 dark:text-secondary-400">
-                        {summary}
+                        {description}
                       </div>
                     </div>
                   </article>

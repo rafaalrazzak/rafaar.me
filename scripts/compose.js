@@ -24,7 +24,7 @@ const getLayouts = () => {
 const genFrontMatter = (answers) => {
   const t = titleCase(answers.title ? answers.title : 'Untitled')
   let d = new Date()
-  const date = d.toISOString()
+  const created_time = d.toISOString()
   const tagArray = answers.tags.split(',')
   tagArray.forEach((tag, index) => (tagArray[index] = tag.trim()))
   const tags = "'" + tagArray.join("','") + "'"
@@ -32,10 +32,10 @@ const genFrontMatter = (answers) => {
 
   let frontMatter = dedent`---
   title: '${t}'
-  date: '${date}'
+  created_time: '${created_time}'
   tags: [${answers.tags ? tags : ''}]
   draft: ${answers.draft === 'yes' ? true : false}
-  summary: '${answers.summary ? answers.summary : ' '}'
+  description: '${answers.description ? answers.description : ' '}'
   thumbnail: ${answers.thumbnail === 'yes' ? true : false}
   layout: ${answers.layout}
   `
@@ -70,8 +70,8 @@ inquirer
       choices: getAuthors,
     },
     {
-      name: 'summary',
-      message: 'Enter post summary:',
+      name: 'description',
+      message: 'Enter post description:',
       type: 'input',
     },
     {

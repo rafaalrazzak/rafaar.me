@@ -2,18 +2,18 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Rafa Al Razzak  – Front End Web Design</title>
-      <link>https://rafaar.me/id/blog</link>
+      <link>https://rafaar.vercel.app/id/blog</link>
       <description>Front-End Web Developer dan mendesain untuk bersenang-senang.</description>
       <language>id</language>
       <managingEditor>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</managingEditor>
       <webMaster>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</webMaster>
       <lastBuildDate>22/6/2022</lastBuildDate>
-      <atom:link href="https://rafaar.me/tags/python/feed.id.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://rafaar.vercel.app/tags/python/feed.id.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://rafaar.me/id/blog/looping-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/looping-python</guid>
     <title>Looping Python</title>
-    <link>https://rafaar.me/id/blog/looping-python</link>
+    <link>https://rafaar.vercel.app/id/blog/looping-python</link>
     <description>Perulangan dalam bahasa pemrograman Python </description>
     <pubDate>22/6/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -21,9 +21,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/kondisi-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/kondisi-python</guid>
     <title>Kondisi Python</title>
-    <link>https://rafaar.me/id/blog/kondisi-python</link>
+    <link>https://rafaar.vercel.app/id/blog/kondisi-python</link>
     <description>Kondisi pada bahasa pemrograman Python </description>
     <pubDate>30/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -31,9 +31,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/operator-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/operator-python</guid>
     <title>Operator Python</title>
-    <link>https://rafaar.me/id/blog/operator-python</link>
+    <link>https://rafaar.vercel.app/id/blog/operator-python</link>
     <description>Operator dalam bahasa pemrograman Python </description>
     <pubDate>18/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -41,9 +41,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/variable-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/variable-python</guid>
     <title>Variabel Python</title>
-    <link>https://rafaar.me/id/blog/variable-python</link>
+    <link>https://rafaar.vercel.app/id/blog/variable-python</link>
     <description>Variabel di dalam bahasa pemrograman Python</description>
     <pubDate>11/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -51,9 +51,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/data-type-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/data-type-python</guid>
     <title>Tipe Data Python</title>
-    <link>https://rafaar.me/id/blog/data-type-python</link>
+    <link>https://rafaar.vercel.app/id/blog/data-type-python</link>
     <description>Tipe data dalam bahasa pemrograman Python</description>
     <pubDate>9/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -61,9 +61,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/write-a-comment-on-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/write-a-comment-on-python</guid>
     <title>Menulis Komentar Pada Python</title>
-    <link>https://rafaar.me/id/blog/write-a-comment-on-python</link>
+    <link>https://rafaar.vercel.app/id/blog/write-a-comment-on-python</link>
     <description>Menulis sebuah komentar dalam bahasa pemrograman python</description>
     <pubDate>7/5/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -71,9 +71,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/hello-world-python</guid>
+    <guid>https://rafaar.vercel.app/id/blog/hello-world-python</guid>
     <title>Hello World Python</title>
-    <link>https://rafaar.me/id/blog/hello-world-python</link>
+    <link>https://rafaar.vercel.app/id/blog/hello-world-python</link>
     <description>Pengenalan syntax di Python</description>
     <pubDate>20/4/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
@@ -81,9 +81,9 @@
   </item>
 
   <item>
-    <guid>https://rafaar.me/id/blog/python-introduction</guid>
+    <guid>https://rafaar.vercel.app/id/blog/python-introduction</guid>
     <title>Pengenalan Python</title>
-    <link>https://rafaar.me/id/blog/python-introduction</link>
+    <link>https://rafaar.vercel.app/id/blog/python-introduction</link>
     <description>Pengenalan bahasa pemrograman python 🐍</description>
     <pubDate>17/4/2022</pubDate>
     <author>contact.rafaalrazzak@gmail.com (Rafa Al Razzak)</author>
